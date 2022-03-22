@@ -1,0 +1,29 @@
+.slideshow{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.slideshow{
+    ul{
+        list-style-type: none;
+        margin-left:0;
+        display: flex;
+    }
+}
+
+.slideShowButtons{
+    width: 600px;
+    display: flex;
+    position: relative;
+    top: -30px;
+
+    .slideButton{
+        cursor: pointer;
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+        background-color: #a1a1a1;
+    }
+}

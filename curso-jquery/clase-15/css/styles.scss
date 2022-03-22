@@ -1,0 +1,94 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+$primary-green:#82b800;
+$secondary-green:#77ab00;
+
+.smallBoxContainer{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+
+    .smallBoxPhoto{
+        float: left;
+        margin-top: 45px;
+        margin-right: 20px;
+
+        img{
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .smallBoxContent{
+        float: left;
+
+        .smallBoxTxtContainer{
+            span{
+                display: block;
+            }
+
+            .smallBoxTitle{
+                font-size: 20px;
+                color: #5b5b5b;
+            }
+            
+            .smallBoxSubtitle{
+                font-size: 18px;
+                color: #291818;
+            }
+            
+        }
+
+        .smallBoxPeak{
+            content: ' ';
+            float: left;
+            position: relative;
+            top: 37px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid transparent;
+            border-right: 8px solid $primary-green;
+            border-left: 0px solid $primary-green;
+        }
+        
+        .smallBoxColorBox{
+            height: 60px;
+            line-height: 60px;
+            margin-top: 15px;
+            padding-left: 15px;
+            background-color: $primary-green;
+            color: #fff;;
+            border-radius: 5px;
+            overflow: hidden;
+            
+            .smallBoxColorText{
+                float: left;
+                font-size: 16px;
+            }
+
+            .smallBoxColorIcon{
+                float: right;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background-color: $secondary-green;
+                text-align: center;
+                margin-left: 10px;
+                font-size: 24px;
+            }
+        }
+
+        .smallBoxShadow{
+            width: 80%;
+            height: 7px;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.09);
+            border-radius: 100%;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
+        }
+    }
+}

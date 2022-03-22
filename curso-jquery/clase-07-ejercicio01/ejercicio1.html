@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <title>Ejercicio 01 | Objetos</title>
+
+    <!-- jQuery se hace la referencia desde un directorio afuera de la carpeta de clase para solo tener un jQuery en el proyecto -->
+    <script src="../assets/js/lib/jquery-3.6.0.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Hoja de estilo de la página -->
+    <link rel="stylesheet" type="text/css" href="/clase-07-ejercicio01/css/styles.css" media="screen" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+			<div class="col">
+				<h1>Ejercicio 1 | Tesla Motors</h1>
+			</div>
+		</div>
+
+		<hr class="mb-3">
+        
+        <div class="row mt-4">
+            <div class="col">
+                
+                <div class="divPreloader">
+                    <img src="/assets/img/loading.gif" class="imgLoader img-fluid">
+                </div> 
+               
+
+                <div class="preview">
+                    <img id="imgAuto" class="img-fluid">
+                </div>
+
+                <div class="form-group">
+                    <div class="offset-sm-4 col-sm-5">
+                          <select id="cmbColor" class="form-control"></select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navegación chafa -->
+        <div class="row text-center mt-5">
+			<div class="col">
+				<a href="/clase-07/clase07.html">
+					<h3 class="text-info">Ir a la Clase 7</h3>
+				</a>
+            </div>
+			
+			<div class="col">
+				<a href="/clase-08/clase8.html">
+					<h3 class="text-info">Ir a la Clase 8</h3>
+				</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        (function () {
+
+            let teslaViewer = {
+
+                loader: $('.divPreloader'),
+                colores:['azul', 'blanco','cafe','gris','negro'],
+
+                cambiarColor: function( img ){
+
+                    var $loader = this.loader;
+                    $loader.fadeIn(150);
+
+                    if( img === undefined ){
+                        var color = teslaViewer.colores[0];
+                        img = '/assets/img/tesla/modelS-'+ color +'.jpg';
+                    }
+
+                    $('<img>', {
+                        src:img,
+                        class:'img-fluid',
+
+                    }).on('load', function(){
+                        $('.preview').find('img').remove();
+                        $(this).appendTo('.preview');
+
+                        $loader.fadeOut(150);
+                    });
+
+                },
+
+                init:function( options ){
+
+                    $.extend( teslaViewer, options );
+
+                    for (let i = 0; i < this.colores.length; i++) {
+                        // Mi solución
+                        // $('#cmbColor').append('<option value="'+this.colores[i]+'">'+ this.colores[i] +'</option>');
+
+                        // Solución del profe usando objetos
+                        var color = this.colores[i];
+
+                        $('<option>', {
+                            value:color,
+                            text:color
+                        }).appendTo('#cmbColor');
+                    }
+
+                    $('#cmbColor').bind('change', function(){
+
+                        let color = $(this).val();
+                        let url = '/assets/img/tesla/modelS-'+ color +'.jpg';
+
+                        teslaViewer.cambiarColor( url );
+
+                    });
+
+                    // Cargar imagen al inicio
+                    teslaViewer.cambiarColor();
+
+                }
+            };
+
+            teslaViewer.init({
+                colores:['azul', 'blanco','cafe','gris','negro','rojo','rojooscuro','verde'],
+            });
+
+        })();
+
+    </script>
+
+</body>
+
+</html>

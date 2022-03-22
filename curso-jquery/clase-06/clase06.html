@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <title>Clase 06 - Objetos</title>
+
+    <!-- jQuery se hace la referencia desde un directorio afuera de la carpeta de clase para solo tener un jQuery en el proyecto -->
+    <script src="../assets/js/lib/jquery-3.6.0.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Hoja de estilo de la página -->
+    <link rel="stylesheet" type="text/css" href="/clase-06/css/styles.css" media="screen" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+			<div class="col">
+				<h1>Objetos 1</h1>
+                <h5><small class="text-muted">Comprendiendo lo básico</small></h5>
+			</div>
+		</div>
+
+		<hr class="mb-3">
+        
+        <div class="row mt-4">
+            <div class="col">
+                <button id="btnEncender" class="btn btn-success">Encender</button>
+                <button id="btnApagar" class="btn btn-danger">Apagar</button>
+            </div>
+        </div>
+
+        <!-- Navegación chafa -->
+        <div class="row text-center mt-5">
+			<div class="col">
+				<a href="/clase-05-tarea01/tarea1.html">
+					<h3 class="text-info">Ir a la Tarea 1</h3>
+				</a>
+            </div>
+			
+            <div class="col">
+				<a href="/clase-05/clase05.html">
+					<h3 class="text-info">Ir a la Clase 5</h3>
+				</a>
+            </div>
+			
+			<div class="col">
+				<a href="/clase-07/clase07.html">
+					<h3 class="text-info">Ir a la Clase 7</h3>
+				</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        ( function(){
+
+            let carro = {
+                encendido:false,
+                llantas:4,
+                puertas:5,
+                fabricante:{
+                    marca: 'Toyota',
+                    telefono: '4773333333',
+                    direccion: "Enrique Segoviano"
+                },
+                colores:['Azul', 'Blanco', 'Rojo', 'Negro'],
+
+                encender: function(){
+
+                    if( carro.encendido ){
+                        console.log("el vehículo ya está encendido");
+                    } else{
+                        console.log("Encendiendo auto.");
+                        this.encendido = true;
+                    }
+                },
+                
+                apagar: function(){
+
+                    if( !carro.encendido ){
+                        console.log("El auto ya está apagado.");
+                    } else {
+                        console.log("El auto se apagó.");
+                        this.encendido = false;
+                    }
+
+                }
+            };
+
+            $('#btnEncender').on('click', function(){
+                carro.encender();
+            });
+            
+            $('#btnApagar').on('click', function(){
+                carro.apagar();
+            });
+
+        })();
+
+    </script>
+
+</body>
+
+</html>

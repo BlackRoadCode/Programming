@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Clase 03 - Eventos</title>
+
+    <!-- jQuery se hace la referencia desde un directorio afuera de la carpeta de clase para solo tener un jQuery en el proyecto -->
+    <script src="../assets/js/lib/jquery-3.6.0.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Hoja de estilo de la página -->
+    <link rel="stylesheet" type="text/css" href="/clase-03/css/styles.css" media="screen" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+			<div class="col">
+				<h1>Eventos</h1>
+			</div>
+		</div>
+
+		<hr class="mb-3">
+
+        <div class="row mt-4">
+            <div class="col">
+                <button class="btn btn-primary" id="btnClick">Evento Click</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <img class="img100" src="../assets/img/nophoto.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <div class="divRojo"></div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <a id="linkUdemy" class="fs-3 text-decoration-none" href="https://udemy.com">Ir a Udemy</a>
+            </div>
+        </div>
+
+        <!-- Navegación chafa -->
+        <div class="row text-center mt-5">
+			<div class="col">
+				<a href="/clase-02/clase02.html">
+					<h3 class="text-info">Ir a la clase 2</h3>
+				</a>
+            </div>
+			
+			<div class="col">
+				<a href="/clase-04/clase04.html">
+					<h3 class="text-info">Ir a la clase 4</h3>
+				</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        $("#btnClick").on("click", function(){
+            console.log("hiciste clic en el botón");
+        });
+
+        $(".img100").on("mouseenter", function(){
+            $(this).attr("src", "../assets/img/profesor.jpg");
+        });
+        
+        $(".img100").on("mouseleave", function(){
+            $(this).attr("src", "../assets/img/nophoto.jpg");
+        });
+        
+        $(".divRojo").on("click", function(){
+            console.log("clic en el div rojo");
+        });
+        
+        // Controles especiales para links (comportamiento por defecto)
+        $("#linkUdemy").on("click", function( event ){
+            event.preventDefault();
+            console.log("clic en el link");
+
+            let link = $(this).attr("href");
+            console.log("esto trae link: ", link);
+
+            window.location = link;
+        });
+
+        $(document).ready( function(){
+            console.log("el sitio ha terminado de cargar");
+        });
+
+    </script>
+
+</body>
+
+</html>

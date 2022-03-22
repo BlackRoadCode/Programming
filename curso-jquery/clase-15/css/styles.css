@@ -1,0 +1,88 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.smallBoxContainer {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+}
+
+.smallBoxContainer .smallBoxPhoto {
+  float: left;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.smallBoxContainer .smallBoxPhoto img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.smallBoxContainer .smallBoxContent {
+  float: left;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxTxtContainer span {
+  display: block;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxTxtContainer .smallBoxTitle {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxTxtContainer .smallBoxSubtitle {
+  font-size: 18px;
+  color: #291818;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxPeak {
+  content: ' ';
+  float: left;
+  position: relative;
+  top: 37px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #82b800;
+  border-left: 0px solid #82b800;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxColorBox {
+  height: 60px;
+  line-height: 60px;
+  margin-top: 15px;
+  padding-left: 15px;
+  background-color: #82b800;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxColorBox .smallBoxColorText {
+  float: left;
+  font-size: 16px;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxColorBox .smallBoxColorIcon {
+  float: right;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #77ab00;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.smallBoxContainer .smallBoxContent .smallBoxShadow {
+  width: 80%;
+  height: 7px;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=styles.css.map */

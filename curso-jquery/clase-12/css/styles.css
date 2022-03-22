@@ -1,0 +1,14 @@
+.slideshow{
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.slideshow ul{
+    list-style-type: none;
+    margin-left:0;
+    display: flex;
+}
+

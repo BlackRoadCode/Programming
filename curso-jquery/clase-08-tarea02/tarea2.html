@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Clase 08 | Tarea 2 | Tienda de Ropa</title>
+
+    <!-- jQuery se hace la referencia desde un directorio afuera de la carpeta de clase para solo tener un jQuery en el proyecto -->
+    <script src="../assets/js/lib/jquery-3.6.0.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Hoja de estilo de la página -->
+    <link rel="stylesheet" type="text/css" href="/clase-08-tarea02/css/styles.css" media="screen" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+            <div class="col">
+                <h1>Tienda de Ropa <small class="text-muted">Pepe's</small></h1>
+            </div>
+        </div>
+
+        <hr class="mb-3">
+
+        <div class="row">
+            <div class="col-1" id="colMiniatures"></div>
+
+            <div class="col-6 text-center preview">
+                <img class="img-fluid" id="img-playera" alt="">
+            </div>
+
+            <div class="col-5 mt-4" id="title-tshirt">
+                <h4 class="h4-title">Camiseta Especial </h4>
+                <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur dolorem aliquid non quas consequuntur amet ipsa veniam repellat repellendus atque molestiae ea consectetur odio voluptate dignissimos.</small></p>
+
+                <h6>Rating</h6>
+                <p>
+                    <i class="text-warning bi bi-star-fill"></i>
+                    <i class="text-warning bi bi-star-fill"></i>
+                    <i class="text-warning bi bi-star-fill"></i>
+                    <i class="text-warning bi bi-star-fill"></i>
+                    <i class="text-warning bi bi-star-half"></i>
+                </p>
+
+                <h5 class="mt-4">Precio <small class="text-muted">$10</small></h5>
+            </div>
+        </div>
+
+
+        <!-- Navegación chafa -->
+        <div class="row text-center mt-5">
+            <div class="col">
+				<a href="/clase-08/clase8.html">
+					<h3 class="text-info">Ir a la clase 8</h3>
+				</a>
+            </div>
+
+            <div class="col">
+				<a href="/clase-09/clase9.html">
+					<h3 class="text-info">Ir a la clase 9</h3>
+				</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        (function () {
+
+            let tshirtViewer = {
+                colores:['blanca','gris','negra','rojo','rosa','verde'],
+
+                cambiarColorPlayera: function( img ){
+                    if( img === undefined ){
+                        var color = tshirtViewer.colores[0];
+                        img = '/assets/img/camiseta/large/'+ color +'.jpg';
+                    }
+
+                    $('<img>', {
+                        src:img,
+                        class:'img-fluid',
+
+                    }).on('load', function(){
+                        $('.preview').find('img').remove();
+                        $(this).appendTo('.preview');
+                    });
+                },
+
+                cambiarColorTexto: function( color ){
+                    if( color === undefined ){
+                        var color = tshirtViewer.colores[0];
+                        $('#title-tshirt').find('h4').append('<small class="text-muted title-price" id="text-color-playera">'+ color +'</small>');
+                    }
+                    
+                    $('#title-tshirt').find('.title-price').remove();
+                    $('#title-tshirt').find('h4').append('<small class="text-muted title-price" id="text-color-playera">'+ color +'</small>');
+                },
+
+                init:function( options ){
+
+                    $.extend( tshirtViewer, options );
+
+                    for (let i = 0; i < this.colores.length; i++) {
+                        var color = this.colores[i];
+
+                        $('<img>', {
+                            src:'/assets/img/camiseta/thumbs/'+ color +'.jpg',
+                            alt:color,
+                            class:'my-2 px-2 border imgTshirt'
+                        }).appendTo('#colMiniatures');
+                    }
+
+                    $('.imgTshirt').bind('mouseenter', function(){
+
+                        let color = $(this).attr('alt');
+                        let url = '/assets/img/camiseta/large/'+ color +'.jpg';
+
+                        tshirtViewer.cambiarColorPlayera( url );
+                        tshirtViewer.cambiarColorTexto( color );
+
+                    });
+
+                    // Cargar imagen al inicio
+                    tshirtViewer.cambiarColorPlayera();
+                    tshirtViewer.cambiarColorTexto();
+
+                }
+            };
+            
+            tshirtViewer.init({
+                colores:['blanca','gris','negra','rojo','rosa','verde'],
+            });          
+
+        })();
+
+    </script>
+
+</body>
+
+</html>

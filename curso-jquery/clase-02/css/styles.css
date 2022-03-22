@@ -1,0 +1,28 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.fnt-bold{
+    font-weight: bold;
+}
+
+.txt-purple{
+    color: purple;
+}
+
+.txt-blue{
+    color:blue;
+}
+
+.txt-crisom{
+    color:crimson;
+}
+
+.txt-deepskyblue{
+    color:deepskyblue;
+}
+
+.txt-hotpink{
+    color:hotpink;
+}
