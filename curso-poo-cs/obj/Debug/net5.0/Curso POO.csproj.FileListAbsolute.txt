@@ -1,0 +1,16 @@
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.exe
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.deps.json
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.runtimeconfig.json
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.runtimeconfig.dev.json
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.dll
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\ref\Curso POO.dll
+G:\Cursos Udemy - Alumno\Curso POO\bin\Debug\net5.0\Curso POO.pdb
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.csproj.AssemblyReference.cache
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.GeneratedMSBuildEditorConfig.editorconfig
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.AssemblyInfoInputs.cache
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.AssemblyInfo.cs
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.csproj.CoreCompileInputs.cache
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.dll
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\ref\Curso POO.dll
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.pdb
+G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.genruntimeconfig.cache
