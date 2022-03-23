@@ -1,0 +1,11 @@
+Esta es la historia de uno, que nadie sabe como se llama
+
+tiene 38 años pero parece de 50
+
+a veces sorprende, generalmente no.
+
+se añade una cosa y se cambia la misma.
+
+el fin.
+
+Aquí se añadió un cambio a historia.txt que ya existía antes de este set de cambios.
