@@ -14,7 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop", "rich-text#texto-menu"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -32,6 +32,13 @@
       "login",
       "minicart.v2"
     ]
+  },
+  "rich-text#texto-menu": {
+    "props": {
+      "text":"Texto en el menu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {

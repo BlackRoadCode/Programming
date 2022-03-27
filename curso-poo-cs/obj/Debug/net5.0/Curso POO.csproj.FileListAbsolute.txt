@@ -14,3 +14,19 @@ G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.dll
 G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\ref\Curso POO.dll
 G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.pdb
 G:\Cursos Udemy - Alumno\Curso POO\obj\Debug\net5.0\Curso POO.genruntimeconfig.cache
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.exe
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.deps.json
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.runtimeconfig.json
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.runtimeconfig.dev.json
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.dll
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\ref\Curso POO.dll
+G:\Github\Programming\curso-poo-cs\bin\Debug\net5.0\Curso POO.pdb
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.csproj.AssemblyReference.cache
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.GeneratedMSBuildEditorConfig.editorconfig
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.AssemblyInfoInputs.cache
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.AssemblyInfo.cs
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.csproj.CoreCompileInputs.cache
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.dll
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\ref\Curso POO.dll
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.pdb
+G:\Github\Programming\curso-poo-cs\obj\Debug\net5.0\Curso POO.genruntimeconfig.cache

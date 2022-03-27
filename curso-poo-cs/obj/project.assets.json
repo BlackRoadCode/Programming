@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Cursos Udemy - Alumno\\Curso POO\\Curso POO.csproj",
+      "projectUniqueName": "G:\\Github\\Programming\\curso-poo-cs\\Curso POO.csproj",
       "projectName": "Curso POO",
-      "projectPath": "G:\\Cursos Udemy - Alumno\\Curso POO\\Curso POO.csproj",
+      "projectPath": "G:\\Github\\Programming\\curso-poo-cs\\Curso POO.csproj",
       "packagesPath": "C:\\Users\\Usx\\.nuget\\packages\\",
-      "outputPath": "G:\\Cursos Udemy - Alumno\\Curso POO\\obj\\",
+      "outputPath": "G:\\Github\\Programming\\curso-poo-cs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usx\\AppData\\Roaming\\NuGet\\NuGet.Config",
