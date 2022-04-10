@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
+import PrimeraApp from "./PrimeraApp";
 
-const saludo = <h1>Hola Mundo</h1>;
 const root = createRoot( document.getElementById('root') );
 
-root.render(saludo);
+root.render( <PrimeraApp /> );
