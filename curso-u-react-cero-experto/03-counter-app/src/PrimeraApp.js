@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 const PrimeraApp = ( { saludoProp, subtituloDefaultProp } ) =>{
 
     const saludo = 'Hola Mundo const';
-    const arreglo = [1,2,3,4,5,6];
+    const arreglo = [ 1, 2, 3, 4, 5, 6 ];
     const booleano = true;
     const objeto = {
         nombre: 'Pepe',
