@@ -10,5 +10,6 @@ const root = createRoot( document.getElementById('root') );
 // root.render( componenteRender );
 
 // root.render(<PrimeraApp saludoProp="Hola, Soy Goku" />);
+root.render(<PrimeraApp />);
 
-root.render(<CounterApp value={ 12345 } />);
+// root.render(<CounterApp value={ 12345 } />);

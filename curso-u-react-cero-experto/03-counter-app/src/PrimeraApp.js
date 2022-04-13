@@ -12,15 +12,15 @@ const PrimeraApp = ( { saludoProp, subtituloDefaultProp } ) =>{
 
     return (
         <>
-            <h1>Hola Mundo desde Functional Component</h1>
+            {/* <h1>Hola Mundo desde Functional Component</h1>
             <p>Y ahora imprimo el saludo acá: { saludo } y una expresión: { 1 + 1 }</p>
             <p>Aquí imprimo un arreglo: { arreglo }</p>
             <p>Aquí imprimo un booleano: { booleano }</p>
             <p>Aquí imprimo un objeto: { JSON.stringify(objeto) }</p>
 
-            <h2>Esto lo imprimo desde las props</h2>
-            <p>{ saludoProp }</p>
-            <p>{ subtituloDefaultProp }</p>
+            <h2>Esto lo imprimo desde las props</h2> */}
+            <h1> { saludoProp } </h1>
+            <p> { subtituloDefaultProp } </p>
         </>
     )
 }
@@ -33,4 +33,4 @@ PrimeraApp.defaultProps = {
     subtituloDefaultProp: 'valor por default'
 }
 
-export default PrimeraApp
+export default PrimeraApp 
