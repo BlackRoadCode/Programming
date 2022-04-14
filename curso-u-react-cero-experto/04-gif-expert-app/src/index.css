@@ -11,4 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input{
+  width: 100%;
+  font-size: 1rem;
+  color: gray;
+}
+
 
