@@ -8,7 +8,7 @@ export const GiftExpertApp = () => {
     const [categories, setCategories] = useState(['Hector Lavoe']);
 
     return (
-        <>
+        <div className="general-container">
             <h2>Gift Expert App</h2>
 
             <AddCategory setCategories={ setCategories } />
@@ -23,7 +23,7 @@ export const GiftExpertApp = () => {
                     )
                 }
             </ol>
-        </>
+        </div>
     )
 
 }
