@@ -17,4 +17,26 @@ input{
   color: gray;
 }
 
+.card-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
+}
+
+.card{
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+}
+
+.card img{
+  max-height: 170px;
+}
