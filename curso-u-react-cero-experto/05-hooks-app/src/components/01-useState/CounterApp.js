@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './counter.css';
+import './useState.css';
 
 export const CounterApp = () => {
 
