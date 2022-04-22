@@ -1,17 +1,14 @@
 
 import { useCallback, useState } from 'react';
-import './ref.css';
 import { ShowIncrement } from './ShowIncrement';
+import './ref.css';
 
 export const CallbackHook = () => {
 
     const [counter, setCounter] = useState(10);
-
-    // const increment = () => {
-    // }
     
-    const increment = useCallback( () => {
-        setCounter( c => c + 1 );
+    const increment = useCallback( ( num ) => {
+        setCounter( c => c + num );
     }, [ setCounter ]);
     
 
