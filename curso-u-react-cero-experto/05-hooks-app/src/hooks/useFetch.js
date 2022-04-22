@@ -10,11 +10,13 @@ export const useFetch = ( url ) => {
         fetch( url )
             .then( resp => resp.json() )
             .then( data => {
+
                 setState( {
                     loading:false,
                     error:null,
                     data
-                 } )
+                 } );
+
             })
       
     }, [ url ] );
