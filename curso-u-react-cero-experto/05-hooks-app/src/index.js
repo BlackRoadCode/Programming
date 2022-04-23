@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Padre } from './components/07-tarea-memo/Padre';
+import { TodoApp } from './components/08-useReducer/TodoApp';
 
 // import { HookApp } from './HookApp';
 // import { CounterApp } from './components/01-useState/CounterApp';
@@ -15,7 +15,10 @@ import { Padre } from './components/07-tarea-memo/Padre';
 // import { MemoHook } from './components/06-memos/MemoHook';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
 
+// Sección 10
+// import { Padre } from './components/07-tarea-memo/Padre';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Padre />
+    <TodoApp />
 );
