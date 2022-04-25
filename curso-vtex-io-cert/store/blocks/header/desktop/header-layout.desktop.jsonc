@@ -1,0 +1,54 @@
+{
+    "header-layout.desktop":{
+      "children":[ "header-row#top-bar" ]
+    },
+    "header-row#top-bar":{
+      "children":["rich-text#secure-buy", "header-spacer", "menu#spi", "menu#language", "search-bar"],
+      "props":{
+        "fullWidth":false
+      }
+    },
+    "rich-text#secure-buy":{
+      "props":{
+        "text":"Tu compra es **100% segura**"
+      }
+    },
+    "menu#spi":{
+      "children":["menu-item#stars"]
+    },
+    "menu-item#stars":{
+      "props":{
+        "type":"custom",
+        "text":"Estrellas",
+        "itemProps":{
+          "iconPosition":"right"
+        },
+        "iconProps":{
+          "id": "nav-caret--down",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }      
+    },
+    "menu#language":{
+      "children":["menu-item#goto"]
+    },
+    "menu-item#goto":{
+      "props":{
+        "type":"custom",
+        "text":"Ir a:",
+        "itemProps":{
+          "iconPosition":"right"
+        },
+        "iconProps":{
+          "id": "nav-caret--down",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    }
+  }
