@@ -1,0 +1,34 @@
+{
+    "flex-layout.row#content1":{
+        "props":{
+            "fullWidth":false,
+            "colSizing":"auto",
+            "horizontalAlign":"center",
+            "preventVerticalStretch":true,
+            "borderWidth":1,
+            "borderColor":"red",
+            "border":"all"
+        },
+        "children":[
+            "image#imagea",
+            "image#imageb",
+            "image#imagec"
+        ]
+    },
+
+    "image#imagea":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-estrena-mex-sem16.jpg"
+        }
+    },
+    "image#imageb":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/monster-primavera-mex-sem16.jpg"
+        }
+    },
+    "image#imagec":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-mp-mex-sem16.jpg"
+        }
+    }
+}

@@ -2,14 +2,13 @@
     "store.home": { 
       "blocks": [
         // Header (Automatic)
-        "flex-layout.row#headband",
-        "flex-layout.row#monsterbanner"
         // Monsterbanner
-        // "info-card#category",
+        "flex-layout.row#headband",
+        "flex-layout.row#monsterbanner",
         // // Carousel New
         // "flex-layout.row#shelf",
         // //  Content 1
-        // "flex-layout.row#content-1",
+        "flex-layout.row#content1"
         // // Carousel brands
         // "flex-layout.row#shelf",
         // //  Content 2

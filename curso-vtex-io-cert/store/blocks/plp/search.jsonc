@@ -1,5 +1,60 @@
 {
   "store.search": {
-    "blocks": []
+    "blocks": ["search-result-layout"]
+  },
+  "search-result-layout":{
+    "blocks":[ "search-result-layout.desktop" ]
+  }, 
+  "search-result-layout.desktop":{
+    "children":[ 
+      "flex-layout.row#breadbrumb",
+      "flex-layout.row#title",
+      "flex-layout.row#content"
+    ]
+  },
+  "flex-layout.row#breadbrumb":{
+    "children":["breadcrumb.search"]
+  },
+
+  "flex-layout.row#title":{
+    "children":["search-title.v2"]
+  },
+
+  "flex-layout.row#content":{
+    "children":[
+      "flex-layout.col#filters",
+      "flex-layout.col#content"
+    ]
+  },
+
+  "flex-layout.col#filters":{ 
+    "children":[ "filter-navigator.v3" ]
+  },
+
+  "flex-layout.col#content":{
+    "props":{
+      "width":"grow",
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "flex-layout.row#top-content",
+      "flex-layout.row#search-content"
+    ] 
+  },
+  "flex-layout.row#top-content":{
+    "children":[
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+
+  "flex-layout.row#search-content":{
+    "children":["flex-layout.row#search-result", "flex-layout.row#more"]
+  },
+  "flex-layout.row#search-result":{
+    "children":[ "search-content" ]
+  },
+  "flex-layout.row#more":{
+    "children":[ "search-fetch-previous", "search-fetch-more" ]
   }
 }

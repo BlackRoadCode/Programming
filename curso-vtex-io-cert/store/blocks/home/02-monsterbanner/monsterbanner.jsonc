@@ -2,17 +2,18 @@
     "flex-layout.row#monsterbanner":{
         "props":{
             "fullWidth":false,
-            "colSizing":"equal",
+            "colSizing":"auto",
             "horizontalAlign":"center",
             "borderWidth":1,
             "borderColor":"red",
             "border":"all"
         },
-        "children":[ 
+        "children":[
             "image#monstera",
             "image#monsterb"
         ]
     },
+
     "image#monstera":{
         "props":{
             "src":"https://mx.andrea.com/arquivos/home-dia-madre-sem16%20b.jpg"

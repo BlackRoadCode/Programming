@@ -1,0 +1,19 @@
+{
+    "store.custom#404":{
+        "blocks":["flex-layout.row#error404"]
+    },
+
+    "flex-layout.row#error404":{
+        "children":[
+            "rich-text#error404",
+            "breadcrumb"
+        ]
+    },
+
+    "rich-text#error404":{
+        "props":{
+            "font": "t-heading-1",
+            "text":"ESTE ES EL ERROR 404"
+        }
+    }
+}

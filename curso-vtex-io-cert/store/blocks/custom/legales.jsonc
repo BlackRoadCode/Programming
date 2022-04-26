@@ -1,0 +1,19 @@
+{
+    "store.custom#legales":{
+        "blocks":["flex-layout.row#legals"]
+    },
+
+    "flex-layout.row#legals":{
+        "children":[
+            "rich-text#legals",
+            "breadcrumb"
+        ]
+    },
+
+    "rich-text#legals":{
+        "props":{
+            "font": "t-heading-3",
+            "text":"ESTOS SON LOS LEGALES"
+        }
+    }
+}
