@@ -1,0 +1,106 @@
+{
+    "header-layout.desktop":{
+      "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar" ]
+    },
+    "flex-layout.row#top-bar":{
+      "children":["flex-layout.col#left", "flex-layout.col#right"],
+      "props":{
+        "fullWidth":false,
+        "blockClass":"bkg-gray"
+      }
+    },
+    "flex-layout.col#left":{
+      "props":{
+        "horizontalAlign":"left"
+      },
+      "children":["rich-text#secure-buy"]
+    },
+    "rich-text#secure-buy":{
+      "props":{
+        "text":"Tu compra es **100% segura**"
+      }
+    },
+    "flex-layout.col#right":{
+      "props":{
+        "horizontalAlign":"right"
+      },
+      "children":["flex-layout.row#right-items"]
+    },
+    "flex-layout.row#right-items":{
+      "children":["menu#spi", "menu#language", "search-bar"]
+    },
+    "menu#spi":{
+      "children":["menu-item#stars"]
+    },
+    "menu-item#stars":{
+      "props":{
+        "type":"custom",
+        "text":"Estrellas",
+        "itemProps":{
+          "iconPosition":"right"
+        },
+        "iconProps":{
+          "id": "nav-caret--down",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }      
+    },
+    "menu#language":{
+      "children":["menu-item#goto"]
+    },
+    "menu-item#goto":{
+      "props":{
+        "type":"custom",
+        "text":"Ir a:",
+        "itemProps":{
+          "iconPosition":"right"
+        },
+        "iconProps":{
+          "id": "nav-caret--down",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    },
+    "flex-layout.row#brand-bar":{
+      "children":[ "flex-layout.col#brand", "flex-layout.col#user-controls" ],
+      "props":{
+        "fullWidth":false,
+        "marginTop":4
+      }
+    },
+    "flex-layout.col#brand":{
+      "props":{
+        "horizontalAlign":"right"
+      },
+      "children":["logo"]
+    },
+    "logo":{
+      "props": {
+        "url":"https://andreamx.vteximg.com.br/arquivos/images_layout_andrea-logo-black.png",
+        "width": 172,
+        "height": "auto"
+      }
+    },
+    "flex-layout.col#user-controls":{
+      "props":{
+        "horizontalAlign":"right",
+        "colSizing":"auto"
+      },
+      "children":[ "flex-layout.row#user-controls" ]
+    },
+    "flex-layout.row#user-controls":{
+      "children":[ "login", "minicart" ]
+    },
+    "login":{
+      "props":{
+        "showIconProfile":true,
+        "hideIconLabel":true
+      }
+    }
+  }

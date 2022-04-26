@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#headband":{
+        "props":{
+            "fullWidth":false,
+            // "colSizing":"auto",
+            "horizontalAlign":"center",
+            "borderWidth":1,
+            "borderColor":"red",
+            "border":"all"
+        },
+        "children":["image#headband"]
+    },
+    "image#headband": {
+        "props": {
+          "src": "https://mx.andrea.com/arquivos/desktop-cintillo-envio-gratis-mex-sem12.png"
+        //   "maxHeight": 24
+        }
+      }
+}

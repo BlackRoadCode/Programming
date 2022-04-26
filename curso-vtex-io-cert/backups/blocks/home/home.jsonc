@@ -1,0 +1,34 @@
+{
+  "store.home": { 
+    "blocks": [
+      // Header
+      "list-context.image-list#monster",
+      "flex-layout.row#brands",
+      // Monsterbanner
+      "info-card#category",
+      // Carousel New
+      "flex-layout.row#shelf",
+      //  Content 1
+      "flex-layout.row#content-1",
+      // Carousel brands
+      "flex-layout.row#shelf",
+      //  Content 2
+      "flex-layout.row#content-2",
+      // Carousel home brands
+      "flex-layout.row#shelf",
+      //  Content 3
+      "flex-layout.row#content-3",
+      // Carousel men/women
+      "flex-layout.row#shelf",
+      // Banner catalogs
+      "flex-layout.row#content-2",
+      // Carousel catalogs
+      "flex-layout.row#shelf"
+      // Prefooter
+      // footer
+    ],
+    "props":{
+      "fullWidth":false
+    }
+  }
+}
