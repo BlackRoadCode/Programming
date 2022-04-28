@@ -1,5 +1,6 @@
 {
     "header-layout.desktop":{
+      // "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar", "flex-layout.row#menus" ]
       "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar" ]
     },
     "flex-layout.row#top-bar":{
@@ -46,7 +47,91 @@
           "activeClassName": "rebel-pink",
           "mutedClassName": "c-action-primary"
         }
-      }      
+      },
+      "blocks": ["vtex.menu@2.x:submenu#stars"]
+    },
+    "vtex.menu@2.x:submenu#stars": {
+      "props": {
+        "width": "auto"
+      },
+      "children": [
+        "vtex.menu@2.x:menu#stars-submenu"
+      ]
+    },
+    "vtex.menu@2.x:menu#stars-submenu": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#stars-spi",
+        "menu-item#stars-locate-star",
+        "menu-item#stars-stores",
+        "menu-item#stars-star-blog"
+      ]
+    },
+    "menu-item#stars-spi":{
+      "props":{
+        "type":"custom",
+        "text":"SPI - SISTEMA DE PEDIDOS",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    },
+    "menu-item#stars-locate-star":{
+      "props":{
+        "type":"custom",
+        "text":"LOCALIZA A TU ESTRELLA",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    },
+    "menu-item#stars-stores":{
+      "props":{
+        "type":"custom",
+        "text":"SUCURSALES",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    },
+    "menu-item#stars-star-blog":{
+      "props":{
+        "type":"custom",
+        "text":"BLOG ESTRELLA",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
     },
     "menu#language":{
       "children":["menu-item#goto"]
@@ -60,6 +145,56 @@
         },
         "iconProps":{
           "id": "nav-caret--down",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      },
+      "blocks": ["vtex.menu@2.x:submenu#goto"]
+    },
+    "vtex.menu@2.x:submenu#goto":{
+      "props": {
+        "width": "auto"
+      },
+      "children": [
+        "vtex.menu@2.x:menu#goto-submenu"
+      ]
+    },
+    "vtex.menu@2.x:menu#goto-submenu":{
+      "props": {
+        "orientation": "vertical"
+      },
+      "children":[
+        "menu-item#goto-usa-esp",
+        "menu-item#goto-usa-eng"
+      ]
+    },
+    "menu-item#goto-usa-esp":{
+      "props":{
+        "type":"custom",
+        "text":"(ESP)",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
+          "size": 12,
+          "viewBox": "0 0 16 16",
+          "activeClassName": "rebel-pink",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+    },
+    "menu-item#goto-usa-eng":{
+      "props":{
+        "type":"custom",
+        "text":"(ING)",
+        "itemProps":{
+          "iconPosition":"left"
+        },
+        "iconProps":{
+          "id": "nav-caret--right",
           "size": 12,
           "viewBox": "0 0 16 16",
           "activeClassName": "rebel-pink",
@@ -103,4 +238,8 @@
         "hideIconLabel":true
       }
     }
+
+    // "flex-layout.row#menus":{
+
+    // }
   }

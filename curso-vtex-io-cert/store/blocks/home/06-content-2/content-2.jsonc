@@ -1,0 +1,43 @@
+{
+    "responsive-layout.desktop#content2":{
+        "children":[
+            "flex-layout.row#content2row1",
+            "flex-layout.row#content2row2"
+        ]
+    },
+    "flex-layout.row#content2row1":{
+        "props":{ },
+        "children":[
+            "image#row1a",
+            "image#row1b"
+        ]
+    },
+    "flex-layout.row#content2row2":{
+        "props":{ },
+        "children":[
+            "image#row2a",
+            "image#row2b"
+        ]
+    },
+
+    "image#row1a":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-mex-madre-sem17.jpg"
+        }
+    },
+    "image#row1b":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-mex-perry-sem17.jpg"
+        }
+    },
+    "image#row2a":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-mex-anne-sem17.jpg"
+        }
+    },
+    "image#row2b":{
+        "props":{
+            "src":"https://mx.andrea.com/arquivos/home-mex-protagonista-sem17.jpg"
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "flex-layout.row#brands-carousel":{
+        "props":{
+            "fullWidth":false,
+            "marginTop":10,
+            "marginBottom":10
+        },
+        "children":[ "slider-layout#brands-carousel" ]
+    },
+    "slider-layout#brands-carousel": {
+        "props": {
+          "fullWidth":false,
+          "infinite": true,
+          "navigationStep": 1,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots":"never",
+          "blockClass": "carousel",
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        "children": [
+            "image#1", "image#2", "image#3", "image#4","image#5",
+            "image#6", "image#7", "image#8", "image#9"
+        ]
+      },
+
+        "image#1":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-adidas.jpg",
+                "link":""
+            }
+        },
+        "image#2":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-dc.jpg",
+                "link":""
+            }
+        },
+        "image#3":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-everlast.jpg",
+                "link":""
+            }
+        },
+        "image#4":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-jeep.jpg",
+                "link":""
+            }
+        },
+        "image#5":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-nike.jpg",
+                "link":""
+            }
+        },
+        "image#6":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-puma.jpg",
+                "link":""
+            }
+        },
+        "image#7":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-reebok.jpg",
+                "link":""
+            }
+        },
+        "image#8":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-under.jpg",
+                "link":""
+            }
+        },
+        "image#9":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-vans.jpg",
+                "link":""
+            }
+        }
+      
+}

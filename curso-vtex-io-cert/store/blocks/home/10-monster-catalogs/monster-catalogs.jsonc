@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#monster-catalogs":{
+        "children":[ "image#catalogs" ]
+    },
+    "image#catalogs": {
+        "props": {
+          "src": "https://mx.andrea.com/arquivos/home-mx-p22-descarga.gif"
+        }
+      }
+}

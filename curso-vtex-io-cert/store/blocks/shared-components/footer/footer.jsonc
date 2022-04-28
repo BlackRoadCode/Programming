@@ -1,5 +1,27 @@
 {
   "footer": {
-    "blocks": []
+    "blocks": ["footer-layout.desktop"]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop-row-1",
+      "flex-layout.row#footer-desktop-row-2",
+      "flex-layout.row#footer-desktop-row-3",
+      "flex-layout.row#footer-desktop-row-4"
+    ]
+  },
+  "flex-layout.row#footer-desktop-row-1":{
+    "props":{
+      "fullWidth":true
+    },
+    "children":["image#prefooter"]
+  },
+
+  "image#prefooter":{
+    "props":{
+      "src":"https://mx.andrea.com/arquivos/desktop-footer-mx-sem14.png"
+    }
   }
 }
+

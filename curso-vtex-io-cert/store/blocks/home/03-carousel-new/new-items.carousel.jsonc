@@ -1,0 +1,57 @@
+{
+    "flex-layout.row#new-items": {
+        "props":{
+            "fullWidth":false,
+            "marginTop":10,
+            "marginBottom":10
+        },
+
+        // "children": ["flex-layout.row#title-new-carousel", "list-context.product-list#new-carousel"]
+        "children": ["list-context.product-list#new-carousel"]
+  },
+  "flex-layout.row#title-new-carousel":{
+    "children":[ "rich-text#new-carousel-title" ]
+  },
+  "rich-text#new-carousel-title":{
+    "props":{
+      "text": "Nueva colección Primavera",
+      "font": "t-heading-2"
+    }
+  },
+  "list-context.product-list#new-carousel": {
+    "blocks": [ "product-summary.shelf" ],
+
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf":{
+    "children": [
+            "product-summary-image",
+            "product-summary-space",
+            "product-summary-name",
+            "product-summary-space",
+            "product-summary-price"
+        ]
+    },
+    "product-summary-price":{
+        "props":{
+            "showInstallments":false,
+            "showLabels": false
+        }
+    },
+  "slider-layout#demo-products": {
+      "props": {
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf",
+        "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+    "flex-layout.row#footer-desktop-row-2":{
+        "props":{
+            "marginTop":7,
+            "marginBottom":7,
+            "fullWidth":false
+        },
+        "children":[
+            "flex-layout.col#help",
+            "flex-layout.col#us",
+            "flex-layout.col#terms",
+            "flex-layout.col#social"
+            // "header-spacer"
+        ]
+    },
+    "flex-layout.col#help":{
+        "props":{
+            "horizontalAlign":"left"
+        },
+        "children":["rich-text#help", "vtex.menu@2.x:menu#help"]
+    },
+    "rich-text#help":{
+        "props":{
+            "text":"AYUDA"
+        }
+    },
+    "vtex.menu@2.x:menu#help": {
+        "props": {
+          "orientation": "vertical"
+        },
+        "children": [
+          "menu-item#size-guide",
+          "menu-item#shipment-information",
+          "menu-item#returns-exchanges",
+          "menu-item#help-center"
+        ]
+    },
+
+    "menu-item#size-guide":{
+        "props": {
+          "id": "menu-size-guide",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Guia de Tallas",
+            "text": "Guía de Tallas"
+          }
+        }
+    },
+    "menu-item#shipment-information":{
+        "props": {
+          "id": "menu-shipment-information",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Informacion de envio",
+            "text": "Información de envío"
+          }
+        }
+    },
+    "menu-item#returns-exchanges":{
+        "props": {
+          "id": "menu-shipment-information",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cambios y devoluciones",
+            "text": "Cambios y devoluciones"
+          }
+        }
+    },
+    "menu-item#help-center":{
+        "props": {
+          "id": "menu-shipment-information",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Centro de ayuda",
+            "text": "Centro de ayuda"
+          }
+        }
+    },
+
+    "flex-layout.col#us":{
+        "props":{
+            "horizontalAlign":"left"
+        },
+        "children":["rich-text#us", "vtex.menu@2.x:menu#us"]
+    },
+    "rich-text#us":{
+        "props":{
+            "text":"ANDREA"
+        }
+    },
+
+    "vtex.menu@2.x:menu#us": {
+        "props": {
+          "orientation": "vertical"
+        },
+        "children": [
+          "menu-item#blog",
+          "menu-item#work-with-us",
+          "menu-item#ferrato"
+        ]
+    },
+
+    "menu-item#blog":{
+        "props": {
+          "id": "menu-blog",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Blog Andrea",
+            "text": "Blog Andrea"
+          }
+        }
+    },
+    "menu-item#work-with-us":{
+        "props": {
+          "id": "menu-work-with-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Trabaja en Andrea",
+            "text": "Trabaja en Andrea"
+          }
+        }
+    },
+    "menu-item#ferrato":{
+        "props": {
+          "id": "menu-ferrato",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ferrato",
+            "text": "Ferrato"
+          }
+        }
+    },
+
+    "flex-layout.col#terms":{
+        "props":{
+            "horizontalAlign":"left"
+        },
+        "children":["rich-text#terms", "vtex.menu@2.x:menu#terms"]
+    },
+    "rich-text#terms":{
+        "props":{
+            "text":"POLITICAS"
+        }
+    },
+
+    "vtex.menu@2.x:menu#terms": {
+        "props": {
+          "orientation": "vertical"
+        },
+        "children": [
+          "menu-item#notice-of-privacy",
+          "menu-item#terms-and-conditions",
+          "menu-item#return-policy",
+          "menu-item#promotions-policies"
+        ]
+    },
+
+    "menu-item#notice-of-privacy":{
+        "props": {
+          "id": "menu-notice-of-privacy",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Aviso de Privacidad",
+            "text": "Aviso de Privacidad"
+          }
+        }
+    },
+    "menu-item#terms-and-conditions":{
+        "props": {
+          "id": "menu-terms-and-conditions",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Terminos y condiciones",
+            "text": "Términos y condiciones"
+          }
+        }
+    },
+    "menu-item#return-policy":{
+        "props": {
+          "id": "menu-return-policy",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Politicas de devolucion",
+            "text": "Políticas de devolución"
+          }
+        }
+    },
+    "menu-item#promotions-policies":{
+        "props": {
+          "id": "menu-promotions-policies",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Politicas de promociones",
+            "text": "Políticas de promociones"
+          }
+        }
+    },
+
+    "flex-layout.col#social":{
+        "props":{
+            "horizontalAlign":"center",
+            "verticalAlign": "middle",
+            "border":"left",
+            "borderColor":"disabled",
+            "borderWidth":1
+        },
+        "children":["rich-text#social", "social-networks", "rich-text#call-center"]
+    },
+    "social-networks":{
+        "props": {
+            "socialNetworks": [
+              { "url": "https://facebook.com/foo", "name": "Facebook" },
+              { "url": "https://twitter.com/foo", "name": "Twitter" },
+              { "url": "https://twitter.com/foo", "name": "Pinterest" },
+              { "url": "https://twitter.com/foo", "name": "Youtube" },
+              { "url": "https://twitter.com/foo", "name": "Instagram" }
+            ]
+          }
+    },
+    "rich-text#social":{
+        "props":{
+            "text":"SÍGUENOS EN"
+        }
+    },
+    "rich-text#call-center":{
+        "props":{
+            "text":"Call Center 477 788 4600",
+            "font": "t-heading-4"
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "flex-layout.row#tab-gender":{
+        "props":{
+            "marginTop":5,
+            "marginBottom":5
+        },
+        "children":["tab-layout#gender"]
+    },
+    "tab-layout#gender":{
+        "props": {
+          "blockClass": "home",
+          "defaultActiveTabId": "women"
+        },
+        "children": [
+          "tab-list#categories",
+          "tab-content#gender"
+        ]
+    },
+    "tab-list#categories":{
+        "children":[
+            "tab-list.item#women",
+            "tab-list.item#men"
+        ]
+    },
+    "tab-list.item#women":{
+        "props":{
+            "defaultActiveTab": true,
+            "tabId":"women",
+            "label": "Mujer"
+        }
+    },
+    "tab-list.item#men":{
+        "props":{
+            "tabId":"men",
+            "label": "Hombre"
+        }
+    },
+    "tab-content#gender":{
+        "children":[
+            "tab-content.item#women",
+            "tab-content.item#men"
+        ]
+    },
+
+    "tab-content.item#women":{
+        "props":{
+            "tabId":"women"
+        },
+        "children":[ "flex-layout.row#gender-carousel-women" ]
+    },
+    "tab-content.item#men":{
+        "props":{
+            "tabId":"men"
+        },
+        "children":[ "flex-layout.row#gender-carousel-men" ]
+    }
+}

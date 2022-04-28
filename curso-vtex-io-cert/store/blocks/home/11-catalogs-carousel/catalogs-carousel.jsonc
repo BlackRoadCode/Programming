@@ -1,0 +1,170 @@
+{
+    "flex-layout.row#carousel-carousel":{
+        "props":{
+            "fullWidth":false,
+            "marginTop":10,
+            "marginBottom":10
+        },
+        "children":[ "slider-layout#catalogs-carousel" ]
+    },
+    "slider-layout#catalogs-carousel": {
+        "props": {
+          "fullWidth":false,
+          "infinite": true,
+          "navigationStep": 1,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots":"never",
+          "blockClass": "carousel",
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        "children": [
+            "flex-layout.col#1", "flex-layout.col#2", "flex-layout.col#3", "flex-layout.col#4","flex-layout.col#5",
+            "flex-layout.col#6", "flex-layout.col#7"
+        ]
+      },
+
+      "flex-layout.col#1":{
+          "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+          "children":["image#col1", "rich-text#col1"]
+      },
+      "image#col1":{
+          "props":{
+              "src":"https://eltepitazo.com/temporal/calzado-dama.jpg",
+              "link":"#"
+          }
+      },
+      "rich-text#col1":{
+          "props":{
+              "text":"CALZADO DAMA"
+          }
+      },
+
+      "flex-layout.col#2":{
+          "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col2", "rich-text#col2"]
+    },
+    "image#col2":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/andrea-vestir.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col2":{
+        "props":{
+            "text":"ANDREA VESTIR"
+        }
+    },
+
+    "flex-layout.col#3":{
+        "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col3", "rich-text#col3"]
+    },
+    "image#col3":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/mia.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col3":{
+        "props":{
+            "text":"LENCERÍA Y VESTIR INTERIOR"
+        }
+    },
+
+    "flex-layout.col#4":{
+        "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col4", "rich-text#col4"]
+    },
+    "image#col4":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/confort.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col4":{
+        "props":{
+            "text":"CALZADO CONFORT"
+        }
+    },
+
+    "flex-layout.col#5":{
+        "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col5", "rich-text#col5"]
+    },
+    "image#col5":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/iu.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col5":{
+        "props":{
+            "text":"BELLEZA INTEGRAL DAMA"
+        }
+    },
+
+    "flex-layout.col#6":{
+        "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col6", "rich-text#col6"]
+    },
+    "image#col6":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/vestir-caballero-vestir.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col6":{
+        "props":{
+            "text":"VESTIR CABALLERO"
+        }
+    },
+
+    "flex-layout.col#7":{
+        "props":{
+              "paddingLeft":3,
+              "paddingRight":3,
+              "horizontalAlign":"center"
+          },
+        "children":["image#col7", "rich-text#col7"]
+    },
+    "image#col7":{
+        "props":{
+            "src":"https://eltepitazo.com/temporal/outlet.jpg",
+            "link":"#"
+        }
+    },
+    "rich-text#col7":{
+        "props":{
+            "text":"OUTLET"
+        }
+    }
+      
+}

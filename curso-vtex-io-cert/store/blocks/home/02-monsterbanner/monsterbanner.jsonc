@@ -2,16 +2,29 @@
     "flex-layout.row#monsterbanner":{
         "props":{
             "fullWidth":false,
-            "colSizing":"auto",
-            "horizontalAlign":"center",
-            "borderWidth":1,
-            "borderColor":"red",
-            "border":"all"
+            // "colSizing":"auto",
+            "horizontalAlign":"center"
+            // "borderWidth":1,
+            // "borderColor":"red",
+            // "border":"all"
         },
         "children":[
-            "image#monstera",
-            "image#monsterb"
+            "flex-layout.col#monster-col-a",
+            "flex-layout.col#monster-col-b"
         ]
+    },
+
+    "flex-layout.col#monster-col-a":{
+        "props":{
+            "horizontalAlign":"right"
+        },
+        "children":["image#monstera"]
+    },
+    "flex-layout.col#monster-col-b":{
+        "props":{
+            "horizontalAlign":"left"
+        },
+        "children":["image#monsterb"]
     },
 
     "image#monstera":{

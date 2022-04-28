@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#gender-carousel-women":{
+        "props":{
+            "fullWidth":false,
+            "marginTop":7,
+            "marginBottom":7
+        },
+        "children": ["list-context.product-list#women-carousel"]
+    },
+    "list-context.product-list#women-carousel": {
+      "props": {
+        "orderBy": "OrderByTopSaleDESC"
+      },
+      "children": ["slider-layout#women-products"],
+      "blocks": [ "product-summary.shelf#women" ]
+    },
+
+    "product-summary.shelf#women":{
+      "children": [
+              "product-summary-image",
+              "product-summary-space",
+              "product-summary-name",
+              "product-summary-space",
+              "product-summary-price#women"
+          ]
+      },
+
+      "product-summary-price#women":{
+          "props":{
+              "showInstallments":false,
+              "showLabels": false
+          }
+      },
+
+      "slider-layout#women-products": {
+          "props": {
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          }
+        }
+      }
+
+}

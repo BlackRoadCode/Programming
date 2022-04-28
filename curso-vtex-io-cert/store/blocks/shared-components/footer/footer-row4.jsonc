@@ -1,0 +1,43 @@
+{
+    "flex-layout.row#footer-desktop-row-4":{
+        "props":{
+            "blockClass":"last-row",
+            "paddingBottom":7
+        },
+        "children":[
+            "flex-layout.col#address",
+            "header-spacer"
+        ]
+    },
+
+    "flex-layout.col#address":{
+        "children":["rich-text#address-line-1", "rich-text#address-line-2", "rich-text#address-line-3"]
+    },
+
+    "rich-text#address-line-1":{
+        "props":{
+            "text":"D.R. FÁBRICAS DE CALZADO ANDREA, S.A. DE C.V., 2022 - v. 4.8.11",
+            "blockClass":"txt-footer",
+            "textColor": "c-on-disabled",
+            "font": "t-mini"
+        }
+    },
+
+    "rich-text#address-line-2":{
+        "props":{
+            "text":"Queda prohibida su reproducción total o parcial por cualquier forma o medio.",
+            "blockClass":"txt-footer",
+            "textColor": "c-on-disabled",
+            "font": "t-mini"
+        }
+    },
+    
+    "rich-text#address-line-3":{
+        "props":{
+            "text":"SALUD ES BELLEZA, Aviso de COFEPRIS No. 133300202D0145",
+            "blockClass":"txt-footer",
+            "textColor": "c-on-disabled",
+            "font": "t-mini"
+        }
+    }
+}

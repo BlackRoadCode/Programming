@@ -1,0 +1,97 @@
+{
+    "flex-layout.row#home-brands-carousel":{
+        "props":{
+            "fullWidth":false,
+            "marginTop":10,
+            "marginBottom":10
+        },
+        "children":[ "slider-layout#home-brands-carousel" ]
+    },
+    "slider-layout#home-brands-carousel": {
+        "props": {
+          "fullWidth":false,
+          "infinite": true,
+          "navigationStep": 1,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots":"never",
+          "blockClass": "carousel",
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        "children": [
+            "image#bnd-1", "image#bnd-2", "image#bnd-3", "image#bnd-4","image#bnd-5",
+            "image#bnd-6", "image#bnd-7", "image#bnd-8", "image#bnd-9", "image#bnd-10",
+            "image#bnd-11"
+        ]
+      },
+
+        "image#bnd-1":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-accesorios.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-2":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-andr.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-3":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-andrea-men.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-4":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-andrea-sport.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-5":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-beauty.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-6":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-confort.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-7":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-ferrato.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-8":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-ferrato-sport.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-9":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-frt.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-10":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-lenceria.jpg",
+                "link":""
+            }
+        },
+        "image#bnd-11":{
+            "props":{
+                "src":"https://eltepitazo.com/temporal/bnd-premium.jpg",
+                "link":""
+            }
+        }
+}

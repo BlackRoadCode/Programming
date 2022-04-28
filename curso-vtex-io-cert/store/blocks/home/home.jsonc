@@ -6,23 +6,23 @@
         "flex-layout.row#headband",
         "flex-layout.row#monsterbanner",
         // // Carousel New
-        // "flex-layout.row#shelf",
+        "flex-layout.row#new-items",
         // //  Content 1
-        "flex-layout.row#content1"
+        "flex-layout.row#content1",
         // // Carousel brands
-        // "flex-layout.row#shelf",
+        "flex-layout.row#brands-carousel",
         // //  Content 2
-        // "flex-layout.row#content-2",
+        "responsive-layout.desktop#content2",
         // // Carousel home brands
-        // "flex-layout.row#shelf",
+        "flex-layout.row#home-brands-carousel",
         // //  Content 3
-        // "flex-layout.row#content-3",
+        "flex-layout.row#content3",
         // // Carousel men/women
-        // "flex-layout.row#shelf",
+        "flex-layout.row#tab-gender",
         // // Banner catalogs
-        // "flex-layout.row#content-2",
+        "flex-layout.row#monster-catalogs",
         // // Carousel catalogs
-        // "flex-layout.row#shelf"
+        "flex-layout.row#carousel-carousel"
         // // Prefooter
         // // footer
       ],

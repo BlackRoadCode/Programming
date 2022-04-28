@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#footer-desktop-row-3":{
+        "props":{
+            "border":"top",
+            "borderColor":"disabled",
+            "borderWidth":1,
+            "marginTop":7,
+            "marginBottom":7,
+            "fullWidth":true
+        },
+        "children":[
+            "flex-layout.col#payment",
+            "header-spacer",
+            "flex-layout.col#trust",
+            "header-spacer",
+            "flex-layout.col#shipment"
+        ]
+    },
+
+    "flex-layout.col#payment":{
+        "children":["rich-text#payment"]
+    },
+    
+    "rich-text#payment":{
+        "props":{
+            "text":"PAYMENT"
+        }
+    },
+    "flex-layout.col#trust":{
+        "children":["rich-text#trust"]
+    },
+    "rich-text#trust":{
+        "props":{
+            "text":"TRUST"
+        }
+    },
+    "flex-layout.col#shipment":{
+        "children":["rich-text#shipment"]
+    },
+    "rich-text#shipment":{
+        "props":{
+            "text":"SHIPMENT"
+        }
+    }
+}
