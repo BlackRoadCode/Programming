@@ -1,14 +1,14 @@
 {
     "flex-layout.row#tab-gender":{
         "props":{
-            "marginTop":5,
-            "marginBottom":5
+            "marginTop":7,
+            "marginBottom":7
         },
         "children":["tab-layout#gender"]
     },
     "tab-layout#gender":{
         "props": {
-          "blockClass": "home",
+          "blockClass": "gender",
           "defaultActiveTabId": "women"
         },
         "children": [
@@ -26,13 +26,15 @@
         "props":{
             "defaultActiveTab": true,
             "tabId":"women",
-            "label": "Mujer"
+            "label": "Mujer",
+            "blockClass": "btn-carousel-gender"
         }
     },
     "tab-list.item#men":{
         "props":{
             "tabId":"men",
-            "label": "Hombre"
+            "label": "Hombre",
+            "blockClass": "btn-carousel-gender"
         }
     },
     "tab-content#gender":{

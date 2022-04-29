@@ -3,7 +3,11 @@
         "props":{
             "fullWidth":false,
             "colSizing":"auto",
-            "horizontalAlign":"center"
+            "horizontalAlign":"center",
+            "colGap":3,
+            "rowGap":5,
+            "marginTop":2,
+            "marginBottom":2
         },
         "children":[
             "image#image3a",
@@ -14,7 +18,7 @@
 
     "image#image3a":{
         "props":{
-            "src":"https://dummyimage.com/900x530/8D67AB/fff"
+            "src":"https://dummyimage.com/500x379/D45D38/fff"
         }
     },
     "image#image3b":{
@@ -24,7 +28,8 @@
     },
     "image#image3c":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-adidas-sem17.jpg"
+            // "src":"https://mx.andrea.com/arquivos/home-mex-adidas-sem17.jpg"
+            "src":"https://dummyimage.com/600x379/E9DB8E/fff"
         }
     }
 }

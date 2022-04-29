@@ -1,7 +1,7 @@
 {
     "header-layout.desktop":{
-      // "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar", "flex-layout.row#menus" ]
-      "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar" ]
+      "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar", "flex-layout.row#menu" ]
+      // "children":[ "flex-layout.row#top-bar", "flex-layout.row#brand-bar" ]
     },
     "flex-layout.row#top-bar":{
       "children":["flex-layout.col#left", "flex-layout.col#right"],
@@ -238,9 +238,10 @@
         "showIconProfile":true,
         "hideIconLabel":true
       }
+    },
+
+    "flex-layout.row#menu":{
+      "children":["menu#main-menu"]
     }
 
-    // "flex-layout.row#menus":{
-
-    // }
   }

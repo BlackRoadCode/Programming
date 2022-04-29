@@ -1,0 +1,32 @@
+{
+    "menu#main-menu":{
+        "children":[
+            "menu-item#test1",
+            "menu-item#test2",
+            "menu-item#test3",
+            "menu-item#test4"
+        ]
+    },
+    "menu-item#test1":{
+        "props":{ "text":"Department" }
+    },
+    "menu-item#test2":{
+        "props":{
+            "type":"category",
+            "categoryId":4,
+            "text":"Category" 
+        }
+    },
+    "menu-item#test3":{
+        "props":{ 
+            "text":"Search",
+            "href":"/caja?_q=caja&map=ft"
+        }
+    },
+    "menu-item#test4":{
+        "props":{ 
+            "text":"Landing Libre",
+            "highlight":true
+        }
+    }
+}

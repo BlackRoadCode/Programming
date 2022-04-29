@@ -2,8 +2,8 @@
     "flex-layout.row#gender-carousel-men":{
         "props":{
             "fullWidth":false,
-            "marginTop":10,
-            "marginBottom":10
+            "marginTop":7,
+            "marginBottom":7
         },
         "children": ["list-context.product-list#men-carousel"]
     },
