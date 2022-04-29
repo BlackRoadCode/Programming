@@ -219,7 +219,8 @@
       "props": {
         "url":"https://andreamx.vteximg.com.br/arquivos/images_layout_andrea-logo-black.png",
         "width": 172,
-        "height": "auto"
+        "height": "auto",
+        "href":"/"
       }
     },
     "flex-layout.col#user-controls":{

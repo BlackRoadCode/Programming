@@ -20,7 +20,8 @@
 
   "image#prefooter":{
     "props":{
-      "src":"https://mx.andrea.com/arquivos/desktop-footer-mx-sem14.png"
+      "src":"https://mx.andrea.com/arquivos/desktop-footer-mx-sem14.png",
+      "blockClass":"img-100"
     }
   }
 }

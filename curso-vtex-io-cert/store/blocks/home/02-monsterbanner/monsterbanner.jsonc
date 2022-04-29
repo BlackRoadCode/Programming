@@ -2,39 +2,31 @@
     "flex-layout.row#monsterbanner":{
         "props":{
             "fullWidth":false,
-            // "colSizing":"auto",
-            "horizontalAlign":"center"
-            // "borderWidth":1,
-            // "borderColor":"red",
-            // "border":"all"
+            "colSizing":"auto",
+            "horizontalAlign":"center",
+            "preventHorizontalStretch":true,
+            "preventVerticalStretch":true,
+            "colGap":2,
+            "rowGap":5,
+            "marginTop":2,
+            "marginBottom":2
         },
         "children":[
-            "flex-layout.col#monster-col-a",
-            "flex-layout.col#monster-col-b"
+            "image#monstera",
+            "image#monsterb"
         ]
-    },
-
-    "flex-layout.col#monster-col-a":{
-        "props":{
-            "horizontalAlign":"right"
-        },
-        "children":["image#monstera"]
-    },
-    "flex-layout.col#monster-col-b":{
-        "props":{
-            "horizontalAlign":"left"
-        },
-        "children":["image#monsterb"]
     },
 
     "image#monstera":{
         "props":{
+            "blockClass":"monster-banner-a",
             "src":"https://mx.andrea.com/arquivos/home-dia-madre-sem16%20b.jpg"
         }
     },
     "image#monsterb":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/monster-b-mex-soleados-sem13.jpg"
+            "blockClass":"monster-banner-b",
+            "src":"https://dummyimage.com/1150x530/86B0CF/fff"
         }
     }
 }

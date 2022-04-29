@@ -3,11 +3,7 @@
         "props":{
             "fullWidth":false,
             "colSizing":"auto",
-            "horizontalAlign":"center",
-            "preventVerticalStretch":true,
-            "borderWidth":1,
-            "borderColor":"red",
-            "border":"all"
+            "horizontalAlign":"center"
         },
         "children":[
             "image#image3a",
@@ -18,7 +14,7 @@
 
     "image#image3a":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-roller-sem17.jpg"
+            "src":"https://dummyimage.com/900x530/8D67AB/fff"
         }
     },
     "image#image3b":{

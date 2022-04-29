@@ -3,10 +3,8 @@
         "props":{
             "fullWidth":false,
             "marginTop":10,
-            "marginBottom":10
+            "marginBottom":9
         },
-
-        // "children": ["flex-layout.row#title-new-carousel", "list-context.product-list#new-carousel"]
         "children": ["list-context.product-list#new-carousel"]
   },
   "flex-layout.row#title-new-carousel":{
@@ -19,12 +17,12 @@
     }
   },
   "list-context.product-list#new-carousel": {
-    "blocks": [ "product-summary.shelf" ],
-
-    "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
+      "orderBy": "OrderByTopSaleDESC",
+      "category":"1"
+    },
+    "blocks": [ "product-summary.shelf" ],
+    "children": ["slider-layout#demo-products"]
   },
   "product-summary.shelf":{
     "children": [

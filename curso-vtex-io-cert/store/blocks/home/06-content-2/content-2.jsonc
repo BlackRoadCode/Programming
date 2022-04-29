@@ -6,14 +6,34 @@
         ]
     },
     "flex-layout.row#content2row1":{
-        "props":{ },
+        "props":{
+            "fullWidth":false,
+            "colSizing":"auto",
+            "horizontalAlign":"center",
+            "preventHorizontalStretch":true,
+            "preventVerticalStretch":true,
+            "colGap":2,
+            "rowGap":5,
+            "marginTop":2,
+            "marginBottom":2
+        },
         "children":[
             "image#row1a",
             "image#row1b"
         ]
     },
     "flex-layout.row#content2row2":{
-        "props":{ },
+        "props":{
+            "fullWidth":false,
+            "colSizing":"auto",
+            "horizontalAlign":"center",
+            "preventHorizontalStretch":true,
+            "preventVerticalStretch":true,
+            "colGap":2,
+            "rowGap":5,
+            "marginTop":2,
+            "marginBottom":2
+        },
         "children":[
             "image#row2a",
             "image#row2b"
@@ -27,12 +47,12 @@
     },
     "image#row1b":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-perry-sem17.jpg"
+            "src":"https://dummyimage.com/950x530/FE8A9C/27ABAA"
         }
     },
     "image#row2a":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-anne-sem17.jpg"
+            "src":"https://dummyimage.com/900x530/8D67AB/fff"
         }
     },
     "image#row2b":{

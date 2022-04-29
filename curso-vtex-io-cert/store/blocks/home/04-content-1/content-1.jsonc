@@ -5,9 +5,10 @@
             "colSizing":"auto",
             "horizontalAlign":"center",
             "preventVerticalStretch":true,
-            "borderWidth":1,
-            "borderColor":"red",
-            "border":"all"
+            "colGap":3,
+            "rowGap":5,
+            "marginTop":2,
+            "marginBottom":2
         },
         "children":[
             "image#imagea",
