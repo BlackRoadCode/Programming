@@ -5,3 +5,11 @@
 .buttonShowMore :global(.vtex-button){
     background: black;
 }
+
+.container--list-layout-shelf {
+    max-width: none !important;
+}
+
+.container--grid-layout-shelf {
+    height: 100% !important;
+}

@@ -1,0 +1,29 @@
+{
+    "product-summary.shelf":{
+        "props":{
+            "blockClass":"grid-layout-shelf"
+        },
+        "children": [
+            "flex-layout.row#grid-product-image",
+            
+            "product-summary-name",
+            "product-summary-space",
+            "product-list-price",
+            "flex-layout.row#selling-price-savings",
+            "product-installments",
+
+            "flex-layout.row#grid-product-buy"
+        ]
+    },
+
+    "flex-layout.row#grid-product-image":{
+        "children":[
+            "flex-layout.col#product-image"
+        ]
+    },
+    "flex-layout.row#grid-product-buy":{
+        "children":[
+            "product-summary-buy-button"
+        ]
+    }
+}

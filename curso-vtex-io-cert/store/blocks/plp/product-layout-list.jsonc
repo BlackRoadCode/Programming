@@ -1,0 +1,81 @@
+{
+    "product-summary.shelf#listLayout": {
+        "props":{
+            "blockClass":"list-layout-shelf"
+        },
+        "children": [
+            "flex-layout.row#list-shelf"
+        ]
+    },
+
+    "flex-layout.row#list-shelf":{
+        "props":{
+            "fullWidth":true,
+            "colSizing":"equal",
+            "colGap":5
+        },
+        "children":[
+            "flex-layout.col#product-image",
+            "flex-layout.col#product-summary-list-details",
+            "flex-layout.col#product-buy-buttons"
+        ]
+    },
+
+    "flex-layout.col#product-image": {
+        "props":{ 
+            "verticalAlign":"middle"
+        },
+        "children": [
+            "product-summary-image#shelf"
+        ]
+    },
+    "product-summary-image#shelf": {
+        "props": {
+            "showBadge": false,
+            "aspectRatio": "1:1",
+            "maxHeight": 300
+        }
+    },
+
+    "flex-layout.col#product-summary-list-details": {
+        "props": {
+            "verticalAlign":"middle",
+            "width":"40%"
+        },
+        "children": [
+            "product-summary-name",
+            "product-summary-space",
+            "product-list-price",
+            "flex-layout.row#selling-price-savings",
+            "product-installments"
+        ]
+    },
+    "flex-layout.row#selling-price-savings": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "product-selling-price",
+            "product-price-savings#summary"
+        ]
+    },
+    "product-price-savings#summary": {
+        "props": {
+            "markers": [
+                "discount"
+            ]
+        }
+    },
+
+    "flex-layout.col#product-buy-buttons":{
+        "props":{ 
+            "verticalAlign":"middle",
+            "marginLeft":5,
+            "marginRight":5
+        },
+        "children":[ "product-summary-buy-button" ]
+    }
+}

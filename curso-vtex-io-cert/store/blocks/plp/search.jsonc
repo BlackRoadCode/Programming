@@ -11,7 +11,9 @@
         }
     },
     "store.search#brand": {
-        "blocks": ["search-result-layout"],
+        "blocks": [
+            "search-result-layout"
+        ],
         "props": {
             "context": {
                 "orderByField": "OrderByReleaseDateDESC",
@@ -149,6 +151,12 @@
             "search-content"
         ]
     },
+    "search-content": {
+        "blocks": [
+            "gallery",
+            "not-found"
+        ]
+    },
     "flex-layout.row#fetchmore": {
         "props": {
             "marginTop": 7,
@@ -158,6 +166,32 @@
             "search-fetch-more"
         ]
     },
+
+    // Grid system
+    "gallery": {
+        "props": {
+            "layouts": [
+                {
+                    "name": "grid",
+                    "component": "GridSummary",
+                    "itemsPerRow": {
+                        "desktop": 5,
+                        "tablet": 3,
+                        "phone": 2
+                    }
+                },
+                {
+                    "name": "list",
+                    "component": "ListSummary",
+                    "itemsPerRow": 1
+                }
+            ],
+            "GridSummary": "product-summary.shelf",
+            "ListSummary": "product-summary.shelf#listLayout"
+        }
+    },
+
+    // OrderByRow & Switcher
     "flex-layout.row#orderBy": {
         "props": {
             "horizontalAlign": "right",
@@ -168,8 +202,8 @@
             "marginBottom": 3
         },
         "children": [
-            "order-by.v2",
-            "gallery-layout-switcher"
+            "gallery-layout-switcher",
+            "order-by.v2"
         ]
     },
     "gallery-layout-switcher": {

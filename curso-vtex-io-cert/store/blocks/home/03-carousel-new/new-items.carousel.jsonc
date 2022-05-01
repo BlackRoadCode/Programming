@@ -21,10 +21,10 @@
       "orderBy": "OrderByTopSaleDESC",
       "category":"1"
     },
-    "blocks": [ "product-summary.shelf" ],
+    "blocks": [ "product-summary.shelf#new-carousel" ],
     "children": ["slider-layout#demo-products"]
   },
-  "product-summary.shelf":{
+  "product-summary.shelf#new-carousel":{
     "children": [
             "product-summary-image",
             "product-summary-space",
