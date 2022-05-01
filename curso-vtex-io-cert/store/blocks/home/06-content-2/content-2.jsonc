@@ -1,63 +1,83 @@
 {
-    "responsive-layout.desktop#content2":{
-        "children":[
+    "responsive-layout.desktop#content2": {
+        "children": [
             "flex-layout.row#content2row1",
             "flex-layout.row#content2row2"
         ]
     },
-    "flex-layout.row#content2row1":{
-        "props":{
-            "fullWidth":false,
-            "colSizing":"auto",
-            "horizontalAlign":"center",
-            "preventHorizontalStretch":true,
-            "preventVerticalStretch":true,
-            "colGap":2,
-            "rowGap":5,
-            "marginTop":2,
-            "marginBottom":2
+    "flex-layout.row#content2row1": {
+        "props": {
+            "fullWidth": false,
+            "colSizing": "auto",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colGap": 2
         },
-        "children":[
+        "children": [
             "image#row1a",
             "image#row1b"
         ]
     },
-    "flex-layout.row#content2row2":{
-        "props":{
-            "fullWidth":false,
-            "colSizing":"auto",
-            "horizontalAlign":"center",
-            "preventHorizontalStretch":true,
-            "preventVerticalStretch":true,
-            "colGap":2,
-            "rowGap":5,
-            "marginTop":2,
-            "marginBottom":2
+    "flex-layout.row#content2row2": {
+        "props": {
+            "fullWidth": false,
+            "colSizing": "auto",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colGap": 2
         },
-        "children":[
+        "children": [
             "image#row2a",
             "image#row2b"
         ]
     },
-
-    "image#row1a":{
-        "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-madre-sem17.jpg"
+    "image#row1a": {
+        "props": {
+            // "src": "https://mx.andrea.com/arquivos/home-mex-madre-sem17.jpg",
+            "src": "https://dummyimage.com/850x530/FE8A9C/27ABAA",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            },
+            "maxHeight":"530px"
         }
     },
-    "image#row1b":{
-        "props":{
-            "src":"https://dummyimage.com/950x530/FE8A9C/27ABAA"
+    "image#row1b": {
+        "props": {
+            "src": "https://dummyimage.com/1050x530/AE6C99/FFF",
+            "blockClass":"img-home-hover",
+            "maxHeight":"530px",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
-    "image#row2a":{
-        "props":{
-            "src":"https://dummyimage.com/900x530/8D67AB/fff"
+    "image#row2a": {
+        "props": {
+            "src": "https://dummyimage.com/1200x530/E8B6A6/fff",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
-    "image#row2b":{
-        "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-protagonista-sem17.jpg"
+    "image#row2b": {
+        "props": {
+            "src": "https://dummyimage.com/700x530/ED9F97/fff",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     }
 }

@@ -1,32 +1,38 @@
 {
-    "flex-layout.row#monsterbanner":{
-        "props":{
-            "fullWidth":false,
-            "colSizing":"auto",
-            "horizontalAlign":"center",
-            "preventHorizontalStretch":true,
-            "preventVerticalStretch":true,
-            "colGap":2,
-            "rowGap":5,
-            "marginTop":2,
-            "marginBottom":2
+    "flex-layout.row#monsterbanner": {
+        "props": {
+            "fullWidth": false,
+            "colSizing": "auto",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colGap": 2,
+            "rowGap": 5,
+            "marginBottom": 2
         },
-        "children":[
+        "children": [
             "image#monstera",
             "image#monsterb"
         ]
     },
-
-    "image#monstera":{
-        "props":{
-            "blockClass":"monster-banner-a",
-            "src":"https://mx.andrea.com/arquivos/home-dia-madre-sem16%20b.jpg"
+    "image#monstera": {
+        "props": {
+            "blockClass": "monster-banner-a",
+            "src": "https://mx.andrea.com/arquivos/home-dia-madre-sem16%20b.jpg",
+            "link": {
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
-    "image#monsterb":{
-        "props":{
-            "blockClass":"monster-banner-b",
-            "src":"https://dummyimage.com/1150x530/86B0CF/fff"
+    "image#monsterb": {
+        "props": {
+            "blockClass": "monster-banner-b",
+            "src": "https://dummyimage.com/1150x530/86B0CF/fff",
+            "link": {
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     }
 }

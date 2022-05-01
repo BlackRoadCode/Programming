@@ -38,12 +38,17 @@
       "image#col1":{
           "props":{
               "src":"https://eltepitazo.com/temporal/calzado-dama.jpg",
-              "link":"#"
+              "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
           }
       },
       "rich-text#col1":{
           "props":{
-              "text":"CALZADO DAMA"
+              "text":"[CALZADO DAMA](https://mx.andrea.com)",
+              "blockClass":"carousel-catalog-link"
           }
       },
 
@@ -58,12 +63,17 @@
     "image#col2":{
         "props":{
             "src":"https://eltepitazo.com/temporal/andrea-vestir.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col2":{
         "props":{
-            "text":"ANDREA VESTIR"
+            "text":"[ANDREA VESTIR](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     },
 
@@ -78,12 +88,17 @@
     "image#col3":{
         "props":{
             "src":"https://eltepitazo.com/temporal/mia.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col3":{
         "props":{
-            "text":"LENCERÍA Y VESTIR INTERIOR"
+            "text":"[LENCERÍA Y VESTIR INTERIOR](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     },
 
@@ -98,12 +113,17 @@
     "image#col4":{
         "props":{
             "src":"https://eltepitazo.com/temporal/confort.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col4":{
         "props":{
-            "text":"CALZADO CONFORT"
+            "text":"[CALZADO CONFORT](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     },
 
@@ -118,12 +138,17 @@
     "image#col5":{
         "props":{
             "src":"https://eltepitazo.com/temporal/iu.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col5":{
         "props":{
-            "text":"BELLEZA INTEGRAL DAMA"
+            "text":"[BELLEZA INTEGRAL DAMA](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     },
 
@@ -138,12 +163,17 @@
     "image#col6":{
         "props":{
             "src":"https://eltepitazo.com/temporal/vestir-caballero-vestir.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col6":{
         "props":{
-            "text":"VESTIR CABALLERO"
+            "text":"[VESTIR CABALLERO](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     },
 
@@ -158,12 +188,17 @@
     "image#col7":{
         "props":{
             "src":"https://eltepitazo.com/temporal/outlet.jpg",
-            "link":"#"
+            "link": {
+                "blockClass": "banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+              }
         }
     },
     "rich-text#col7":{
         "props":{
-            "text":"OUTLET"
+            "text":"[OUTLET](https://mx.andrea.com)",
+            "blockClass":"carousel-catalog-link"
         }
     }
       

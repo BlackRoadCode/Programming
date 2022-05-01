@@ -1,35 +1,49 @@
 {
-    "flex-layout.row#content1":{
-        "props":{
-            "fullWidth":false,
-            "colSizing":"auto",
-            "horizontalAlign":"center",
-            "preventVerticalStretch":true,
-            "colGap":3,
-            "rowGap":5,
-            "marginTop":2,
-            "marginBottom":2
+    "flex-layout.row#content1": {
+        "props": {
+            "fullWidth": false,
+            "colSizing": "auto",
+            "horizontalAlign": "center",
+            "preventVerticalStretch": true,
+            "colGap": 3,
+            "rowGap": 5,
+            "marginTop": 2,
+            "marginBottom": 2
         },
-        "children":[
+        "children": [
             "image#imagea",
             "image#imageb",
             "image#imagec"
         ]
     },
-
-    "image#imagea":{
-        "props":{
-            "src":"https://mx.andrea.com/arquivos/home-estrena-mex-sem16.jpg"
+    "image#imagea": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/home-estrena-mex-sem16.jpg",
+            "blockClass":"img-home-hover",
+            "link": {
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
-    "image#imageb":{
-        "props":{
-            "src":"https://mx.andrea.com/arquivos/monster-primavera-mex-sem16.jpg"
+    "image#imageb": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/monster-primavera-mex-sem16.jpg",
+            "blockClass":"img-home-hover",
+            "link": {
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
-    "image#imagec":{
-        "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mp-mex-sem16.jpg"
+    "image#imagec": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/home-mp-mex-sem16.jpg",
+            "blockClass":"img-home-hover",
+            "link": {
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     }
 }

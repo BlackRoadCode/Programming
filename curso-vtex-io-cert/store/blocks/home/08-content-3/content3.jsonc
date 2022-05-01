@@ -18,18 +18,35 @@
 
     "image#image3a":{
         "props":{
-            "src":"https://dummyimage.com/500x379/D45D38/fff"
+            "src":"https://dummyimage.com/500x379/D45D38/fff",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
     "image#image3b":{
         "props":{
-            "src":"https://mx.andrea.com/arquivos/home-mex-bolso-sem17.jpg"
+            "src":"https://mx.andrea.com/arquivos/home-mex-bolso-sem17.jpg",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     },
     "image#image3c":{
         "props":{
-            // "src":"https://mx.andrea.com/arquivos/home-mex-adidas-sem17.jpg"
-            "src":"https://dummyimage.com/600x379/E9DB8E/fff"
+            "src":"https://dummyimage.com/600x379/E9DB8E/fff",
+            "blockClass":"img-home-hover",
+            "link": {
+                "blockClass":"banner-link",
+                "newTab": true,
+                "url": "https://www.google.com"
+            }
         }
     }
 }

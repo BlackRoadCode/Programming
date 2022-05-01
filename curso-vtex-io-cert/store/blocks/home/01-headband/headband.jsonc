@@ -1,16 +1,23 @@
 {
-    "flex-layout.row#headband":{
-        "props":{
-            "fullWidth":false,
-            "horizontalAlign":"center"
-        },
-        "children":["image#headband"]
+  "flex-layout.row#headband": {
+    "props": {
+      "fullWidth": false,
+      "horizontalAlign": "center"
     },
-    "image#headband": {
-        "props": {
-          "src": "https://mx.andrea.com/arquivos/desktop-cintillo-envio-gratis-mex-sem12.png",
-          "alt":"headband",
-          "blockClass": "img-100"
-        }
+    "children": [
+      "image#headband"
+    ]
+  },
+  "image#headband": {
+    "props": {
+      "src": "https://mx.andrea.com/arquivos/desktop-cintillo-envio-gratis-mex-sem12.png",
+      "alt": "headband",
+      "blockClass": "img-100",
+      "link": {
+        "newTab":true,
+        "url":"https://www.google.com"
       }
+    }
+  }
+
 }

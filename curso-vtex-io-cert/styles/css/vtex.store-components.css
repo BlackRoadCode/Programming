@@ -1,3 +1,8 @@
 .imageElement.imageElement--img-100{
     width: 100%;
 }
+
+.imageElement.imageElement--img-home-hover:hover{
+    transform: scale(.97);
+    transition: transform .4s;
+}

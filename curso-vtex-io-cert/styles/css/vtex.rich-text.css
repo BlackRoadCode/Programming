@@ -1,1 +1,10 @@
 .wrapper.wrapper--txt-footer{height: 20px;}
+
+.link.link--carousel-catalog-link{
+    text-decoration: none;
+    color: #3f3f40;
+}
+
+.link.link--carousel-catalog-link:hover{
+    text-decoration: underline;
+}

@@ -1,10 +1,29 @@
 {
-    "flex-layout.row#monster-catalogs":{
-        "children":[ "image#catalogs" ]
+  "flex-layout.row#monster-catalogs": {
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": false
     },
-    "image#catalogs": {
-        "props": {
-          "src": "https://mx.andrea.com/arquivos/home-mx-p22-descarga.gif"
-        }
+    "children": [
+      "flex-layout.col#monster-catalogs"
+    ]
+  },
+  "flex-layout.col#monster-catalogs": {
+    "props":{
+      "blockClass":"col-monster-center"
+    },
+    "children": [
+      "image#catalogs"
+    ]
+  },
+  "image#catalogs": {
+    "props": {
+      "src": "https://mx.andrea.com/arquivos/home-mx-p22-descarga.gif",
+      "link": {
+        "blockClass": "banner-link",
+        "newTab": true,
+        "url": "https://www.google.com"
       }
+    }
+  }
 }
