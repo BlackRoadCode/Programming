@@ -1,0 +1,7 @@
+.buyButton :global(.vtex-button){
+    border-radius: 0;
+}
+
+.buttonShowMore :global(.vtex-button){
+    background: black;
+}

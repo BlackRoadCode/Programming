@@ -9,7 +9,8 @@
     },
     "list-context.product-list#women-carousel": {
       "props": {
-        "orderBy": "OrderByTopSaleDESC"
+        "orderBy": "OrderByTopSaleDESC",
+        "category":"1"
       },
       "children": ["slider-layout#women-products"],
       "blocks": [ "product-summary.shelf#women" ]

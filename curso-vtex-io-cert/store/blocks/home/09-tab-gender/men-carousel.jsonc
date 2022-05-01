@@ -12,7 +12,8 @@
     
       "children": ["slider-layout#demo-products-men"],
       "props": {
-        "orderBy": "OrderByTopSaleDESC"
+        "orderBy": "OrderByTopSaleDESC",
+        "category":"3"
       }
     },
 

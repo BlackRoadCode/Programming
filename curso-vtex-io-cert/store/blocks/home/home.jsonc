@@ -23,8 +23,7 @@
         "flex-layout.row#monster-catalogs",
         // // Carousel catalogs
         "flex-layout.row#carousel-carousel"
-        // // Prefooter
-        // // footer
+        // // footer (Automatic)
       ],
       "props":{
         "fullWidth":false

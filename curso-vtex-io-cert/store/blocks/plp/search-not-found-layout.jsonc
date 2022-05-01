@@ -1,0 +1,52 @@
+{
+    "search-not-found-layout":{
+        "children":[
+            "flex-layout.row#not-found-title",
+            "flex-layout.row#not-found-subtitle",
+            "flex-layout.row#suggestions-carousel"
+        ]
+    },
+    "flex-layout.row#not-found-title":{
+        "props":{
+            "horizontalAlign":"center"
+        },
+        "children":[
+            "rich-text#not-found", 
+            "search-title.v2" 
+        ]
+    },
+    "rich-text#not-found":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "No hay resultados para la búsqueda: ",
+            "textColor": "c-on-active",
+            "font": "t-heading-3"
+        }
+    },
+    
+    "flex-layout.row#not-found-subtitle":{
+        "props":{
+            "horizontalAlign":"center"
+        },
+        "children":["rich-text#subtitle-not-found"]
+    },
+    "rich-text#subtitle-not-found":{
+        "props":{
+            "blockClass":"not-found-subtitle",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "PRODUCTOS QUE TE PUEDEN INTERESAR",
+            "textColor": "c-muted-1",
+            "font": "t-heading-4"
+        }
+    },
+
+    "flex-layout.row#suggestions-carousel":{
+        "props":{
+            "marginTop":7,
+            "marginBottom":7
+        },
+        "children":[ "list-context.product-list#new-carousel" ]
+    }
+}

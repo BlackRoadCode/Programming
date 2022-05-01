@@ -1,5 +1,5 @@
 {
-    "product-summary.shelf": {
+    "product-summary.shelf#search": {
       "children": [
         "stack-layout#prodsum",
         "product-summary-name",
