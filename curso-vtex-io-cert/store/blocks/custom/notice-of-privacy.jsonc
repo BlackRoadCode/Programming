@@ -1,0 +1,119 @@
+{
+    "store.custom#notice-of-privacy":{
+        "blocks":[
+            "flex-layout.row#notice-breadcrumb",
+            "flex-layout.row#notice-content"
+        ]
+    },
+
+    "flex-layout.row#notice-breadcrumb":{
+      "props": {
+        "marginTop": 4
+      },
+      "children":["breadcrumb"]
+    },
+
+    "breadcrumb": {
+        "props": {
+          "showOnMobile": true
+        }
+    },
+
+    "flex-layout.row#notice-content":{
+        "children":[
+            "flex-layout.col#notice-text"
+        ]
+    },
+
+    "flex-layout.col#notice-text":{
+        "children":[
+            "rich-text#notice-of-privacy-title",
+            "rich-text#notice-of-privacy-subtitle",
+            
+            "rich-text#notice-of-privacy-text-1-generals",
+            "rich-text#notice-of-privacy-text-1-1-generals",
+
+            "rich-text#notice-of-privacy-text-2-definitions",
+            "rich-text#notice-of-privacy-text-2-1-definitions",
+            
+            "rich-text#notice-of-privacy-text-3-identity",
+            "rich-text#notice-of-privacy-text-3-1-identity",
+            
+            "rich-text#notice-of-privacy-text-4-personal",
+            "rich-text#notice-of-privacy-text-4-1-personal"
+        ]
+    },
+
+    "rich-text#notice-of-privacy-title":{
+        "props":{
+            "font": "t-heading-3",
+            "text":"Aviso de privacidad 'Consumidor final' página de internet Andrea"
+        }
+    },
+    
+    "rich-text#notice-of-privacy-subtitle":{
+        "props":{
+            "font": "t-heading-5",
+            "text":"**AVISO DE PRIVACIDAD relacionado con los datos personales recabados por FÁBRICAS DE CALZADO ANDREA, S.A. DE C.V., sus filiales, subsidiarias y distribuidores autorizados (en adelante denominada como “ANDREA”)**"
+        }
+    },
+
+    "rich-text#notice-of-privacy-text-1-generals":{
+        "props":{
+            "text":"1.- Generales",
+            "blockClass":"privacy-red-title",
+            "textColor":"c-on-action-secondary"
+        }
+    },
+    "rich-text#notice-of-privacy-text-1-1-generals":{
+        "props":{
+            "font": "t-body",
+            "text":"**1.1.- ANDREA** es una persona moral comprometida y respetuosa de los derechos sobre los datos personales de las personas físicas, reconocidos en el artículo 16, párrafo II de la Constitución Política de los Estados Unidos Mexicanos, así como de las disposiciones de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su Reglamento y la demás normativa aplicable. Por lo anterior, pone a su disposición el presente Aviso de Privacidad, en aras de que el titular de los datos personales, se encuentre facultado a ejercitar su derecho a la autodeterminación informativa.\n\n**1.2.-** Al ingresar y utilizar la página de Internet, cuya dirección electrónica es www.andrea.com, en la sección correspondiente a “Aviso de Privacidad”, en adelante denominada como LA PÁGINA DE INTERNET propiedad de **ANDREA**, y/o al vincularse comercialmente con **ANDREA** declara que está entendiendo y aceptando los términos y las condiciones contenidos en este Aviso y declara y otorga expresamente su aceptación y consentimiento utilizado para tal efecto medios electrónicos, en términos de los dispuesto por el artículo 1803 del Código Civil Federal.\n\n**1.3.-** Si EL TITULAR no acepta en forma absoluta y completa los términos y condiciones de este Aviso, deberá abstenerse de compartir cualquier tipo de información a **ANDREA** por cualquier medio, incluyendo su página de Internet.\n\n**1.4.-** Para el caso de que EL TITULAR continúe en el uso de LA PÁGINA DE INTERNET DE **ANDREA** sea en forma total o parcial, dicha acción se considerará como su absoluta y expresa aceptación a los términos y condiciones aquí estipulados.\n\n**1.5.-** La sola utilización de LA PÁGINA DE INTERNET DE **ANDREA** le otorga al público usuario la calidad de titular (en adelante referido como “EL TITULAR” o “LOS TITULARES”) e implica la aceptación plena e incondicional, de todas y cada una de las condiciones generales y particulares incluidas en este Aviso de Privacidad en la versión publicada por **ANDREA** en el momento mismo en que EL TITULAR acceda a la mencionada página.\n\nLas partes declaran que, al no existir error, dolo, mala fe o cualquier otro vicio de la voluntad que pudiera nulificar la validez del presente instrumento, ambas acuerdan en sujetarse al tenor de lo estipulado en los siguientes:"
+        }
+    },
+    
+    "rich-text#notice-of-privacy-text-2-definitions":{
+        "props":{
+            "text":"2.- Definiciones",
+            "blockClass":"privacy-red-title",
+            "textColor":"c-on-action-secondary"
+        }
+    },
+    "rich-text#notice-of-privacy-text-2-1-definitions":{
+        "props":{ 
+            "font": "t-body",
+            "text":"**2.1.- Datos personales.-** Cualquier información concerniente a una persona física identificada o identificable.\n\n**2.2.- Datos personales sensibles.-** Aquellos datos personales que afecten a la esfera más íntima de su TITULAR, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para éste. En particular, se consideran sensibles aquellos que puedan revelar aspectos como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas, preferencia sexual.\n\n**2.3.- Titular.-** La persona física (EL TITULAR) a quien identifican o corresponden los datos personales.\n\n**2.4.- Responsable.-** Persona física o moral (**ANDREA**) de carácter privado que decide sobre el tratamiento de los datos personales.\n\n**2.5.- Encargado.-** La persona física o moral que sola o conjuntamente con otras trate datos personales por cuenta del responsable.\n\n**2.6.- Tratamiento.-** La obtención, uso (que incluye el acceso, manejo, aprovechamiento, transferencia o disposición de datos personales), divulgación o almacenamiento de datos personales por cualquier medio.\n\n**2.6.1.- Transferencia.-** Toda comunicación de datos realizada a persona distinta del responsable o encargado del tratamiento.\n\n**2.6.2.- Remisión.-** La comunicación de datos personales entre el responsable y el encargado, dentro o fuera del territorio mexicano.\n\n**2.7.- Tercero.-** La persona física o moral, nacional o extranjera, distinta del titular o del responsable de los datos.\n\n**2.8.- Derechos ARCO.-** Derechos de Acceso, Rectificación, Cancelación y Oposición.\n\n**2.9.- Consentimiento Tácito.-** Se entenderá que EL TITULAR ha consentido en el tratamiento de los datos, cuando habiéndose puesto a su disposición el Aviso de Privacidad, no manifieste su oposición.\n\n**2.10.- Finalidades Primarias.-** Son aquellas finalidades para las cuales se solicitan principalmente los datos personales y por lo que se da origen a la relación entre **ANDREA** y EL TITULAR.\n\n**2.11.- Finalidades Secundarias.-** Son aquellas finalidades que no son imprescindibles para la relación entre **ANDREA** y EL TITULAR, pero que con su tratamiento contribuyen al cumplimiento del objeto social."
+        }
+    },
+
+    "rich-text#notice-of-privacy-text-3-identity":{
+        "props":{
+            "text":"3.- Identidad y domicilio del responsable que trata los datos personales",
+            "blockClass":"privacy-red-title",
+            "textColor":"c-on-action-secondary"
+        }
+    },
+    "rich-text#notice-of-privacy-text-3-1-identity":{
+        "props":{
+            "font": "t-body",
+            "text":"**3.1.-** La responsable del tratamiento de los datos personales es **FÁBRICAS DE CALZADO ANDREA, S.A. DE C.V., sus filiales y subsidiarias (en adelante denominada como ANDREA)**, quien se compromete a respetar lo establecido en el presente Aviso de Privacidad (en lo sucesivo el “Aviso” o el “Aviso de Privacidad” indistintamente), mismo que está puesto a su disposición en cumplimiento de lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo la “Ley” o “LFPDPPP” indistintamente) y es aplicable respecto de los datos personales de las personas físicas tales como candidatos, colaboradores, estrellas o distribuidores, consumidores finales o clientes, proveedores, usuarios de LA PÁGINA DE INTERNET DE **ANDREA** y visitantes a las oficinas físicas o instalaciones de **ANDREA** a los que **ANDREA** les da tratamiento con motivo de la comercialización de calzados, accesorios, cosméticos, prendas de vestir interior y exterior a través de catálogo.\n\n**3.2.-** El domicilio que para los efectos del presente Aviso establece **ANDREA** es el ubicado en Blvd. Juan Alonso de Torres No. 106, colonia San Jerónimo, c.p. 37204, León, Guanajuato, México."
+        }
+    },
+
+    "rich-text#notice-of-privacy-text-4-personal":{
+        "props":{
+            "text":"4.- Datos personales a los que se les da tratamiento",
+            "blockClass":"privacy-red-title",
+            "textColor":"c-on-action-secondary"
+        }
+    },
+    "rich-text#notice-of-privacy-text-4-1-personal":{
+        "props":{
+            "font":"t-body",
+            "text":"**4.1.-** EL TITULAR reconoce y acepta que **ANDREA** podrá tratar directamente y/o a través de encargados, los siguientes datos personales, ateniendo a la relación con cada TITULAR:\n\n***4.1.1.- EL TITULAR-Candidato: Generales: Nombre completo, fecha y lugar de nacimiento, edad, sexo, nacionalidad, estado civil, profesión, identificación oficial con fotografía, imagen o fotografía, firma, domicilio (código postal, estado, país, ciudad o municipio, colonia, localidad, calle, número exterior e interior), teléfono fijo y/o móvil, correo electrónico, RFC, CURP, número de seguridad social. Académicos: Nivel de estudios, escuela, periodo de estudios, títulos obtenidos, cursos de actualización y/o capacitación. Familiares: Nombre, edad, escolaridad, teléfono y profesión de padres, hermanos, hijos, cónyuges. Datos patrimoniales y/o financieros: datos de cuenta bancaria (número de cuenta, CLABE, banco), ingresos y gastos actuales. Experiencia laboral: nombre de la empresa en la que prestó sus servicios, tiempo de prestación de servicios, dirección, teléfono, puesto desempeñado, nombre de jefe inmediato. Referencias personales y referencias laborales (de las cuales, EL TITULAR asegura contar con el consentimiento para compartir los datos personales de dichos terceros): nombre completo, domicilio, teléfono, profesión.***\n\n***Documentación en copia: Identificación oficial con fotografía, acta de nacimiento, Curriculum Vitae, cédula de RFC, cédula de CURP, comprobante de domicilio, seguro social, comprobante de estudios, cédula profesional, carátula bancaria.***\n\n**ANDREA** manifiesta que podrá dar tratamiento a datos personales sensibles de EL TITULAR-Colaborador como son sus datos de salud pasada y presente, y conforme al artículo 9 de la LFPDPPP, se le requerirá a EL TITULAR-Colaborador su consentimiento expreso, escrito y firmado para su tratamiento a través de los formatos correspondientes.\n\n***4.1.3.- EL TITULAR-Consumidor Final: Nombre completo, fecha y lugar de nacimiento, edad, sexo, nacionalidad, estado civil, firma, identificación oficial con fotografía, imagen o fotografía, voz, domicilio (código postal, estado, país, ciudad o municipio, colonia, localidad, calle, número exterior e interior), teléfono fijo y/o móvil, correo electrónico, RFC, CURP, datos bancarios (número de cuenta, CLABE, banco), domicilio de facturación, datos de tarjeta de crédito y/o débito, nombres de usuario de las redes sociales en las que participa.***\n\nSi EL TITULAR contrata los servicios ofrecidos por **ANDREA** para que el beneficiario y/o usuario de dichos servicios sea un tercero, dicho TITULAR deberá obtener previamente su consentimiento antes de otorgar sus datos personales a **ANDREA** comprometiéndose a sacar en paz y a salvo a **ANDREA** de cualquier controversia ocasionada por el uso no autorizado de los datos personales de los terceros. En los casos en los que el tercero sea un menor de edad conforme a la normativa mexicana aplicable, EL TITULAR manifiesta bajo protesta de decir verdad, tener facultades suficientes para otorgar sus datos personales a **ANDREA** y aceptar el presente Aviso de Privacidad, comprometiéndose a sacar en paz y a salvo a **ANDREA** de cualquier controversia ocasionada por el uso no autorizado de los datos personales de los terceros y de los menores de edad.\n\n***Documentación en copia: Identificación oficial con fotografía, cédula de identificación fiscal, cédula de RFC, CURP, comprobante de domicilio, carátula bancaria.***\n\n***4.1.4.- EL TITULAR-Estrella: Nombre completo, fecha y lugar de nacimiento, edad, sexo, nacionalidad, identificación oficial con fotografía, imagen o fotografía, voz, firma, domicilio (código postal, estado, país, ciudad o municipio, colonia, localidad, calle, número exterior e interior), teléfono fijo y/o móvil, correo electrónico, RFC, CURP, datos bancarios (nombre del banco, cuenta y cuenta CLABE, SWIFT, ABBA –en caso de transferencias internacionales), datos fiscales, estado de cuenta, domicilio de facturación, datos de tarjeta de crédito y/o débito, nombres de usuario de las redes sociales en las que participa.***\n\nSi EL TITULAR contrata los servicios ofrecidos por **ANDREA** para que el beneficiario y/o usuario de dichos servicios sea un tercero, dicho TITULAR deberá obtener previamente su consentimiento antes de otorgar sus datos personales a **ANDREA** comprometiéndose a sacar en paz y a salvo a **ANDREA** de cualquier controversia ocasionada por el uso no autorizado de los datos personales de los terceros. En los casos en los que el tercero sea un menor de edad conforme a la normativa mexicana aplicable, EL TITULAR manifiesta bajo protesta de decir verdad, tener facultades suficientes para otorgar sus datos personales a **ANDREA** y aceptar el presente Aviso de Privacidad, comprometiéndose a sacar en paz y a salvo a **ANDREA** de cualquier controversia ocasionada por el uso no autorizado de los datos personales de los terceros y de los menores de edad.\n\n***Documentación en copia: Identificación oficial con fotografía, cédula de identificación fiscal, cédula de RFC, CURP, comprobante de domicilio, carátula bancaria.***\n\n***4.1.5.- EL TITULAR-Proveedor: Nombre completo, fecha y lugar de nacimiento, edad, sexo, nacionalidad, estado civil, identificación oficial con fotografía, imagen o fotografía, firma, domicilio (código postal, estado, país, ciudad o municipio, colonia, localidad, calle, número exterior e interior), teléfono fijo y/o móvil, RFC, CURP.***\n\n***Documentación en copia: Identificación oficial con fotografía, cédula de identificación fiscal, cédula de RFC, CURP, comprobante de domicilio, carátula bancaria, acta constitutiva de la empresa, poder legal del representante legal inscrito en el Registro Público de la Propiedad y Comercio.***\n\n***4.1.7.- EL TITULAR-Visitante de las oficinas o instalaciones de **ANDREA**: Nombre completo, fecha y lugar de nacimiento, edad, firma, imagen o fotografía.***\n\n**4.2.-** EL TITULAR en este acto, otorga su consentimiento expreso en términos del artículo 8 de la LFPDPPP, para que **ANDREA**, trate sus datos personales, incluidos los denominados datos patrimoniales y/o financieros, contenidos en esta cláusula, para cumplir con las finalidades que establece el presente Aviso de Privacidad.\n\n**4.3.-** EL TITULAR en este acto, bajo protesta de decir verdad, acepta que los datos que ha proporcionado a **ANDREA** son veraces, actuales y correctos. Además, se compromete a sacar en paz y a salvo a **ANDREA** de cualquier demanda o reclamación, derivada de los errores en los datos que le haya entregado.\n\n**4.4.- ANDREA** manifiesta que podrá obtener los datos personales de EL TITULAR mediante las denominadas fuentes de acceso público, a efecto de validar y actualizar los datos de EL TITULAR, respetando en todo momento la expectativa razonable de privacidad, a que se refiere el artículo 7 de la LFPDPPP.\n\n**4.5.- ANDREA** usará información IP (Protocolo de Internet, por sus siglas en inglés Internet Protocol) para analizar cualquier tipo de amenazas a LA PÁGINA DE INTERNET DE ANDREA así como para recabar información demográfica. Sin embargo, la información IP, en ningún caso será utilizada para identificar a LOS TITULARES, excepto cuando haya probabilidades de actividad fraudulenta."
+        }
+    }
+}
+
+
+
