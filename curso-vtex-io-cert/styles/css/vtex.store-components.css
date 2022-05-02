@@ -1,22 +1,4 @@
-.imageElement.imageElement--img-100{
-    width: 100%;
-}
-
-.imageElement.imageElement--img-home-hover:hover{
-    transform: scale(.97);
-    transition: transform .4s;
-}
-
-.shareLabel{
-    font-size: 16px;
-    margin-right: 5%;
-}
-
-.shareContainer{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
+.imageElement.imageElement--img-100{width: 100%;}
+.imageElement.imageElement--img-home-hover:hover{transform: scale(.97);transition: transform .4s;}
+.shareLabel{font-size: 16px;margin-right: 5%;}
+.shareContainer{margin-top: 5%;margin-bottom: 5%;display: flex;flex-direction: column;align-items: center;justify-content: end;}

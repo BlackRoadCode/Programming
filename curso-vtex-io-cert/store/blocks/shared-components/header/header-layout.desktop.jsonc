@@ -73,6 +73,7 @@
       "props":{
         "type":"custom",
         "text":"SPI - SISTEMA DE PEDIDOS",
+        "blockClass":"submenu-top-bar",
         "itemProps":{
           "iconPosition":"left"
         },
@@ -89,6 +90,7 @@
       "props":{
         "type":"custom",
         "text":"LOCALIZA A TU ESTRELLA",
+        "blockClass":"submenu-top-bar",
         "itemProps":{
           "iconPosition":"left"
         },
@@ -105,6 +107,7 @@
       "props":{
         "type":"custom",
         "text":"SUCURSALES",
+        "blockClass":"submenu-top-bar",
         "itemProps":{
           "iconPosition":"left"
         },
@@ -121,6 +124,7 @@
       "props":{
         "type":"custom",
         "text":"BLOG ESTRELLA",
+        "blockClass":"submenu-top-bar",
         "itemProps":{
           "iconPosition":"left"
         },

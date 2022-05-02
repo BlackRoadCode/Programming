@@ -1,14 +1,4 @@
 .galleryTitle--layout{text-transform: capitalize;}
-
-.galleryLayoutOptionButton{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.galleryItem--list {
-    border-bottom: 1px #E7E9EE solid;
-}
-
-.galleryLayoutOptionButton--selected {
-  color: #ED1C26;
-}
+.galleryLayoutOptionButton{margin-left: 5px;margin-right: 5px;}
+.galleryItem--list {border-bottom: 1px #E7E9EE solid;}
+.galleryLayoutOptionButton--selected {color: #ED1C26;}
