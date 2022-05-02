@@ -8,3 +8,22 @@
 .link.link--carousel-catalog-link:hover{
     text-decoration: underline;
 }
+
+.wrapper.wrapper--promotion-policies-text{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.link.link--promotion-policies-button{
+    background: #ED1C26;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 7% 25px;
+}
+
+.link.link--promotion-policies-button:hover{
+    background: #6E0D12;
+    color: #FFF;
+}

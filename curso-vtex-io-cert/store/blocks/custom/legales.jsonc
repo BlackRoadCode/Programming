@@ -1,19 +1,71 @@
 {
-    "store.custom#legales":{
-        "blocks":["flex-layout.row#legals"]
-    },
-
-    "flex-layout.row#legals":{
-        "children":[
-            "rich-text#legals",
-            "breadcrumb"
+    "store.custom#notice-of-privacy":{
+        "blocks":[
+            "flex-layout.row#notice-breadcrumb",
+            "flex-layout.row#notice-content"
         ]
     },
 
-    "rich-text#legals":{
+    "flex-layout.row#notice-breadcrumb":{
+      "props": {
+        "marginTop": 4
+      },
+      "children":["breadcrumb"]
+    },
+
+    "breadcrumb": {
+        "props": {
+          "showOnMobile": true
+        }
+    },
+
+    "flex-layout.row#notice-content":{
+        "children":[
+            "flex-layout.col#notice-text"
+        ]
+    },
+
+    "flex-layout.col#notice-text":{
+        "children":[
+            "rich-text#notice-of-privacy-title",
+            "rich-text#notice-of-privacy-subtitle",
+            "rich-text#notice-of-privacy-text-1-generals",
+            "rich-text#notice-of-privacy-text-1-1-generals",
+            "rich-text#notice-of-privacy-text-1-2-generals"
+        ]
+    },
+
+    "rich-text#notice-of-privacy-title":{
         "props":{
             "font": "t-heading-3",
-            "text":"ESTOS SON LOS LEGALES"
+            "text":"Aviso de privacidad 'Consumidor final' página de internet Andrea"
+        }
+    },
+    
+    "rich-text#notice-of-privacy-subtitle":{
+        "props":{
+            "font": "t-heading-5",
+            "text":"**AVISO DE PRIVACIDAD relacionado con los datos personales recabados por FÁBRICAS DE CALZADO ANDREA, S.A. DE C.V., sus filiales, subsidiarias y distribuidores autorizados (en adelante denominada como “ANDREA”)**"
+        }
+    },
+
+    "rich-text#notice-of-privacy-text-1-generals":{
+        "props":{
+            "text":"1.- Generales"
+        }
+    },
+
+    "rich-text#notice-of-privacy-text-1-1-generals":{
+        "props":{
+            "font": "t-body",
+            "text":"**1.1.- ANDREA** es una persona moral comprometida y respetuosa de los derechos sobre los datos personales de las personas físicas, reconocidos en el artículo 16, párrafo II de la Constitución Política de los Estados Unidos Mexicanos, así como de las disposiciones de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su Reglamento y la demás normativa aplicable. Por lo anterior, pone a su disposición el presente Aviso de Privacidad, en aras de que el titular de los datos personales, se encuentre facultado a ejercitar su derecho a la autodeterminación informativa."
+        }
+    },
+    
+    "rich-text#notice-of-privacy-text-1-2-generals":{
+        "props":{
+            "font": "t-body",
+            "text":"**1.2.-** Al ingresar y utilizar la página de Internet, cuya dirección electrónica es www.andrea.com, en la sección correspondiente a “Aviso de Privacidad”, en adelante denominada como LA PÁGINA DE INTERNET propiedad de **ANDREA**, y/o al vincularse comercialmente con **ANDREA** declara que está entendiendo y aceptando los términos y las condiciones contenidos en este Aviso y declara y otorga expresamente su aceptación y consentimiento utilizado para tal efecto medios electrónicos, en términos de los dispuesto por el artículo 1803 del Código Civil Federal."
         }
     }
 }

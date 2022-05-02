@@ -1,8 +1,8 @@
 {
-  "store.custom#about-us": {
-    "path": "/about-us"
+  "store.custom#notice-of-privacy": {
+    "path": "/aviso-de-privacidad"
   },
-  "store.custom#legales": {
-    "path": "/legales"
+  "store.custom#promotion-policies": {
+    "path": "/politicas-promocion"
   }
 }

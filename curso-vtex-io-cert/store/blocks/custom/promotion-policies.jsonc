@@ -1,0 +1,292 @@
+{
+    "store.custom#promotion-policies": {
+        "blocks": [
+            "flex-layout.row#promotion-policies-breadcrumb",
+            "flex-layout.row#promotion-policies-content"
+        ]
+    },
+    "flex-layout.row#promotion-policies-breadcrumb": {
+        "props": {
+            "marginTop": 4
+        },
+        "children": [
+            "breadcrumb"
+        ]
+    },
+    "flex-layout.row#promotion-policies-content": {
+        "children": [
+            "flex-layout.col#promotion-policies-title"
+        ]
+    },
+    "flex-layout.col#promotion-policies-title": {
+        "children": [
+            "rich-text#promotion-policies-title",
+            "rich-text#promotion-policies-list",
+            "flex-layout.row#promotion-policies-items-1",
+            "flex-layout.row#promotion-policies-items-2"
+        ]
+    },
+    "rich-text#promotion-policies-title": {
+        "props": {
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text": "Políticas de Promociones",
+            "font": "t-heading-3"
+        }
+    },
+    "rich-text#promotion-policies-list": {
+        "props": {
+            "textPosition": "LEFT",
+            "textAlignment": "LEFT",
+            "text": "Andrea se reserva el derecho de cancelar cualquier pedido realizado bajo los siguientes supuestos:\n* Cuando el usuario viole los términos y condiciones.\n* Cuando el usuario no cubra el importe total del pedido solicitado.\n* Cuando el usuario pretenda causar daños a Andrea o a un tercero. \n* Cuando se detecte la posible comisión de un delito. \n* Cuando por errores involuntarios en nuestros sistemas se lancen promociones no autorizadas en perjuicio del negocio. \n* Cuando se detecte que las promociones lanzadas por nuestros sistemas tengan un descuento mayor al 90% sobre el valor del pedido. \n* Cuando la conducta del usuario afecte la experiencia de otros clientes. \n* Cuando la conducta del usuario afecte o dañe la reputación de Andrea. \n* Cuando el producto solicitado no esté disponible.\n",
+            "font": "t-body"
+        }
+    },
+    "flex-layout.row#promotion-policies-items-1": {
+        "children": [
+            "flex-layout.col#promotion-policies-item-1",
+            "flex-layout.col#promotion-policies-item-2",
+            "flex-layout.col#promotion-policies-item-3"
+        ],
+        "props": {
+            "fullWidth": false,
+            "marginTop": 6
+        }
+    },
+    
+    "flex-layout.row#promotion-policies-items-2": {
+        "children": [
+            "flex-layout.col#promotion-policies-item-4",
+            "flex-layout.col#promotion-policies-item-5",
+            "flex-layout.col#promotion-policies-item-6"
+        ],
+        "props": {
+            "fullWidth": false,
+            "marginTop": 6
+        }
+    },
+
+    // Items definition
+    "flex-layout.col#promotion-policies-item-1": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-1",
+            "rich-text#title-item-1",
+            "rich-text#item-1",
+            "rich-text#button-item-1"
+        ]
+    },
+
+    "flex-layout.col#promotion-policies-item-2": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-2",
+            "rich-text#title-item-2",
+            "rich-text#item-2",
+            "rich-text#button-item-2"
+        ]
+    },
+
+    "flex-layout.col#promotion-policies-item-3": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-3",
+            "rich-text#title-item-3",
+            "rich-text#item-3",
+            "rich-text#button-item-3"
+        ]
+    },
+
+    "flex-layout.col#promotion-policies-item-4": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-4",
+            "rich-text#title-item-4",
+            "rich-text#item-4",
+            "rich-text#button-item-4"
+        ]
+    },
+
+    "flex-layout.col#promotion-policies-item-5": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-5",
+            "rich-text#title-item-5",
+            "rich-text#item-5",
+            "rich-text#button-item-5"
+        ]
+    },
+
+    "flex-layout.col#promotion-policies-item-6": {
+        "props": { "horizontalAlign": "center" },
+        "children": [
+            "image#item-6",
+            "rich-text#title-item-6",
+            "rich-text#item-6",
+            "rich-text#button-item-6"
+        ]
+    },
+
+    // Item elements
+
+    "rich-text#title-item-1":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "$200 EN TU PRIMERA COMPRA",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-1": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-200-prim-compra-mex.jpg"
+        }
+    },
+    "rich-text#item-1": {
+        "props": {
+            "text": "Promoción válida en [mx.andrea.com](https://mx.andrea.com) al 31 de Diciembre del 2022. $200 MXN de descuento en primera compra con monto mínimo de $1,199 MXN. (Monto neto). No participa con otras promociones. No aplica devoluciones en productos outlet. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-1":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    },
+
+    "rich-text#title-item-2":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ENVÍO GRATIS",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-2": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-envio-gratis-sem8-22.jpg"
+        }
+    },
+    "rich-text#item-2": {
+        "props": {
+            "text": "Promoción válida en [mx.andrea.com](https://mx.andrea.com) al 31 de Diciembre del 2022. Envío gratis en compra con monto mínimo de $1,199 MXN. (Monto neto). El descuento aplica exclusivamente con el uso de cupón. No participa con otras promociones. No aplica devoluciones en productos outlet. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-2":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    },
+
+    "rich-text#title-item-3":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "NEWSLETTER",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-3": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-newsletter-mex-2022.gif"
+        }
+    },
+    "rich-text#item-3": {
+        "props": {
+            "text": "Promoción válida en [mx.andrea.com](https://mx.andrea.com) al 31 de Diciembre del 2022. Regístrate en nuestro Newsletter y obtén un cupón por $150.00 MXN de descuento en compras mínimas de $599.00 MXN. El monto en cambios o devoluciones es por el valor del producto con descuento aplicado. No participa con otras promociones. No aplica devoluciones en productos outlet. Sujeta a cambios sin previo aviso. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-3":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    },
+
+    "rich-text#title-item-4":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ESCALERA DE DESCUENTOS",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-4": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-outler-mx-sem8.jpg"
+        }
+    },
+    "rich-text#item-4": {
+        "props": {
+            "text": "Promoción válida en mx.andrea.com del 24 de febrero al 30 de abril 2022. Descuentos en la tienda en línea de la siguiente manera: 10% de descuento en compras mínimas de 1,190, 15% de descuento en compras mínimas de $1,690, 20% de descuento en compras mínimas de $2,290. Aplica en productos de la marca Andrea y Ferrato. No participa con otras promociones. No aplica devoluciones en productos outlet. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-4":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    },
+    
+    "rich-text#title-item-5":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "REBAJAS DE PRIMAVERA",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-5": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-rebajas-primavera-mex-sem13.jpg"
+        }
+    },
+    "rich-text#item-5": {
+        "props": {
+            "text": "Promoción válida en mx.andrea.com del 24 de febrero al 30 de abril 2022. Descuentos en la tienda en línea de la siguiente manera: 10% de descuento en compras mínimas de 1,190, 15% de descuento en compras mínimas de $1,690, 20% de descuento en compras mínimas de $2,290. Aplica en productos de la marca Andrea y Ferrato. No participa con otras promociones. No aplica devoluciones en productos outlet. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-5":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    },
+    
+    "rich-text#title-item-6":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ÚLTIMAS TALLAS",
+            "font": "t-heading-6"
+        }
+    },
+    "image#item-6": {
+        "props": {
+            "src": "https://mx.andrea.com/arquivos/terminos-ultimas-tallas-mex-sem9.jpg"
+        }
+    },
+    "rich-text#item-6": {
+        "props": {
+            "text": "Promoción válida en mx.andrea.com del 1 al 31 de marzo 2022. 3X2 en productos seleccionados de la tienda en línea. Se cobra el producto de mayor valor. No participa con otras promociones. No aplica devoluciones en productos outlet. No aplica para estrellas ni para sucursales.",
+            "blockClass": "promotion-policies-text"
+        }
+    },
+    "rich-text#button-item-6":{
+        "props":{
+            "text":"[Compra Aquí]()",
+            "blockClass":"promotion-policies-button"
+        }
+    }
+
+
+
+
+
+}

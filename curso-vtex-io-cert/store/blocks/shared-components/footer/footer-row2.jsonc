@@ -198,7 +198,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/aviso-de-privacidad",
             "noFollow": false,
             "tagTitle": "Aviso de Privacidad",
             "text": "Aviso de Privacidad"
@@ -243,7 +243,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/politicas-promocion",
             "noFollow": false,
             "tagTitle": "Politicas de promociones",
             "text": "Políticas de promociones"
