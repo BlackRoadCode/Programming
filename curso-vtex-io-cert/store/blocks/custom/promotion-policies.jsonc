@@ -242,6 +242,7 @@
         }
     },
     "image#item-5": {
+        "title":"placeholder name",
         "props": {
             "src": "https://mx.andrea.com/arquivos/terminos-rebajas-primavera-mex-sem13.jpg"
         }
