@@ -1,0 +1,37 @@
+
+.container{
+    border: 5px solid crimson;
+    background-color: #FFF;
+
+    display: grid;
+	grid-template-columns: 150px 150px 150px;
+	grid-template-rows: 75px 75px 75px;
+
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar main main" ;
+
+    place-content: center;
+}
+
+.item{
+    /* border: 5px solid deepskyblue; */
+    font-size: 4rem;
+}
+
+.item-2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    border: 5px solid tomato;
+    background-color: deepskyblue;
+}
+
+.item-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    border: 5px solid tomato;
+    background-color: deepskyblue;
+}
