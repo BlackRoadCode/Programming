@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+body{
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    font-family: var(--roboto-mono);
+}
+
+a{
+    color: #000;
+    display: inline;
+    text-decoration: none;
+}
+
+:root{
+    --black:#000;
+    --green: #61F2F5;
+    --dark-gray: #23182D;
+    --light-gray: #E6E9ED;
+    --white: #FFF;
+
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+    --roboto-slab: 'Roboto Slab', serif;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: var(--green);
+}
+
+header .header-icons-container .icons{
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    justify-items: flex-end;
+    justify-self: end;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.social-icon{
+    height: 32px;
+    width: 32px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    align-items: center;
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+
+nav .nav-logo-container a img{
+    height: 60px;
+}
+
+nav .profile-link{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    text-decoration: underline;
+}
+
+/* hero */
+main.home-main{
+    align-items: center;
+    background-image: url('../assets/img/hero-cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+main .hero .hero-title{
+    color: var(--white);
+    font-family: var(--roboto-mono);
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.hero .hero-button{
+    background-color: var(--green);
+    cursor: pointer;
+    font-family: var(--roboto-mono);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 20px 25px;
+}
+
+.hero .hero-button:hover{
+    filter: invert(100%);
+}
+
+/* Blogs */
+
+.blogs-main{
+    display: grid;
+}
+
+section.main-blog-post{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--light-gray);
+}
+
+.main-blog-post__image-container{
+
+}
+
+.blogs-button{}
+
