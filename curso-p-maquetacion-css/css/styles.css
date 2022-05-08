@@ -130,10 +130,3 @@ section.main-blog-post{
     grid-template-columns: 1fr 1fr;
     background: var(--light-gray);
 }
-
-.main-blog-post__image-container{
-
-}
-
-.blogs-button{}
-
