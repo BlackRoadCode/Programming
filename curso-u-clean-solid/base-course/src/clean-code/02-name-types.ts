@@ -8,7 +8,7 @@
 
     // Listado de usuarios
     const users = [
-        {id: 1, email: 'fernando@google.com'},
+        { id: 1, email: 'fernando@google.com' },
         { id: 2, email: 'juan@google.com' }, 
         { id: 3, email: 'melissa@google.com' }
     ];
@@ -17,10 +17,10 @@
     const usersEmails = users.map( user => user.email );
 
     // Variables booleanas de un video juego
-    const isJumping = false;
-    const isRunning = true;
+    const canJump = false;
+    const canRun = true;
     const hasItems = false;
-    const loading = false;
+    const isLoading = true;
 
     // Otros ejercicios
     // tiempo inicial
@@ -30,7 +30,6 @@
     //...
     // Tiempo al final
     const endTime = new Date().getTime() - startTime;
-
 
     // Funciones
     // Obtiene los libros
@@ -52,5 +51,19 @@
     function printJob() {
         throw new Error('Function not implemented.');
     }
+
+    // bien
+    function sendEmail( toWhom:string, from:string, body:string ): boolean{
+        return false;
+    }
+
+    // no muy bien
+    function sendEmail( numero:number, numero2:number, otracosa:number ): boolean{
+        return false;
+    }
+
+    sendEmail( 'param', 'param', 'param');
+    sendEmail( 1,2,3);
+
 
 })();
