@@ -1,25 +1,23 @@
 (() => {
 
     function isRedFruit( fruit: string ): boolean {
-
-        const redFruits = [ 'manzana', 'cereza', 'ciruela' ];
-        
-        return redFruits.includes( fruit ) ? true : false;
-
+        return [ 'manzana', 'cereza', 'ciruela' ].includes( fruit );
     }
+
+    type FruitColor = 'red' | 'yellow' | 'purple';
 
     function getFruitsByColor( color: string ): string[] {
 
-        switch ( color ) {
-            case 'red':
-                return ['manzana','fresa'];
-            case 'yellow':
-                return ['piña','banana'];
-            case 'purple':
-                return ['moras','uvas'];
-            default:
-                throw Error('the color must be: red, yellow, purple');
-        }
+        const fruitsByColor = {
+            red:    ['manzana','fresa'],
+            yellow: ['piña','banana'],
+            purple: ['moras','uvas']
+        };
+
+        if( !Object.keys( fruitsByColor ).includes( color ) )
+            throw Error( 'the color must be: red, yellow, purple' );
+
+        return fruitsByColor[color];
 
     }
 
@@ -29,11 +27,8 @@
     let isFourthStepWorking = true;
 
     function workingSteps(): string {
-        
         if ( !isFirstStepWorking ) return 'First step broken.';
-        
         if ( !isSecondStepWorking ) return 'Second step broken.';
-        
         if ( !isThirdStepWorking ) return 'Third step broken.';
         
         return ( !isFourthStepWorking ) ? 'Fourth step broken.' : 'Working properly!';
