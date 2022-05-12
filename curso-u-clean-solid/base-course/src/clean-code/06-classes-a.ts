@@ -1,4 +1,7 @@
 (() => {
+
+    // Sin principio de responsabilidad única
+
     type Gender = 'M' | 'F';
 
     class Person {
