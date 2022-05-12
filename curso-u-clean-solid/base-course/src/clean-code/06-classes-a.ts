@@ -45,7 +45,7 @@
         }
     }
 
-    const userSettings = new UserSettings(
+    const userSettings = new UserSettings (
         '/usr/home',
         '/home',
         'pepesosa@gmail.com',
@@ -55,6 +55,7 @@
         new Date('1982-12-24')
     )
 
-    console.log({ userSettings, areCredentialsValid: userSettings.checkCredentials() });
+    // console.log({ userSettings, areCredentialsValid: userSettings.checkCredentials() });
+    console.log({ userSettings });
     
 })();
