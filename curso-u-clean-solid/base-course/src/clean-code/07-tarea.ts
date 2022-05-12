@@ -20,7 +20,7 @@
     }
 
     class InputEvents {
-        constructor(  ) { }
+        constructor( ){ }
 
         setFocus(){ console.log('ejecutando setFocus()') };
         getValue() {};
@@ -40,7 +40,7 @@
         public inputAttributes: InputAttributes;
         public inputEvents: InputEvents;
 
-        constructor({ id, type, value, placeholder }:htmlElementProps){
+        constructor( { id, type, value, placeholder }:htmlElementProps ){
             this.htmlElement = new HtmlElement( id, type );
             this.inputAttributes = new InputAttributes( value, placeholder );
             this.inputEvents = new InputEvents();
