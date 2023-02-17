@@ -38,7 +38,7 @@ const decryptText = ( encryptedText ) => {
     
     let resultLabel = document.getElementById('resultdecrypt');
     let p = document.createElement("p")
-    p.classList.add('lead');
+    p.classList.add('lead text-break');
     p.append(decryptedText);
     resultLabel.append(p);
 }
