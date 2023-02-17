@@ -16,7 +16,7 @@ const encryptText = ( inputText ) => {
 
     let resultLabel = document.getElementById('result');
     let p = document.createElement("p")
-    p.classList.add('lead');
+    p.classList.add('lead', 'text-break');
     p.append(encryptedHex);
     resultLabel.append(p);
 }
