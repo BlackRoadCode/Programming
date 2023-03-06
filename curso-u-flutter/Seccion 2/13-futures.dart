@@ -1,5 +1,4 @@
 void main(){
-
   print('Antes de la petición');
   
   httpGet('https://rickymortiapp.com')
@@ -8,7 +7,6 @@ void main(){
     });
   
   print('Fin del programa');
-  
 }
 
 Future<String> httpGet( String url ){
