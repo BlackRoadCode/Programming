@@ -11,6 +11,21 @@ class _CounterScreenState extends State<CounterScreen> {
 
   int counter = 0;
 
+  void increase(){
+    counter++;
+    setState(() { });
+  }
+  
+  void decrease(){
+    counter--;
+    setState(() { });
+  }
+  
+  void restart(){
+    counter = 0;
+    setState(() { });
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -33,17 +48,52 @@ class _CounterScreenState extends State<CounterScreen> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blueGrey,
-        onPressed: (){ 
-            counter++;
-            setState(() { });
-        },
-        child: const Icon(Icons.add, size: 30,),
-        )
+      floatingActionButton: CustomFloatingActions(
+        increaseFn: increase,
+        decreaseFn: decrease,
+        restartFn: restart,
+      ),
     );
   }
 }
 
+class CustomFloatingActions extends StatelessWidget {
 
-// Text('Click`s Counter 2')
+  final Function increaseFn;
+  final Function decreaseFn;
+  final Function restartFn;
+
+  const CustomFloatingActions({
+    super.key, 
+    required this.increaseFn, 
+    required this.decreaseFn, 
+    required this.restartFn,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        FloatingActionButton(
+          backgroundColor: Colors.blueGrey,
+          // onPressed: () => setState( () => counter++ ),
+          onPressed: () => increaseFn(),
+          child: const Icon(Icons.add, size: 30,),
+        ),
+
+        FloatingActionButton(
+          backgroundColor: Colors.blueGrey,
+          onPressed: () => restartFn(),
+          child: const Icon(Icons.all_inclusive, size: 30,),
+        ),
+
+        FloatingActionButton(
+          backgroundColor: Colors.blueGrey,
+          onPressed: () => decreaseFn(),
+          child: const Icon(Icons.remove, size: 30,),
+        ),
+      ],
+    );
+  }
+}
