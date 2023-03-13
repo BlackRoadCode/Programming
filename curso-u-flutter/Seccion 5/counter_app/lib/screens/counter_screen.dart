@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CounterScreen extends StatefulWidget {
-  const CounterScreen({super.key});
+  // const CounterScreen({super.key});
 
   @override
   State<CounterScreen> createState() => _CounterScreenState();
@@ -21,7 +21,7 @@ class _CounterScreenState extends State<CounterScreen> {
     setState(() { });
   }
   
-  void restart(){
+  void reset(){
     counter = 0;
     setState(() { });
   }
@@ -51,7 +51,7 @@ class _CounterScreenState extends State<CounterScreen> {
       floatingActionButton: CustomFloatingActions(
         increaseFn: increase,
         decreaseFn: decrease,
-        restartFn: restart,
+        resetFn: reset,
       ),
     );
   }
@@ -61,13 +61,13 @@ class CustomFloatingActions extends StatelessWidget {
 
   final Function increaseFn;
   final Function decreaseFn;
-  final Function restartFn;
+  final Function resetFn;
 
   const CustomFloatingActions({
     super.key, 
     required this.increaseFn, 
     required this.decreaseFn, 
-    required this.restartFn,
+    required this.resetFn,
   });
 
   @override
@@ -84,7 +84,7 @@ class CustomFloatingActions extends StatelessWidget {
 
         FloatingActionButton(
           backgroundColor: Colors.blueGrey,
-          onPressed: () => restartFn(),
+          onPressed: () => resetFn(),
           child: const Icon(Icons.all_inclusive, size: 30,),
         ),
 
