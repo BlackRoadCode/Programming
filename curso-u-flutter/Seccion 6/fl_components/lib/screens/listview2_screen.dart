@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Listview2Screen extends StatelessWidget {
 
-  final options = const['Fortnite', 'Resident Evil', 'Inside', 'Limbo'];
+  final options = const['Fortnite', 'Resident Evil  ', 'Inside', 'Limbo'];
    
   const Listview2Screen({Key? key}) : super(key: key);
   
@@ -16,7 +16,7 @@ class Listview2Screen extends StatelessWidget {
       ),
       body: ListView.separated(
         itemCount: options.length,
-        itemBuilder: (context, index) => ListTile(
+        itemBuilder:  (context, index) => ListTile(
           title: Text(options[index]),
           trailing: const Icon(Icons.arrow_forward_ios_outlined),
         ),
