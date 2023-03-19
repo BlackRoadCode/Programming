@@ -14,10 +14,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center( child: Text('Home Screen') ),
-        elevation: 2,
       ),
       body: ListView.separated(
-        itemCount: menuOptions.length,
         itemBuilder: (context, i) => ListTile(
           leading: Icon( menuOptions[i].icon ),
           title: Text(menuOptions[i].name),
@@ -26,6 +24,7 @@ class HomeScreen extends StatelessWidget {
             Navigator.pushNamed(context, menuOptions[i].route);
           },
         ), 
+        itemCount: menuOptions.length,
         separatorBuilder: ( _ , __ ) => const Divider(), 
       )
     );
