@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AlertScreen extends StatelessWidget {
@@ -12,12 +15,14 @@ class AlertScreen extends StatelessWidget {
         ),
         body: Center(
           child: ElevatedButton(
-            onPressed: () => displayDialogAndroid(context),
+            onPressed: () => Platform.isAndroid 
+                ? displayDialogAndroid(context)
+                : displayDialogIos(context),
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 13),
-              child: Text('Mostrar Alerta', style: TextStyle(fontSize: 17),),
+              child: Text('Mostrar Alerta', style: TextStyle(fontSize: 17)),
             ),
-          ),
+          )
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: (){
@@ -51,6 +56,10 @@ class AlertScreen extends StatelessWidget {
             TextButton(
               onPressed: () => Navigator.pop(context), 
               child: const Text('Cancelar')
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context), 
+              child: const Text('Ok')
             )
           ],
         );
@@ -58,4 +67,37 @@ class AlertScreen extends StatelessWidget {
     );
     
   }
+
+  displayDialogIos( BuildContext context ){
+
+    showCupertinoDialog(
+      barrierDismissible: true,
+      context: context, 
+      builder: ( context ){
+        return CupertinoAlertDialog(
+          title: const Text('Título del cupertino alert'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: const [
+              Text('Este es el contenido de la alerta cupertino'),
+              SizedBox( height: 10, ),
+              FlutterLogo(size: 50,)
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context), 
+              child: const Text('Cancelar')
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context), 
+              child: const Text('Ok')
+            )
+          ],
+        );
+      }
+    );
+
+  }
+
 }
