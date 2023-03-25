@@ -14,8 +14,8 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
 
   double _width = 50;
   double _height = 50;
-  Color _color = Colors.teal;
-  BorderRadiusGeometry _borderRadius = BorderRadius.circular(10);
+  Color _color = Colors.lightBlue;
+  BorderRadiusGeometry _borderRadius = BorderRadius.circular(1);
 
    void changeShape(){
     final rnd = Random();
@@ -39,7 +39,9 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
           ),
       ),
       body: Center(
-         child: Container(
+         child: AnimatedContainer(
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeOutCubic,
           width: _width,
           height: _height,
           decoration: BoxDecoration(
