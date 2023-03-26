@@ -23,6 +23,23 @@ class AppTheme {
             shape: const StadiumBorder(),
             elevation: 0
           )
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          iconColor: primary,
+          suffixIconColor: primary,
+          floatingLabelStyle: TextStyle( color: primary ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: primary ),
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: Colors.green ), 
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: Colors.red ), 
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
         )
       );
 
@@ -45,6 +62,23 @@ class AppTheme {
             shape: const StadiumBorder(),
             elevation: 0
           )
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          iconColor: primaryDark,
+          suffixIconColor: primaryDark,
+          floatingLabelStyle: TextStyle( color: primaryDark ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: primaryDark ),
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: Colors.green ), 
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: Colors.red ), 
+            borderRadius: BorderRadius.only( bottomLeft: Radius.circular(20), topRight: Radius.circular(20) ),
+          ),
         )
       );
 }
