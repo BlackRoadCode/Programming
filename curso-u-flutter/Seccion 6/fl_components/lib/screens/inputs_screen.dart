@@ -32,6 +32,7 @@ class InputsScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox( height: 30, ),
+
                 CustomTextField( 
                   labelText: 'Nombre', 
                   helperText: 'Mínimo 3 caracteres', 
@@ -40,17 +41,32 @@ class InputsScreen extends StatelessWidget {
                   suffixIcon: Icons.person_add_alt_1, 
                   formProperty: 'first_name', 
                   formValues: formValues,),
-                
                 const SizedBox( height: 30, ),
+
                 CustomTextField( labelText: 'Email', helperText: 'Ingresa un email válido', hintText: 'Correo', icon: Icons.email, textInputType: TextInputType.emailAddress,  formProperty: 'email', formValues: formValues,),
-                
                 const SizedBox( height: 30, ),
-                CustomTextField( labelText: 'Password', helperText: 'Mínimo 3 caracteres 2 mayusculas un número', hintText: 'Password', icon: Icons.password_sharp, obscureText: true, obscuringCharacter: '*',  formProperty: 'password', formValues: formValues, ),
                 
+                CustomTextField( labelText: 'Password', helperText: 'Mínimo 3 caracteres 2 mayusculas un número', hintText: 'Password', icon: Icons.password_sharp, obscureText: true, obscuringCharacter: '*',  formProperty: 'password', formValues: formValues, ),
+                const SizedBox( height: 30 ),
+                
+                DropdownButtonFormField(
+                  items: const [ 
+                    DropdownMenuItem( value: 'Admin',     child: Text('Admin') ),
+                    DropdownMenuItem( value: 'SuperUser', child: Text('SuperUser') ),
+                    DropdownMenuItem( value: 'Developer', child: Text('Developer') ),
+                    DropdownMenuItem( value: 'User',      child: Text('User') ),
+                  ], 
+                  onChanged: (value){
+                    // formValues['role'] = value!; // también funciona
+                    formValues['role'] = value  ?? 'Admin';
+                  },
+                ),
+
                 const SizedBox( height: 30 ),
                 ElevatedButton(
                   onPressed: () {
-                    FocusScope.of(context).requestFocus( FocusNode() );
+                    // FocusScope.of(context).requestFocus( FocusNode() );
+                    FocusManager.instance.primaryFocus?.unfocus();
 
                     if ( !myFormKey.currentState!.validate() ) {
                       print('Formulario no válido');
