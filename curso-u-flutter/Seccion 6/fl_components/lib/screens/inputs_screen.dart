@@ -12,9 +12,9 @@ class InputsScreen extends StatelessWidget {
     final GlobalKey<FormState> myFormKey = GlobalKey<FormState>();
 
     final Map<String, String> formValues = {
-      'first_name' : 'Pepe Sosa',
-      'email'      : 'mail@mail.com',
-      'password'   : 'abc123',
+      'first_name' : '',
+      'email'      : '',
+      'password'   : '',
       'role'       : 'admin'
     };
 
