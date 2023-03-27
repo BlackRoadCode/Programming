@@ -14,7 +14,8 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Center( child: Text('Home Screen') ),
+        title: const Text('Home Screen'),
+        centerTitle: true,
       ),
       body: ListView.separated(
         itemBuilder: (context, i) => ListTile(

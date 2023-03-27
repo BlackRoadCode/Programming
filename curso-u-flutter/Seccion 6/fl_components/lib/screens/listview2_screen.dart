@@ -10,9 +10,8 @@ class Listview2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text('Listview 2')
-          ),
+        centerTitle: true,
+        title: const Text('Other List View Screen'),
       ),
       body: ListView.separated(
         itemCount: options.length,

@@ -19,9 +19,8 @@ class _SliderScreenState extends State<SliderScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text('Slider Screen'),
-        ),
+        title: const Text('Slider Screen'),
+        centerTitle: true,
       ),
       body: Column(
         children: [
@@ -39,28 +38,28 @@ class _SliderScreenState extends State<SliderScreen> {
             : null
           ),
 
-          Checkbox(
-            value: _sliderEnabled, 
-            onChanged: (value) {
-              _sliderEnabled = value ?? true;
-              setState(() {});
-            },
-          ),
+          // Checkbox(
+          //   value: _sliderEnabled, 
+          //   onChanged: (value) {
+          //     _sliderEnabled = value ?? true;
+          //     setState(() {});
+          //   },
+          // ),
 
-          CheckboxListTile(
-            activeColor: Theme.of(context).primaryColor,
-            title: const Text('Habilitar Slider'),
-            value: _sliderEnabled, 
-            onChanged: (value) => setState(() { _sliderEnabled = value ?? true; }),
-          ),
+          // CheckboxListTile(
+          //   activeColor: Theme.of(context).primaryColor,
+          //   title: const Text('Habilitar Slider'),
+          //   value: _sliderEnabled, 
+          //   onChanged: (value) => setState(() { _sliderEnabled = value ?? true; }),
+          // ),
 
-          Switch(
-            activeColor: Theme.of(context).primaryColor,
-            value: _sliderEnabled, 
-            onChanged: (value) => setState(() { _sliderEnabled = value; }),
-          ),
+          // Switch(
+          //   activeColor: Theme.of(context).primaryColor,
+          //   value: _sliderEnabled, 
+          //   onChanged: (value) => setState(() { _sliderEnabled = value; }),
+          // ),
 
-          SwitchListTile.adaptive(
+          SwitchListTile(
             activeColor: Theme.of(context).primaryColor,
             title: const Text('Habilitar Slider'),
             value: _sliderEnabled, 

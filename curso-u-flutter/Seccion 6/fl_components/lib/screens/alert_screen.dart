@@ -11,8 +11,9 @@ class AlertScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Center(child: Text('Alert screen')),
-        ),
+        centerTitle: true,
+        title: const Text('Alert Screen'),
+      ),
         body: Center(
           child: ElevatedButton(
             onPressed: () => Platform.isAndroid 

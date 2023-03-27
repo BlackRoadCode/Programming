@@ -20,9 +20,8 @@ class InputsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text('Inputs y Forms'),
-        ),
+        centerTitle: true,
+        title: const Text('Inputs Screen'),
       ),
       body: SingleChildScrollView(
         child: Padding(
