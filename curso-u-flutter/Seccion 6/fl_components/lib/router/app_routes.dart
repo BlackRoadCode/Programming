@@ -17,7 +17,7 @@ class AppRoutes{
     MenuOption(route: 'listView1',  name: 'List View 1 Screen',       screen: const Listview1Screen(),        icon: Icons.list ),
     MenuOption(route: 'listView2',  name: 'List View 2 Screen',       screen: const Listview2Screen(),        icon: Icons.list_alt_outlined ),
     MenuOption(route: 'slider',     name: 'Slider Screen',            screen: const SliderScreen(),           icon: Icons.sledding_rounded ),
-    MenuOption(route: 'listviewbs', name: 'ListView Builder Screen',  screen: const ListViewBuilderScreen(),  icon: Icons.list_sharp ),
+    MenuOption(route: 'listviewbs', name: 'ListView Builder Screen',  screen: const ListViewBuilderScreen(),  icon: Icons.build_rounded ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){

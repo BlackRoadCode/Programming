@@ -7,12 +7,22 @@ class ListViewBuilderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Infinite Scroll & Pull Refresh'),
-      ),
-      body: const Center(
-         child: Text('ListViewBuilderScreen'),
+      body: MediaQuery.removePadding(
+        context: context,
+        removeTop: true,
+        removeBottom: true,
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (BuildContext context, int index) {
+            return FadeInImage(
+              width: double.infinity,
+              height: 300,
+              fit: BoxFit.cover,
+              placeholder: const AssetImage('assets/img/jar-loading.gif'), 
+              image: NetworkImage('https://placeimg.com/500/300/${ index + 1 }'),
+            );
+          },
+        ),
       ),
     );
   }
