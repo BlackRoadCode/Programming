@@ -10,8 +10,10 @@ class SliderScreen extends StatefulWidget {
 
 class _SliderScreenState extends State<SliderScreen> {
 
-  double _sliderValue = 100;
-  String imageUrl = 'https://i.pinimg.com/originals/9c/30/84/9c3084c759600e775dd1f53b01c6cf53.jpg';
+  double _sliderValue = 200;
+  bool _sliderEnabled = true;
+  // String imageUrl = 'https://i.pinimg.com/originals/9c/30/84/9c3084c759600e775dd1f53b01c6cf53.jpg';
+  String imageUrl = 'https://cdn.shoplightspeed.com/shops/632400/files/16488266/king-king-3bpl-tenor-trombone.jpg';
 
   @override
   Widget build(BuildContext context) {
@@ -24,22 +26,59 @@ class _SliderScreenState extends State<SliderScreen> {
       body: Column(
         children: [
           Slider.adaptive(
-            min: 50,
-            max: 500,
+            min: 150,
+            max: 600,
             activeColor: Theme.of(context).primaryColor,
             value: _sliderValue, 
+            onChanged: _sliderEnabled 
+            ? (value) {
+                print(value);
+                _sliderValue = value;
+                setState(() {});
+              }
+            : null
+          ),
+
+          Checkbox(
+            value: _sliderEnabled, 
             onChanged: (value) {
-              print(value);
-              _sliderValue = value;
+              _sliderEnabled = value ?? true;
               setState(() {});
             },
           ),
 
-          Image(
-            image: NetworkImage(imageUrl),
-            fit: BoxFit.contain,
-            width: _sliderValue,
-          )
+          CheckboxListTile(
+            activeColor: Theme.of(context).primaryColor,
+            title: const Text('Habilitar Slider'),
+            value: _sliderEnabled, 
+            onChanged: (value) => setState(() { _sliderEnabled = value ?? true; }),
+          ),
+
+          Switch(
+            activeColor: Theme.of(context).primaryColor,
+            value: _sliderEnabled, 
+            onChanged: (value) => setState(() { _sliderEnabled = value; }),
+          ),
+
+          SwitchListTile.adaptive(
+            activeColor: Theme.of(context).primaryColor,
+            title: const Text('Habilitar Slider'),
+            value: _sliderEnabled, 
+            onChanged: (value) => setState(() { _sliderEnabled = value; }),
+          ),
+
+          Expanded(
+            child: SingleChildScrollView(
+              child: Image(
+                image: NetworkImage(imageUrl),
+                fit: BoxFit.contain,
+                width: _sliderValue,
+              ),
+            ),
+          ),
+
+          const AboutListTile()
+
         ],
       )
     );
