@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/models.dart';
 
-class MovieSlider extends StatelessWidget {
+class MovieSlider extends StatefulWidget {
 
   final List<Movie> movies;
   final String? title;
@@ -14,6 +14,42 @@ class MovieSlider extends StatelessWidget {
   }); 
 
   @override
+  State<MovieSlider> createState() => _MovieSliderState();
+}
+
+class _MovieSliderState extends State<MovieSlider> {
+
+  final ScrollController scrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+
+    scrollController.addListener(() {
+
+      if( scrollController.position.pixels >= scrollController.position.maxScrollExtent - 200 ){
+        // llamar provider
+        print('Obtener siguiente páginas');
+
+      }
+
+      print( scrollController.position.pixels );
+      print( scrollController.position.maxScrollExtent );
+
+
+      
+    });
+
+  }
+
+  @override
+  void dispose() {
+    
+    
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
@@ -22,19 +58,20 @@ class MovieSlider extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
-          if ( title != null )
+          if ( widget.title != null )
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(title!, style: const TextStyle( fontSize: 20, fontWeight: FontWeight.bold )),
+              child: Text(widget.title!, style: const TextStyle( fontSize: 20, fontWeight: FontWeight.bold )),
             ), 
 
           const SizedBox(height: 5),
 
           Expanded(
             child: ListView.builder(
+              controller: scrollController,
               scrollDirection: Axis.horizontal,
-              itemCount: movies.length,
-              itemBuilder: ( _ , int index) => _MoviePoster( movie: movies[index] ),
+              itemCount: widget.movies.length,
+              itemBuilder: ( _ , int index) => _MoviePoster( movie: widget.movies[index] ),
             ),
           ),
         ],
