@@ -6,11 +6,13 @@ class MovieSlider extends StatefulWidget {
 
   final List<Movie> movies;
   final String? title;
+  final Function onNextPage;
 
   const MovieSlider({
     super.key, 
     required this.movies, 
-    this.title,
+    required this.onNextPage,
+    this.title, 
   }); 
 
   @override
@@ -27,16 +29,9 @@ class _MovieSliderState extends State<MovieSlider> {
 
     scrollController.addListener(() {
 
-      if( scrollController.position.pixels >= scrollController.position.maxScrollExtent - 200 ){
-        // llamar provider
-        print('Obtener siguiente páginas');
-
+      if( scrollController.position.pixels >= scrollController.position.maxScrollExtent - 300 ){
+        widget.onNextPage();
       }
-
-      print( scrollController.position.pixels );
-      print( scrollController.position.maxScrollExtent );
-
-
       
     });
 
@@ -68,6 +63,7 @@ class _MovieSliderState extends State<MovieSlider> {
 
           Expanded(
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               controller: scrollController,
               scrollDirection: Axis.horizontal,
               itemCount: widget.movies.length,
@@ -99,7 +95,7 @@ class _MoviePoster extends StatelessWidget {
         children: [
 
           GestureDetector(
-            onTap: () => Navigator.pushNamed( context , 'details', arguments: 'movie-instance-slider'),
+            onTap: () => Navigator.pushNamed( context , 'details', arguments: movie ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
                 child: FadeInImage(
