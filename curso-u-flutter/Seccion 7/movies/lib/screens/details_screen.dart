@@ -32,7 +32,7 @@ class DetailsScreen extends StatelessWidget {
                   movieOverview: movie.overview,
                 ),
 
-                const CastingCards(),
+                CastingCards( movieId: movie.id, ),
             ])
           ),
         ],
@@ -66,12 +66,13 @@ class _CustomAppbar extends StatelessWidget {
           color: Colors.black26,
           width: double.infinity,
           alignment: Alignment.bottomCenter,
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
           child: Text(
             appBarTitle,
             style: const TextStyle(
               fontSize: 16
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         background: FadeInImage(

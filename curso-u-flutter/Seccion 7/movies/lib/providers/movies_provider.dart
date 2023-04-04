@@ -11,6 +11,9 @@ class MoviesProvider extends ChangeNotifier{
 
   List<Movie> onDisplayMovies = [];
   List<Movie> popularMovies = [];
+  
+  Map<int, List<Cast>> movieCast = {};
+  
   int _popularPage = 0;
 
   MoviesProvider(){
@@ -42,6 +45,13 @@ class MoviesProvider extends ChangeNotifier{
     final popularResponse = PopularResponse.fromJson( jsonData );
     popularMovies = [ ...popularMovies, ...popularResponse.results];
     notifyListeners();
+  }
+
+  Future<List<Cast>> getCastMovie( int movieId ) async {
+    final jsonData = await _getJsonData('3/movie/$movieId/credits');
+    final creditsResponse = CreditsResponse.fromJson( jsonData );
+    movieCast[movieId] = creditsResponse.cast;
+    return creditsResponse.cast;
   }
 
 }
