@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:movies/providers/movies_provider.dart';
 import '../models/models.dart';
@@ -23,7 +24,7 @@ class CastingCards extends StatelessWidget {
 
         if ( !snapshot.hasData ) {
           return Container(
-            height: 180,
+            height: 220,
             child: const CupertinoActivityIndicator(radius: 30),
           );
         }
@@ -32,7 +33,7 @@ class CastingCards extends StatelessWidget {
         
         return Container(
           width: double.infinity,
-          height: 180,
+          height: 220,
           margin: const EdgeInsets.only( bottom: 30 ),
           child: ListView.builder(
             itemCount: cast.length,
@@ -61,7 +62,7 @@ class _CastCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
       width: 110,
-      height: 100,
+      height: 120,
       child: Column(
         children: [
           ClipRRect(
@@ -74,13 +75,27 @@ class _CastCard extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+          
           const SizedBox(height: 5),
+          
           Text(
             actor.name,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
-          )
+          ),
+
+          const SizedBox(height: 5),
+
+          Text(
+            actor.character ?? '',
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Theme.of(context).primaryColor
+            ),
+          ),
         ],
       ),
     );

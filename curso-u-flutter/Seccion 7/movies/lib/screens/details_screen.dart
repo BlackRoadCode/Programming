@@ -55,7 +55,7 @@ class _CustomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: Colors.red,
+      backgroundColor: Theme.of(context).primaryColor,
       expandedHeight: 200,
       floating: false,
       pinned: true,
@@ -126,7 +126,7 @@ class _PosterAndTitle extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ConstrainedBox(
-                constraints: BoxConstraints( maxWidth: size.width - 160 ),
+                constraints: BoxConstraints( maxWidth: size.width - 165 ),
                 child: Text(
                   movieTitle,
                   overflow: TextOverflow.ellipsis, 
