@@ -25,11 +25,11 @@ class Cast {
         required this.adult,
         required this.gender,
         required this.id,
-        required this.knownForDepartment,
         required this.name,
         required this.originalName,
         required this.popularity,
         required this.creditId,
+        this.knownForDepartment,
         this.profilePath,
         this.castId,
         this.character,
@@ -41,7 +41,7 @@ class Cast {
     bool adult;
     int gender;
     int id;
-    Department knownForDepartment;
+    Department? knownForDepartment;
     String name;
     String originalName;
     double popularity;
@@ -58,7 +58,7 @@ class Cast {
         return 'https://image.tmdb.org/t/p/w500$profilePath';
       }
 
-      return 'https://i.stack.imgur.com/GNhxO.png';
+      return 'https://ui-avatars.com/api/?name=$name';
     }
 
     factory Cast.fromJson(String str) => Cast.fromMap(json.decode(str));
@@ -67,7 +67,7 @@ class Cast {
         adult: json["adult"],
         gender: json["gender"],
         id: json["id"],
-        knownForDepartment: departmentValues.map[json["known_for_department"]]!,
+        knownForDepartment: departmentValues.map[json["known_for_department"]],
         name: json["name"],
         originalName: json["original_name"],
         popularity: json["popularity"]?.toDouble(),

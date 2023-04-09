@@ -1,6 +1,6 @@
 
 import 'dart:convert';
-import 'models.dart';
+import 'models.dart' show Movie;
 
 class SearchResponse {
     SearchResponse({
@@ -20,7 +20,7 @@ class SearchResponse {
     factory SearchResponse.fromMap(Map<String, dynamic> json) => SearchResponse(
         page: json["page"],
         results: List<Movie>.from(json["results"].map((x) => Movie.fromMap(x))),
-        totalPages: json["total_pages"],
-        totalResults: json["total_results"],
+        totalPages    : json["total_pages"],
+        totalResults  : json["total_results"],
     );
 }

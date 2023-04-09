@@ -19,7 +19,7 @@ class CastingCards extends StatelessWidget {
     final moviesProvider = Provider.of<MoviesProvider>(context, listen: false);
 
     return FutureBuilder(
-      future: moviesProvider.getCastMovie(movieId),
+      future: moviesProvider.getCastMovie( movieId ),
       builder: ( _ , AsyncSnapshot<List<Cast>> snapshot) {
 
         if ( !snapshot.hasData ) {
@@ -65,14 +65,20 @@ class _CastCard extends StatelessWidget {
       height: 120,
       child: Column(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: FadeInImage(
-              placeholder: const AssetImage( 'assets/img/no-image.jpg' ), 
-              image: NetworkImage( actor.fullProfilePath ),
-              height: 140,
-              width: 100,
-              fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () => Navigator.pushNamed( context , 'actor', arguments: actor ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Hero(
+                tag: actor.id,
+                child: FadeInImage(
+                  placeholder: const AssetImage( 'assets/img/no-image.jpg' ), 
+                  image: NetworkImage( actor.fullProfilePath ),
+                  height: 140,
+                  width: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ),
           

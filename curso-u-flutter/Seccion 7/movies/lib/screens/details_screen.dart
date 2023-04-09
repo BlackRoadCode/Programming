@@ -26,6 +26,7 @@ class DetailsScreen extends StatelessWidget {
                   movieTitle: movie.title, 
                   movieOriginalTitle: movie.originalTitle, 
                   movieVoteAverage: movie.voteAverage.toString(),
+                  movieHeroId: movie.heroId!,
                 ),
 
                 _Overview(
@@ -91,13 +92,15 @@ class _PosterAndTitle extends StatelessWidget {
   final String movieTitle;
   final String movieOriginalTitle;
   final String movieVoteAverage;
+  final String movieHeroId;
 
   const _PosterAndTitle({
     super.key, 
     required this.moviePoster, 
     required this.movieTitle, 
     required this.movieOriginalTitle, 
-    required this.movieVoteAverage
+    required this.movieVoteAverage, 
+    required this.movieHeroId, 
   });
 
   @override
@@ -111,12 +114,15 @@ class _PosterAndTitle extends StatelessWidget {
       padding: const EdgeInsets.symmetric( horizontal: 20 ),
       child: Row(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: FadeInImage(
-              placeholder: const AssetImage( 'assets/img/no-image.jpg' ), 
-              image: NetworkImage( moviePoster ),
-              height: 150,
+          Hero(
+            tag: movieHeroId,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: FadeInImage(
+                placeholder: const AssetImage( 'assets/img/no-image.jpg' ), 
+                image: NetworkImage( moviePoster ),
+                height: 150,
+              ),
             ),
           ),
 
@@ -137,6 +143,7 @@ class _PosterAndTitle extends StatelessWidget {
                   ),
                 ),
               ),
+              
               Text(
                 movieOriginalTitle,
                 overflow: TextOverflow.ellipsis, 
@@ -145,11 +152,12 @@ class _PosterAndTitle extends StatelessWidget {
                   fontSize: textTheme.titleMedium?.fontSize
                 ),
               ),
+              
               Row(
                 children: [
                   const Icon(Icons.star_outline, size: 15, color: Colors.grey,),
                   const SizedBox( width: 5, ),
-                  Text(movieVoteAverage, style: TextStyle( fontSize: textTheme.bodySmall?.fontSize ),)
+                  Text( movieVoteAverage, style: TextStyle( fontSize: textTheme.bodySmall?.fontSize ),)
                 ],
               )
             ],
