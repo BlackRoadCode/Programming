@@ -46,7 +46,7 @@ class _PinkBox extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(80),
           gradient: const LinearGradient(
-            colors: [ 
+            colors: [
               Color.fromRGBO(236, 98, 188, 1),
               Color.fromRGBO(251, 142, 172, 1),
             ]
