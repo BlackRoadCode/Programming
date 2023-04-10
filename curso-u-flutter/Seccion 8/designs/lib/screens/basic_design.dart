@@ -69,9 +69,9 @@ class ButtonsBar extends StatelessWidget {
       child: Row( 
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [
-          _CustomButton( icon: Icons.phone, text: 'CALL', ),
-          _CustomButton( icon: Icons.near_me, text: 'ROUTE', ),
-          _CustomButton( icon: Icons.share, text: 'SHARE', ),
+          _CustomButton( icon: Icons.phone, text: 'CALL', route: 'basic_design' ),
+          _CustomButton( icon: Icons.near_me, text: 'SCROLL', route: 'scroll_design', ),
+          _CustomButton( icon: Icons.share, text: 'GLASS', route: 'scroll_design' ),
         ]
       ),
     );
@@ -82,18 +82,24 @@ class _CustomButton extends StatelessWidget {
   
   final IconData icon;
   final String text;
+  final String route;
 
   const _CustomButton({
     super.key, 
     required this.icon, 
-    required this.text,
+    required this.text, 
+    required this.route,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon( icon, color:Colors.lightBlue, size: 26),
+        GestureDetector(
+          child: Icon( icon, color:Colors.lightBlue, size: 26),
+          onTap: () => Navigator.pushNamed( context , route),
+        ),
+        
         Text( text, style: const TextStyle( color:Colors.lightBlue, fontSize: 16 ),)
       ]
     );
