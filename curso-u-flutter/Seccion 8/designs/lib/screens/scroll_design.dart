@@ -89,7 +89,14 @@ class StepTwo extends StatelessWidget {
         child: TextButton(
           
           onPressed: () => Navigator.pushNamed(context, 'basic_design'), 
-          child: const Text('Regresar al HOME', style: TextStyle(color: Colors.white, fontSize: 30),)
+          style: TextButton.styleFrom(
+            backgroundColor: Colors.blueAccent,
+            shape: const StadiumBorder(),
+          ),
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+            child: Text('Regresar al HOME', style: TextStyle(color: Colors.white, fontSize: 30),),
+          )
         )
       ),
     );

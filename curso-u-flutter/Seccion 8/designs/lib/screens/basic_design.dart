@@ -69,9 +69,9 @@ class ButtonsBar extends StatelessWidget {
       child: Row( 
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [
-          _CustomButton( icon: Icons.phone, text: 'CALL', route: 'basic_design' ),
+          _CustomButton( icon: Icons.phone, text: 'HOME', route: 'home_design' ),
           _CustomButton( icon: Icons.near_me, text: 'SCROLL', route: 'scroll_design', ),
-          _CustomButton( icon: Icons.share, text: 'GLASS', route: 'scroll_design' ),
+          _CustomButton( icon: Icons.share, text: 'BASIC', route: 'basic_design' ),
         ]
       ),
     );
