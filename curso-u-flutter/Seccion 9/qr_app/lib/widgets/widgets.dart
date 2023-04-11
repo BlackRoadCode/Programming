@@ -1,0 +1,1 @@
+export 'package:qr_app/widgets/custom_navigation_bar.dart';
