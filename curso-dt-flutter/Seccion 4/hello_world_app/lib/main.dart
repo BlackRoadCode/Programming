@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_app/presentation/screens/screens.dart';
 
 void main() {
 
@@ -11,16 +12,14 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(child: Text('Hola Mundo')),
-      )
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.orange
+      ),
+      home: const CounterScreen()
     );
-    
   }
-
-
 
 }
