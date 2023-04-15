@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yes_no_app/presentation/widgets/chat/her_message_bubble.dart';
-import 'package:yes_no_app/presentation/widgets/chat/my_message_bubble.dart';
-
+import 'package:yes_no_app/presentation/widgets/widgets.dart';
 
 class ChatScreen extends StatelessWidget {
    
@@ -46,7 +44,10 @@ class _ChatView extends StatelessWidget {
               )
             ),
           
-            const Text('adios'),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: MessageFieldBox(),
+            )
           ],
         ),
       ),
