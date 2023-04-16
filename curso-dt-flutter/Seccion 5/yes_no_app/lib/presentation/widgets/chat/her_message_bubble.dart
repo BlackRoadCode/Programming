@@ -42,7 +42,7 @@ class _ImageBubble extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       // child: Image.network(
-      //   'https://yesno.wtf/assets/no/7-331da2464250a1459cd7d41715e1f67d.gif', 
+      //   'https://yesno.wtf/assets/yes/3-422e51268d64d78241720a7de52fe121.gif', 
       //   width: size.width * .7,
       //   height: 150,
       //   fit: BoxFit.cover,
@@ -57,6 +57,9 @@ class _ImageBubble extends StatelessWidget {
       //     );
       //   },
       // )
+      
+      // ------------------------
+      
       child: Image(
         image: const NetworkImage('https://yesno.wtf/assets/no/7-331da2464250a1459cd7d41715e1f67d.gif'),
         width: size.width * 0.7, 
