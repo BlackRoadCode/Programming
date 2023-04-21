@@ -1,12 +1,12 @@
 List<Map<String, dynamic>> videoPosts = [
   {
-    'name': 'Subiendo escaleras automáticas',
+    'name': 'Volar sin alas',
     'videoUrl': 'assets/videos/1.mp4',
     'likes': 23230498,
     'views': 1523,
   },
   {
-    'name': 'Planta apreciada por peatones',
+    'name': 'Cualquier político es como una esfera de navidad... Solo sirven de adorno.',
     'videoUrl': 'assets/videos/2.mp4',
     'likes': 24230,
     'views': 1343,
@@ -24,7 +24,7 @@ List<Map<String, dynamic>> videoPosts = [
     'views': 2300,
   },
   {
-    'name': 'El COVID no me afecta',
+    'name': 'Te y velas.',
     'videoUrl': 'assets/videos/5.mp4',
     'likes': 3230,
     'views': 31030,
@@ -36,7 +36,7 @@ List<Map<String, dynamic>> videoPosts = [
     'views': 330,
   },
   {
-    'name': 'Limpiar nunca fue tan divertido',
+    'name': 'Leer nunca fue tan divertido',
     'videoUrl': 'assets/videos/7.mp4',
     'likes': 1320,
     'views': 33032,
