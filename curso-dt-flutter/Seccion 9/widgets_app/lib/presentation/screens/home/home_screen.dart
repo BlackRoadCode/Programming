@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/config/config.dart' show appMenuItems;
-import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/config/config.dart'; // show MenuItem, appMenuItems
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -22,18 +21,19 @@ class _HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-
     return ListView.builder(
       itemCount: appMenuItems.length,
-      itemBuilder: (BuildContext context, int index) {
+      itemBuilder: ( BuildContext context, int index ) {
         final menuItem = appMenuItems[index];
         return _CustomLisTile( menuItem: menuItem );
       },
     );
+
   }
 }
 
 class _CustomLisTile extends StatelessWidget {
+
   const _CustomLisTile({
     required this.menuItem,
   });
@@ -41,7 +41,7 @@ class _CustomLisTile extends StatelessWidget {
   final MenuItem menuItem;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build( BuildContext context ) {
 
     final colors = Theme.of(context).colorScheme;
 
@@ -51,7 +51,7 @@ class _CustomLisTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () { 
-        Router.navigate( context, () => menuItem.route );
+        // Router.navigate( context, () => menuItem.route );
       },
     );
   }
