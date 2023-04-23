@@ -18,7 +18,6 @@ class AppTheme {
     colorSchemeSeed: colors[ selectedColor ],
     appBarTheme: const AppBarTheme(
       centerTitle: false,
-      color: Colors.red
     )
   );
   
