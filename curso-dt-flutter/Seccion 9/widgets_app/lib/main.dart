@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/config.dart' show AppTheme;
+
+import 'package:widgets_app/presentation/screens/home/home_screen.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,15 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 2).getTheme(),
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Nuevos cambios a la app'),
-          centerTitle: true,
-        ),
-        body: Center(
-          child: FilledButton(onPressed: () {}, child: const Text('Verificador de temas')),
-        ),
-      ),
+      home: const HomeScreen()
     );
   }
 }
