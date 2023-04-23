@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:widgets_app/config/config.dart' show AppTheme;
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,15 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-  
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(selectedColor: 2).getTheme(),
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Nuevos cambios a la app'),
           centerTitle: true,
         ),
-        body: const Center(
-          child: Text('Hello World y más cambios ahora subidos'),
+        body: Center(
+          child: FilledButton(onPressed: () {}, child: const Text('Verificador de temas')),
         ),
       ),
     );
