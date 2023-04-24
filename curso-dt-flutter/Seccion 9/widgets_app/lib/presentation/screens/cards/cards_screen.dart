@@ -12,9 +12,18 @@ class CardsScreen extends StatelessWidget {
     appBar: AppBar(
       title: const Text('CardsTitle'),
     ),
-      body: const Center(
-         child: Text('CardsScreen'),
-      ),
+      body: const _CardsView(),
+    );
+  }
+}
+
+class _CardsView extends StatelessWidget {
+  const _CardsView();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+       child: Text('CardsScreen view'),
     );
   }
 }
