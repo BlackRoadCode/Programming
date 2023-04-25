@@ -30,5 +30,19 @@ const appMenuItems = <MenuItem>[
     route: '/cards', 
     icon: Icons.card_membership_sharp
   ),
+  
+  MenuItem(
+    title: 'Animated', 
+    subTitle: 'Aniumaciones', 
+    route: '/animated', 
+    icon: Icons.animation_sharp
+  ),
+  
+  MenuItem(
+    title: 'Infinite Scroll', 
+    subTitle: 'Un scroll infinito con carga asíncrona', 
+    route: '/infinite', 
+    icon: Icons.screen_share_outlined
+  ),
 
 ];
