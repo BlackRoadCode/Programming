@@ -32,10 +32,38 @@ const appMenuItems = <MenuItem>[
   ),
   
   MenuItem(
-    title: 'Animated', 
-    subTitle: 'Aniumaciones', 
+    title: 'Progress indicator', 
+    subTitle: 'Generales y controlados', 
+    route: '/progress', 
+    icon: Icons.refresh_sharp
+  ),
+
+  MenuItem(
+    title: 'Snackbars y diálogos', 
+    subTitle: 'Indicadores en pantalla', 
+    route: '/snackbars', 
+    icon: Icons.info_outlined
+  ),
+
+  MenuItem(
+    title: 'Animated container', 
+    subTitle: 'Stateful widget animator', 
     route: '/animated', 
-    icon: Icons.animation_sharp
+    icon: Icons.square_outlined
+  ),
+  
+  MenuItem(
+    title: 'UI Controls + Tiles', 
+    subTitle: 'Una serie de controles de Flutter', 
+    route: '/controls', 
+    icon: Icons.car_rental_outlined
+  ),
+  
+  MenuItem(
+    title: 'Introducción a la aplicación', 
+    subTitle: 'Pequeño tutorial introductorio', 
+    route: '/tutorial', 
+    icon: Icons.wheelchair_pickup_sharp
   ),
   
   MenuItem(
