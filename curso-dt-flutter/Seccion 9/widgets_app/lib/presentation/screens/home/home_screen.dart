@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/config/config.dart'; // show MenuItem, appMenuItems
+import 'package:widgets_app/config/config.dart';
+import 'package:widgets_app/presentation/widgets/widgets.dart' show SideMenu; // show MenuItem, appMenuItems
 
 class HomeScreen extends StatelessWidget {
 
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Widgets en Flutter'),  
       ),
       body:  const _HomeView(),
+      drawer: const SideMenu(),
     );
   }
 }
