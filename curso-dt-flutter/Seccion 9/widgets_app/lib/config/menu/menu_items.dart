@@ -67,10 +67,10 @@ const appMenuItems = <MenuItem>[
   ),
   
   MenuItem(
-    title: 'Infinite Scroll', 
+    title: 'Infinite Scrolly Pull', 
     subTitle: 'Un scroll infinito con carga asíncrona', 
     route: '/infinite', 
-    icon: Icons.screen_share_outlined
+    icon: Icons.list_alt_sharp
   ),
 
 ];
