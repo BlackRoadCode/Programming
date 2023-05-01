@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:widgets_app/presentation/providers/providers.dart' show counterProvider, isDarkModeProvider;
+import 'package:widgets_app/presentation/providers/providers.dart' show counterProvider, themeNotifierProvider;
 
 class CounterScreen extends ConsumerWidget {
 
@@ -12,7 +12,7 @@ class CounterScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
 
     final int clickCounter = ref.watch( counterProvider );
-    final bool isDarkMode = ref.watch( isDarkModeProvider );
+    final bool isDarkMode = ref.watch( themeNotifierProvider ).isDarkMode;
 
     return Scaffold(
        appBar: AppBar(
@@ -21,7 +21,7 @@ class CounterScreen extends ConsumerWidget {
               IconButton(
                 icon: Icon( isDarkMode ? Icons.dark_mode_outlined : Icons.light_mode_outlined ),
                 onPressed: (){
-                  ref.read( isDarkModeProvider.notifier ).update( (state) => !state );
+                  ref.read( themeNotifierProvider.notifier ).toggleDarkMode();
                 }, 
               )
            ],

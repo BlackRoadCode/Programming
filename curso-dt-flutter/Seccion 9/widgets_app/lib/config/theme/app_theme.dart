@@ -9,6 +9,7 @@ final List<Color> colors = [
   Colors.blueGrey,
   Colors.purple,
   Colors.teal,
+  Colors.red,
 ];
 
 class AppTheme {
@@ -29,6 +30,14 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       centerTitle: false,
     )
+  );
+
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode
+  }) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
   );
   
 }
