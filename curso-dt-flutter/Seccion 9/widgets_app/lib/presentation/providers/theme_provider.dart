@@ -1,14 +1,14 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:widgets_app/config/config.dart';
 
-// Listado de colores inmutable
+// Immutable provider (never gonna change the value)
 final colorListProvider = Provider( (ref) => colors );
 
-final isDarkModeProvider = StateProvider<bool>( (ref) => false );
+// StateProvider control a single value
+// final isDarkModeProvider = StateProvider<bool>( (ref) => false );
+// final selectedColorProvider = StateProvider<int>((ref) => 0);
 
-final selectedColorProvider = StateProvider<int>((ref) => 0);
-
-// Objeto de tipo AppTheme (custom)
+// Object of type AppTheme (custom)
 final themeNotifierProvider = StateNotifierProvider<ThemeNotifier, AppTheme>(
   (ref) => ThemeNotifier(),
 );
