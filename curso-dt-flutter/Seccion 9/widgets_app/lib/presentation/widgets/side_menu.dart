@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:widgets_app/config/config.dart';
 
 class SideMenu extends StatefulWidget {
-  const SideMenu({super.key});
+
+  final GlobalKey<ScaffoldState> scaffoldKey;
+
+  const SideMenu({
+    super.key, 
+    required this.scaffoldKey
+  });
 
   @override
   State<SideMenu> createState() => _SideMenuState();
@@ -13,23 +21,57 @@ class _SideMenuState extends State<SideMenu> {
 
   @override
   Widget build(BuildContext context) {
+
+    final hasNotch = MediaQuery.of(context).viewPadding.top > 35;
+
     return NavigationDrawer(
       selectedIndex: navDrawerIndex,
       onDestinationSelected: (value) {
+
         setState(() {
           navDrawerIndex = value;
         });
+
+        final menuItem = appMenuItems[value];
+        context.push( menuItem.route );
+        widget.scaffoldKey.currentState?.closeDrawer();
+
       },
-      children: const [
-        NavigationDrawerDestination(
-          icon: Icon( Icons.add_road ), 
-          label: Text('Menu nuevo')
+      children: [
+
+        Padding(
+          padding: EdgeInsets.fromLTRB(20, hasNotch ? 0 : 20, 0, 20),
+          child: const Text('Menu de Configuración'),
+        ),
+
+        ...appMenuItems
+        .sublist(0,3)
+        .map(( item ) => 
+          NavigationDrawerDestination(
+            icon: Icon( item.icon ), 
+            label: Text( item.title ),
+          )
+        ),
+
+        const Padding(
+          padding: EdgeInsets.all(3),
+          child: Divider()
+        ),
+
+        const Padding(
+          padding: EdgeInsets.fromLTRB(20, 20, 0, 20),
+          child: Text('Otras opciones'),
+        ),
+
+        ...appMenuItems
+        .sublist(3)
+        .map(( item ) => 
+          NavigationDrawerDestination(
+            icon: Icon( item.icon ), 
+            label: Text( item.title ),
+          )
         ),
         
-        NavigationDrawerDestination(
-          icon: Icon( Icons.add_home_work_rounded ), 
-          label: Text('Otro menu')
-        ),
       ]
     );
   }
