@@ -1,6 +1,8 @@
 /* ======================= Monster Banner ======================= */
 .bkg-cintillo{
   background: url('../img/generator/bkg-cintillo.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .bkg-monster{
@@ -63,6 +65,11 @@
 
 .bkg-c3-i4{
   background: url("../img/generator/bkg-c3-i4.jpg");
+}
+
+.bkg-img-single-banner{
+  background: url("../img/generator/single-banner.jpg");
+  background-size: cover;
 }
 
 /* ======================= Content 3 ======================= */

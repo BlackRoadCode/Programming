@@ -7,6 +7,7 @@
     <title>Andrea Code Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style-andrea.css" >
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container-fluid" id="mainmenu"></div>
     </nav>
 
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-2">
         <div class="row">
             <div class="col">
 
@@ -42,14 +43,12 @@
                                               <div class="row">
                                                 <div class="col bkg-cintillo">
                                                   <form>
+                                                      
+                                                    <div class="col-sm-12 py-2 text-center">
+                                                      <button onclick="copyHeadband()" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Cintillo</button>
+                                                    </div>
+
                                                     <div class="form-group row">
-                                                      <div class="col-sm-1">
-                                                        <!-- Flag Cintillo -->
-                                                        <div class="form-check">
-                                                          <input type="checkbox" class="form-check-input" id="check-cintillo">
-                                                        </div>
-                                                      </div>
-                                      
                                                       <div class="col-sm-3">
                                                         <!-- URL Cintillo -->
                                                         <input type="text" class="form-control form-control-sm" id="url-cintillo" name="url-cintillo" placeholder="URL">
@@ -62,7 +61,7 @@
                                                         <!-- URL Cintillo Móvil -->
                                                         <input type="text" class="form-control form-control-sm" id="img-cintillo-movil" name="img-cintillo-movil" placeholder="IMG Móvil">
                                                       </div>
-                                                      <div class="col-sm-2">
+                                                      <div class="col-sm-3">
                                                         <!-- Alt + Title -->
                                                         <input type="text" class="form-control form-control-sm" id="alt-cintillo" name="alt-cintillo" placeholder="ALT + Title">
                                                       </div>
@@ -95,355 +94,14 @@
                                                       </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <center><button onclick="copiarMonsterbanner()" type="button" class="btn btn-info btn-sm"><i class="fa fa-clipboard" aria-hidden="true"></i> Monsterbanner</button></center>
+                                                      <div class="col-sm-12 text-center">
+                                                        <button onclick="copyMonsterbanner()" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Monsterbanner</button>
                                                       </div>
                                                     </div>
                                                   </form>
                                                 </div>
                                               </div>
-                                            </div>
-                                      
-                                            <div class="pad-top-1"></div>
-                                      
-                                            <div class="content1">
-                                              <!-- Content-1 -->
-                                              <div class="row">
-                                                <!-- IMG 1 under monster -->
-                                                <div class="col bkg-img-um-1">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c1-i1" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c1-i1" placeholder="IMG - 1">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c1-i1" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <!-- IMG 2 under monster -->
-                                                <div class="col bkg-img-um-2">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c1-i2" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c1-i2" placeholder="IMG - 2">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c1-i2" placeholder="Alt + Title">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <center><button onclick="copiarContentUno();" type="button" class="btn btn-info btn-sm"><i class="fa fa-clipboard" aria-hidden="true"></i> Content 1</button></center>
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <!-- IMG 3 under monster -->
-                                                <div class="col bkg-img-um-3">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c1-i3" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c1-i3" placeholder="IMG - 3">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c1-i3" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                      
-                                              <div class="row">
-                                                <div class="col">
-                                                  <img class="max-w-100" src="img/img-carr-1.PNG" alt="">
-                                                </div>
-                                              </div>
-                                            </div>
-                                      
-                                            <div class="pad-top-1"></div>
-                                      
-                                            <div class="content2">
-                                              <!-- Content-2 -->
-                                              <div class="row">
-                                                <!-- img 1 - content 2 -->
-                                                <div class="col bkg-img-c2-1">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i1" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i1" placeholder="IMG - 1">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i1" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <!-- img 2 - content 2 -->
-                                                <div class="col bkg-img-c2-2">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i2" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i2" placeholder="IMG - 2">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i2" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <!-- img 3 - content 2 -->
-                                                <div class="col bkg-img-c2-3">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i3" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i3" placeholder="IMG - 3">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i3" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <!-- img 4 - content 2 -->
-                                                <div class="col bkg-img-c2-4">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i4" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i4" placeholder="IMG - 4">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i4" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                      
-                                              <div class="row">
-                                                <div class="col">
-                                                  <img class="max-w-100" src="img/img-carr-2.PNG" alt="">
-                                                </div>
-                                              </div>
-                                      
-                                              <div class="row">
-                                                <!-- img 1 - last part content 2 -->
-                                                <div class="col bkg-img-c2-5">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i5" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i5" placeholder="IMG - 5">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i5" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                      
-                                                <!-- img 2 - last part content 2 -->
-                                                <div class="col bkg-img-c2-6">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i6" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i6" placeholder="IMG - 6">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i6" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                      
-                                                <!-- img 3 - last part content 2 -->
-                                                <div class="col bkg-img-c2-7">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c2-i7" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c2-i7" placeholder="IMG - 7">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c2-i7" placeholder="Alt + title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                      
-                                                <div class="col-sm-12">
-                                                  <center><button onclick="copiarContentDos();" type="button" class="btn btn-info btn-sm"><i class="fa fa-clipboard" aria-hidden="true"></i> Content 2</button></center>
-                                                </div>
-                                      
-                                                <div class="row">
-                                                  <div class="col">
-                                                    <img class="max-w-100" src="img/img-carr-3.PNG" alt="">
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                      
-                                            <div class="pad-top-1"></div>
-                                      
-                                            <!-- Content 3 -->
-                                            <div class="content3">
-                                              <div class="row">
-                                                <div class="col bkg-monster-2 pad-14">
-                                                  <form>
-                                                  <div class="form-group row">
-                                                    <div class="col-12">
-                                      
-                                                    <!--=============================================>>>>>
-                                                    = Toggles para seleccionar monster o video =
-                                                    ===============================================>>>>-->
-                                                    <div class="btn-group-sm btn-group-toggle" data-toggle="buttons">
-                                                      <label id="check-monster-opt1" class="btn btn-info active">
-                                                        <input onclick="selectorElementos( 'check-monster-opt1', 'check-monster-opt2', 'form-monster', 'form-video' );" type="radio" name="options" autocomplete="off"> Generar Imagen</label>
-                                                      <label id="check-monster-opt2" class="btn btn-info">
-                                                        <input onclick="selectorElementos( 'check-monster-opt1', 'check-monster-opt2', 'form-monster', 'form-video' );" type="radio" name="options" autocomplete="off">Generar Video</label>
-                                                    </div>
-                                                    <!--= End of Toggles para seleccionar monster o video =*/-->
-                                                    <!--=============================================<<<<<-->
-                                      
-                                                    </div>
-                                                  </div>
-                                                  <!-- Form Genera Banner -->
-                                                  <div class="inactive" id="form-monster">
-                                                    <div class="form-group row">
-                                                      <div style"padding-top:0% !important;" class="col-6">
-                                                        <!-- URL Monsterbanner -->
-                                                        <input type="text" class="form-control form-control-sm" id="url-monsterbanner-down" name="url-monsterbanner" placeholder="URL">
-                                                      </div>
-                                      
-                                                      <!-- Alt + Title Monsterbanner -->
-                                                      <div class="col-6">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-monsterbanner" name="alt-monsterbanner" placeholder="Alt + Title">
-                                                      </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                      <div class="col-12">
-                                                        <!-- IMG Desktop -->
-                                                        <input type="text" class="form-control form-control-sm" id="img-monsterbanner" name="img-monsterbanner" placeholder="IMG Banner">
-                                                      </div>
-                                                    </div>
-                                      
-                                                    <div class="col-sm-12">
-                                                      <center><button onclick="copiarContentTres();" type="button" class="btn btn-info btn-sm"><i class="fa fa-clipboard" aria-hidden="true"></i> Content 3</button></center>
-                                                    </div>
-                                                  </div>
-                                      
-                                                  <!-- Form Genera Video -->
-                                                  <div class="inactive" id="form-video">
-                                                    <div class="form-group row">
-                                                      <div style"padding-top:0% !important;" class="col-6">
-                                                        <!-- URL Video -->
-                                                        <input type="text" class="form-control form-control-sm" id="url-c3-video" name="url-video" placeholder="URL Video">
-                                                      </div>
-                                                      <div style"padding-top:0% !important;" class="col-6">
-                                                        <!-- ID Video -->
-                                                        <input type="text" class="form-control form-control-sm" id="id-c3-video" name="id-video" placeholder="ID Video">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <center><button onclick="copiarContentTres();" type="button" class="btn btn-info btn-sm"><i class="fa fa-clipboard" aria-hidden="true"></i> Content 3</button></center>
-                                                      </div>
-                                                  </div>
-                                                </form>
-                                              </div>
-                                            </div>
-                                      
-                                              <div class="row">
-                                                <div class="col bkg-c3-i1">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c3-i1" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c3-i1" placeholder="IMG - 1">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c3-i1" placeholder="Alt + title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                      
-                                                <div class="col bkg-c3-i2">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c3-i2" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c3-i2" placeholder="IMG - 2">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c3-i2" placeholder="Alt + title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <div class="col bkg-c3-i3">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c3-i3" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c3-i3" placeholder="IMG - 3">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c3-i3" placeholder="Alt + title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                                <div class="col bkg-c3-i4">
-                                                  <form>
-                                                    <div class="form-group row">
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="url-c3-i4" placeholder="URL">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="img-c3-i4" placeholder="IMG - 4">
-                                                      </div>
-                                                      <div class="col-sm-12">
-                                                        <input type="text" class="form-control form-control-sm" id="alt-c3-i4" placeholder="Alt + title">
-                                                      </div>
-                                                    </div>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                            </div>
+                                            </div> 
                                       
                                           </div>
                                     </div>
@@ -455,7 +113,148 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <h1>content2</h1>
+                                        <div class="container">
+                                            <div class="content2">
+                                                <!-- Content-2 -->
+                                                <div class="row">
+                                                  <!-- img 1 - content 2 -->
+                                                  <div class="col bkg-img-c2-1">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i1" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i1" placeholder="IMG - 1">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i1" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                                  <!-- img 2 - content 2 -->
+                                                  <div class="col bkg-img-c2-2">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i2" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i2" placeholder="IMG - 2">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i2" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <!-- img 3 - content 2 -->
+                                                  <div class="col bkg-img-c2-3">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i3" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i3" placeholder="IMG - 3">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i3" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                                  <!-- img 4 - content 2 -->
+                                                  <div class="col bkg-img-c2-4">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i4" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i4" placeholder="IMG - 4">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i4" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                        
+                                                <div class="row">
+                                                  <div class="col">
+                                                    <img class="max-w-100" src="img/img-carr-2.PNG" alt="">
+                                                  </div>
+                                                </div>
+                                        
+                                                <div class="row">
+                                                  <!-- img 1 - last part content 2 -->
+                                                  <div class="col bkg-img-c2-5">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i5" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i5" placeholder="IMG - 5">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i5" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                        
+                                                  <!-- img 2 - last part content 2 -->
+                                                  <div class="col bkg-img-c2-6">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i6" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i6" placeholder="IMG - 6">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i6" placeholder="Alt + Title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                        
+                                                  <!-- img 3 - last part content 2 -->
+                                                  <div class="col bkg-img-c2-7">
+                                                    <form>
+                                                      <div class="form-group row">
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="url-c2-i7" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="img-c2-i7" placeholder="IMG - 7">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                          <input type="text" class="form-control form-control-sm" id="alt-c2-i7" placeholder="Alt + title">
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                        
+                                                  <div class="col-sm-12 text-center">
+                                                    <button onclick="copyContentTwo();" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Content 2</button>
+                                                  </div>
+                                        
+                                                  <div class="row">
+                                                    <div class="col">
+                                                      <img class="max-w-100" src="img/img-carr-3.PNG" alt="">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -465,7 +264,28 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <h1>singlelanding</h1>
+                                        <div class="container">
+                                            <div class="row text-center">
+                                                <div class="col">
+                                                    <button onclick="copySingleBanner();" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Single Banner</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col bkg-img-single-banner py-5">
+                                                    <form class="row g-3">
+                                                        <div class="col-sm-4">
+                                                            <input type="text" class="form-control form-control-sm" id="url-single-banner" placeholder="URL">
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" class="form-control form-control-sm" id="img-single-banner" placeholder="Image">
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" class="form-control form-control-sm" id="alt-single-banner" placeholder="Alt + Title">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -494,3 +314,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

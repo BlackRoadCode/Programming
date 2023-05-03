@@ -31,29 +31,43 @@ function executeSAlert(){
   })
 }
 
-function copiarMonsterbanner(  ){
+function copyHeadband(){
+  let urlCintillo = document.getElementById('url-cintillo').value;
+  let imgCintilloDesktop = document.getElementById('img-cintillo-desktop').value;
+  let imgCintilloMovil = document.getElementById('img-cintillo-movil').value;
+  let altCintillo = document.getElementById('alt-cintillo').value;
 
-  // Elementos Cintillo
-  var checkCintillo = document.getElementById('check-cintillo').checked;
-  var urlCintillo = document.getElementById('url-cintillo').value;
-  var imgCintilloDesktop = document.getElementById('img-cintillo-desktop').value;
-  var imgCintilloMovil = document.getElementById('img-cintillo-movil').value;
-  var altCintillo = document.getElementById('alt-cintillo').value;
+  let cintillo = `<a style='padding-bottom: 2px;' class='banner' href='${ urlCintillo }' target='_blank'>
+                    <img class='desktop' src='/arquivos/${ imgCintilloDesktop }' alt='${ altCintillo }' title='${ altCintillo }'>
+                    <img class='mobile' src='/arquivos/${ imgCintilloMovil }' alt='${ altCintillo }' title='${ altCintillo }'>
+                  </a>`;
 
-  // Elementos Monsterbanner
-  var urlMonsterbanner = document.getElementById('url-monsterbanner').value;
-  var imgMonsterbannerDesktop = document.getElementById('img-cintillo-desk-monsterbanner').value;
-  var imgMonsterbannerMovil = document.getElementById('img-cintillo-movil-monsterbanner').value;
-  var altMonster = document.getElementById('alt-monster').value;
+   // Empieza copiado
+   var aux = document.createElement("textarea");
+   aux.innerHTML = cintillo;
+   document.body.appendChild(aux);
+   aux.select();
+   document.execCommand("copy");
+   document.body.removeChild(aux);
+ 
+   // Alert
+   executeSAlert('timer');
+}
 
-  if( checkCintillo ){
-    var monsterbanner = "<div class='primary-banner-wrapper re-central'><div id='carousel-example-generic' class='carousel slide' data-ride='carousel'><!-- Indicators --><!--=============================================>>>>> = Cintillo ================================================>>>>--> <a style='padding-bottom: 2px;' class='banner' href='" + urlCintillo + "' target='_blank'> <img class='desktop' src='/arquivos/" + imgCintilloDesktop + "' alt='"+ altCintillo +"' title='"+ altCintillo +"'> <img class='mobile' src='/arquivos/" + imgCintilloMovil + "' alt='"+ altCintillo +"' title='" + altCintillo + "'> </a> <!--= End of Fin de Cintillo =*/ <!-=============================================<<<<<--> <!-- Wrapper for slides --> <div class='carousel-inner' role='listbox'> <div class='item active'> <a class='banner' target='_blank' href='" + urlMonsterbanner + "'> <img class='desktop' src='/arquivos/" + imgMonsterbannerDesktop + "' alt='"+altMonster+"' title='"+altMonster+"'> <img class='mobile' src='/arquivos/" + imgMonsterbannerMovil + "' alt='"+altMonster+"' title='"+altMonster+"'> </a> </div> </div> </div> </div>";
-  } else {
-    var monsterbanner = "<div class='primary-banner-wrapper re-central'><div id='carousel-example-generic' class='carousel slide' data-ride='carousel'><!-- Wrapper for slides --> <div class='carousel-inner' role='listbox'> <div class='item active'> <a class='banner' target='_blank' href='" + urlMonsterbanner + "'> <img class='desktop' src='/arquivos/" + imgMonsterbannerDesktop + "' alt='"+altMonster+"' title='"+altMonster+"'> <img class='mobile' src='/arquivos/" + imgMonsterbannerMovil + "' alt='"+altMonster+"' title='"+altMonster+"'> </a> </div> </div> </div> </div>";
-  }
+function copyMonsterbanner(){
+  let urlMonsterbanner = document.getElementById('url-monsterbanner').value;
+  let imgMonsterbannerDesktop = document.getElementById('img-cintillo-desk-monsterbanner').value;
+  let imgMonsterbannerMovil = document.getElementById('img-cintillo-movil-monsterbanner').value;
+  let altMonster = document.getElementById('alt-monster').value;
 
+  let monsterbanner = `<div class='item'>
+                           <a class='banner' href='${ urlMonsterbanner }'>
+                               <img class='desktop' src='/arquivos/${ imgMonsterbannerDesktop }' alt='${ altMonster }' title='${ altMonster }'>
+                               <img class='mobile' src='/arquivos/${ imgMonsterbannerMovil }' alt='${ altMonster }' title='${ altMonster }'>
+                           </a>
+                       </div>`;
 
-  // Empieza copiado
+  // copy process
   var aux = document.createElement("textarea");
   aux.innerHTML = monsterbanner;
   document.body.appendChild(aux);
@@ -61,12 +75,178 @@ function copiarMonsterbanner(  ){
   document.execCommand("copy");
   document.body.removeChild(aux);
 
-  // Alert
   executeSAlert('timer');
-
 }
 
-function copiarContentUno(  ){
+function copyContentTwo(){
+  // elementos img 1
+  let urlImg1 = document.getElementById('url-c2-i1').value;
+  let imgImg1 = document.getElementById('img-c2-i1').value;
+  let altImg1 = document.getElementById('alt-c2-i1').value;
+
+  // elementos img 2
+  let urlImg2 = document.getElementById('url-c2-i2').value;
+  let imgImg2 = document.getElementById('img-c2-i2').value;
+  let altImg2 = document.getElementById('alt-c2-i2').value;
+
+  // elementos img 3
+  let urlImg3 = document.getElementById('url-c2-i3').value;
+  let imgImg3 = document.getElementById('img-c2-i3').value;
+  let altImg3 = document.getElementById('alt-c2-i3').value;
+
+  // elementos img 4
+  let urlImg4 = document.getElementById('url-c2-i4').value;
+  let imgImg4 = document.getElementById('img-c2-i4').value;
+  let altImg4 = document.getElementById('alt-c2-i4').value;
+
+  // elementos img 5
+  let urlImg5 = document.getElementById('url-c2-i5').value;
+  let imgImg5 = document.getElementById('img-c2-i5').value;
+  let altImg5 = document.getElementById('alt-c2-i5').value;
+
+  // elementos img 6
+  let urlImg6 = document.getElementById('url-c2-i6').value;
+  let imgImg6 = document.getElementById('img-c2-i6').value;
+  let altImg6 = document.getElementById('alt-c2-i6').value;
+
+  // elementos img 7
+  let urlImg7 = document.getElementById('url-c2-i7').value;
+  let imgImg7 = document.getElementById('img-c2-i7').value;
+  let altImg7 = document.getElementById('alt-c2-i7').value;
+
+  let content2 = `
+  <h3 class='tag-title--level-1'>Tendencia</h3>
+    <div class='BoardCategory-list'>
+        <a href='${ urlImg1 }' class='BoardCategory-item transition-hover hidden-sm hidden-xs'>
+            <img src='/arquivos/${ imgImg1 }' alt='Andrea | ${ altImg1 }' title='${ altImg1 }' class='img-100'>
+        </a>
+        <a href='${ urlImg2 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg2 }' alt='${ altImg2 }' title='${ altImg2 }' class='img-100'>
+        </a>
+    </div>
+    <div class='BoardCategory-list'>
+        <a href='${ urlImg3 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg3 }' alt='${ altImg3 }' title='${ altImg3 }' class='img-100'>
+        </a>
+        <a href='${ urlImg4 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg4 }' alt='${ altImg4 }' title='${ altImg4 }' class='img-100'>
+        </a>
+    </div>
+    
+    <div id='BoardBrands01' class='BoardBrands-list'>
+        <a href='/nike' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-nike'></use></svg></a>
+        <a href='/adidas' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-adidas'></use></svg></a> 
+        <a href='/reebok' class='BoardBrands-item'><img style='max-width: 63%; opacity: .6;' class='img-brand-logo' src='/arquivos/lnd-reebok-logo.gif?v=230123' alt=''></a> 
+        <a href='/puma' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-puma'></use></svg></a> 
+        <a href='/vans' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-vans'></use></svg></a> 
+        <a href='/under-armour' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-under-armour'></use></svg></a> 
+        <a href='/everlast' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-everlast'></use></svg></a> 
+        <a href='/jeep' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-jeep'></use></svg></a>
+        <a href='/champion' class='BoardBrands-item'><img style='max-width: 63%; opacity: .6;' class='img-brand-logo' src='/arquivos/lnd-champion-logo.png' alt=''></a> 
+    </div>
+                  
+    <div class='BoardCategory-list'>
+        <a href='${ urlImg5 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg5 }' alt='${ altImg5 }' title='${ altImg5 }' class='img-100'>
+        </a>
+        <a href='${ urlImg6 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg6 }' alt='${ altImg6 }' title='${ altImg6 }' class='img-100'>
+        </a>
+        <a href='${ urlImg7 }' class='BoardCategory-item transition-hover'>
+            <img src='/arquivos/${ imgImg7 }' alt='${ altImg7 }' title='${ altImg7 }' class='img-100'>
+        </a>
+    </div>
+                  
+    <div id='BoardBrands02' class='BoardBrands-list--own'>
+        <a href='http://cdn-img.andrea.com/mx/25/89/' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-confort.png'></a>
+        <a href='http://cdn-img.andrea.com/mx/25/407/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andr'></use></svg></a>
+        <a href='http://cdn-img.andrea.com/mx/25/407/10/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-frt'></use></svg></a> <a href='/andrea-premium' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-premium'></use></svg></a>
+        <a href='/Mia-Andrea?fq=B:2000041' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-lenceria.png'></a>
+        <a href='http://cdn-img.andrea.com/mx/25/18/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-accesorios'></use></svg></a>
+        <a href='http://cdn-img.andrea.com/mx/25/177/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato-sport'></use></svg></a>
+        <a href='http://cdn-img.andrea.com/mx/25/203/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-sport'></use></svg></a>
+        <a href='/belleza/Unisex?map=c,specificationFilter_363' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/lnd-beauty-logo.jpg'></a>
+        <a href='/ferrato' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato'></use></svg></a>
+        <a href='/Andrea-Men?fq=B:2000299' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/andrea- men.png'></a>
+    </div>
+                  
+    <h3 class='noline tag-title--level-1' style='padding-top: 5%; margin-bottom: -3%;'>LO MEJOR DE MID SEASON</h3>`;
+
+  // Copy process
+  var aux = document.createElement("textarea");
+  aux.innerHTML = content2;
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  executeSAlert('timer');
+}
+
+function copySingleBanner(){
+
+  // single banner elements
+  let urlsinglebanner = document.getElementById('url-single-banner').value;
+  let imgsinglebanner = document.getElementById('img-single-banner').value;
+  let altsinglebanner = document.getElementById('alt-single-banner').value;
+
+  let singlebanner = `<div class='img-container'>
+     <a href='${ urlsinglebanner }'>
+         <img src='/arquivos/${ imgsinglebanner }' alt='${ altsinglebanner }' title='${ altsinglebanner }'>
+     </a>
+   </div>`;
+
+   // copy process
+  var aux = document.createElement("textarea");
+  aux.innerHTML = singlebanner;
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  executeSAlert('timer');
+}
+
+function buttonsBanner(){
+
+  let imgbuttonsbanner = document.getElementById('img-single-banner').value;
+  let altbuttonsbanner = document.getElementById('alt-single-banner').value;
+
+  let placeholderimg = document.getElementById('img-single-banner').value;
+  let placeholderalt = document.getElementById('alt-single-banner').value;
+
+  let buttonsbanner = `
+  <table style='width: 100%;' class='thot' cellpadding='0' cellspacing='0'>
+    <tr>
+      <th colspan='4'>
+        <div id='img-sup' class='banner-wrapper' style='margin: 0 !important;'>
+            <img style='width:100%;' src='/arquivos/${ imgbuttonsbanner }' class='img-cien' alt='${ altbuttonsbanner }' title='${ altbuttonsbanner }' />
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td><img src='/arquivos/${ placeholderimg }' alt='${ placeholderalt }' title='${ placeholderalt }'></td>
+      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
+      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
+      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
+    </tr>
+</table>
+  `;
+
+  // copy process
+  var aux = document.createElement("textarea");
+  aux.innerHTML = buttonsBanner;
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  executeSAlert('timer');
+}
+
+// Refactor 02/05/23
+
+function copiarContentUno(){
 
   // elementos img 1
   var urlc1i1 = document.getElementById('url-c1-i1').value;
@@ -89,58 +269,6 @@ function copiarContentUno(  ){
   // Empieza copiado
   var aux = document.createElement("textarea");
   aux.innerHTML = content1;
-  document.body.appendChild(aux);
-  aux.select();
-  document.execCommand("copy");
-  document.body.removeChild(aux);
-
-  // Alert
-  executeSAlert('timer');
-
-}
-
-function copiarContentDos(  ){
-
-  // elementos img 1
-  var urlImg1 = document.getElementById('url-c2-i1').value;
-  var imgImg1 = document.getElementById('img-c2-i1').value;
-  var altImg1 = document.getElementById('alt-c2-i1').value;
-
-  // elementos img 2
-  var urlImg2 = document.getElementById('url-c2-i2').value;
-  var imgImg2 = document.getElementById('img-c2-i2').value;
-  var altImg2 = document.getElementById('alt-c2-i2').value;
-
-  // elementos img 3
-  var urlImg3 = document.getElementById('url-c2-i3').value;
-  var imgImg3 = document.getElementById('img-c2-i3').value;
-  var altImg3 = document.getElementById('alt-c2-i3').value;
-
-  // elementos img 4
-  var urlImg4 = document.getElementById('url-c2-i4').value;
-  var imgImg4 = document.getElementById('img-c2-i4').value;
-  var altImg4 = document.getElementById('alt-c2-i4').value;
-
-  // elementos img 5
-  var urlImg5 = document.getElementById('url-c2-i5').value;
-  var imgImg5 = document.getElementById('img-c2-i5').value;
-  var altImg5 = document.getElementById('alt-c2-i5').value;
-
-  // elementos img 6
-  var urlImg6 = document.getElementById('url-c2-i6').value;
-  var imgImg6 = document.getElementById('img-c2-i6').value;
-  var altImg6 = document.getElementById('alt-c2-i6').value;
-
-  // elementos img 7
-  var urlImg7 = document.getElementById('url-c2-i7').value;
-  var imgImg7 = document.getElementById('img-c2-i7').value;
-  var altImg7 = document.getElementById('alt-c2-i7').value;
-
-  var content2 = "<h3 class='tag-title--level-1'>Tendencia</h3><div class='BoardCategory-list'><a href='"+ urlImg1 +"' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg1 +"' alt='"+ altImg1 +"' title='"+ altImg1 +"' class='img-100'></a> <a href='"+ urlImg2 +"' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg2 +"' alt='"+ altImg2 +"' title='"+ altImg2 +"' class='img-100'></a></div><div class='BoardCategory-list'><a href='"+ urlImg3 +"' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg3 +"' alt='"+ altImg3 +"' title='"+ altImg3 +"' class='img-100'></a> <a href='"+ urlImg4 +"' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg4 +"' alt='"+ altImg4 +"' title='"+ altImg4 +"' class='img-100'></a></div><div id='BoardBrands02' class='BoardBrands-list--own'><a href='http://cdn-img.andrea.com/mx/1/89/' target='_blank' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-confort.png'></a><a href='http://cdn-img.andrea.com/mx/1/331/' target='_blank' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andr'></use></svg></a> <a href='http://cdn-img.andrea.com/mx/1/330/' target='_blank' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-frt'></use></svg></a> <a href='/andrea-premium' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-premium'></use></svg></a> <a href='/Mia-Andrea?fq=B:2000041' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-mia'></use></svg></a> <a href='http://cdn-img.andrea.com/mx/1/18/' target='_blank' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-accesorios'></use></svg></a> <a href='http://cdn-img.andrea.com/mx/25/177/' target='_blank' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato-sport'></use></svg></a> <a href='http://cdn-img.andrea.com/mx/25/203/' target='_blank' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-sport'></use></svg></a> <a href='/belleza/Unisex?map=c,specificationFilter_363' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-iu'></use></svg></a> <a href='/ferrato' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato'></use></svg></a></div><div class='BoardCategory-list'><a href='"+ urlImg5 +"' target='_blank' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg5 +"' alt='"+ altImg5 +"' title='"+ altImg5 +"' class='img-100'></a> <a href='"+ urlImg6 +"' target='_blank' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg6 +"' alt='"+ altImg6 +"' title='"+ altImg6 +"' class='img-100'></a> <a href='"+ urlImg7 +"' class='BoardCategory-item transition-hover'><img src='/arquivos/"+ imgImg7 +"' alt='"+ altImg7 +"' title='"+ altImg7 +"' class='img-100'></a></div><h3 class='tag-title--level-1' style='padding-top: 5%; margin-bottom: -3%;'>Última Oportunidad</h3>";
-
-  // Empieza copiado
-  var aux = document.createElement("textarea");
-  aux.innerHTML = content2;
   document.body.appendChild(aux);
   aux.select();
   document.execCommand("copy");
