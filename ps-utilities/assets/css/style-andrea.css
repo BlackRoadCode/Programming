@@ -1,0 +1,136 @@
+/* ======================= Monster Banner ======================= */
+.bkg-cintillo{
+  background: url('../img/generator/bkg-cintillo.jpg');
+}
+
+.bkg-monster{
+  background: url("../img/generator/bkg-monster.jpg");
+}
+
+/* ======================= Content 1 ======================= */
+.bkg-img-um-1{
+  background: url("../img/generator/bkg-img-um-1.jpg");
+}
+
+.bkg-img-um-2{
+  background: url("../img/generator/bkg-img-um-2.jpg");
+}
+
+.bkg-img-um-3{
+  background: url("../img/generator/bkg-img-um-3.jpg");
+}
+
+/* ======================= Content 2 ======================= */
+.bkg-img-c2-1{
+  background: url("../img/generator/bkg-img-uc1-1.jpg");
+}
+
+.bkg-img-c2-2{
+  background: url("../img/generator/bkg-img-uc1-2.jpg");
+}
+
+.bkg-img-c2-3{
+  background: url("../img/generator/bkg-img-uc1-3.jpg");
+}
+
+.bkg-img-c2-4{
+  background: url("../img/generator/bkg-img-uc1-4.jpg");
+}
+
+.bkg-img-c2-5{
+  background: url("../img/generator/bkg-img-uc2-1.jpg");
+}
+
+.bkg-img-c2-6{
+  background: url("../img/generator/bkg-img-uc2-2.jpg");
+}
+
+.bkg-img-c2-7{
+  background: url("../img/generator/bkg-img-uc2-3.jpg");
+}
+
+.bkg-c3-i1{
+  background: url("../img/generator/bkg-c3-i1.jpg");
+}
+
+.bkg-c3-i2{
+  background: url("../img/generator/bkg-c3-i2.jpg");
+}
+
+.bkg-c3-i3{
+  background: url("../img/generator/bkg-c3-i3.jpg");
+}
+
+.bkg-c3-i4{
+  background: url("../img/generator/bkg-c3-i4.jpg");
+}
+
+/* ======================= Content 3 ======================= */
+
+.bkg-monster-2{
+  background: url("../img/generator/bkg-monster-2.jpg");
+}
+
+.bkg-cintillo, .bkg-monster, .bkg-monster-2, .bkg-img-um-1, .bkg-img-um-2, .bkg-img-um-3, .bkg-img-c2-1, .bkg-img-c2-2, .bkg-img-c2-3, .bkg-img-c2-4, .bkg-img-c2-5, .bkg-img-c2-6, .bkg-img-c2-7, .bkg-c3-i1, .bkg-c3-i2, .bkg-c3-i3, .bkg-c3-i4{
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+
+/* ======================= borders ======================= */
+
+.monsterbanner, .content1, .content2, .content3{
+  border-style: dashed;
+  padding: 0% 2%;
+}
+
+.monsterbanner{
+  border-color: #fccdd0;
+}
+
+.content1{
+  border-color: #c6dbdf;
+}
+
+.content2{
+  border-color: #f9ecc9;
+}
+
+.content3{
+  border-color: #c2e2e1;
+}
+
+
+/* ======================= Generales ======================= */
+.max-w-100{
+  max-width: 100%;
+}
+
+.col{
+  padding-top: 2%;
+  margin: 1%
+}
+
+.pad-top-1{
+  padding:1%;
+}
+
+.pad-bot-1{
+  padding-bottom:1%;
+}
+
+.pad-14{
+  padding:14%;
+}
+
+.col-sm-12, .col-sm-7, .col-sm-5{
+  padding-top: 10%;
+}
+
+.inactive{
+  display: none;
+}
+
+button{
+  text-transform: uppercase;;
+}
