@@ -16,7 +16,7 @@ $(document).ready(function(){
                 <a class="nav-link" href="encrypt.html">Encrypt text</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="commands.html">Generador de Código</a>
+                <a class="nav-link" href="generator.html">Generador de Código</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="commands.html">Usefull Commands</a>

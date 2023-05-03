@@ -67,9 +67,14 @@
   background: url("../img/generator/bkg-c3-i4.jpg");
 }
 
+/* ======================= Single and Buttons landing ======================= */
+
 .bkg-img-single-banner{
   background: url("../img/generator/single-banner.jpg");
-  background-size: cover;
+}
+
+.bkg-buttons{
+  background-color: #ffd7d7;
 }
 
 /* ======================= Content 3 ======================= */
@@ -78,7 +83,7 @@
   background: url("../img/generator/bkg-monster-2.jpg");
 }
 
-.bkg-cintillo, .bkg-monster, .bkg-monster-2, .bkg-img-um-1, .bkg-img-um-2, .bkg-img-um-3, .bkg-img-c2-1, .bkg-img-c2-2, .bkg-img-c2-3, .bkg-img-c2-4, .bkg-img-c2-5, .bkg-img-c2-6, .bkg-img-c2-7, .bkg-c3-i1, .bkg-c3-i2, .bkg-c3-i3, .bkg-c3-i4{
+.bkg-img-single-banner, .bkg-cintillo, .bkg-monster, .bkg-monster-2, .bkg-img-um-1, .bkg-img-um-2, .bkg-img-um-3, .bkg-img-c2-1, .bkg-img-c2-2, .bkg-img-c2-3, .bkg-img-c2-4, .bkg-img-c2-5, .bkg-img-c2-6, .bkg-img-c2-7, .bkg-c3-i1, .bkg-c3-i2, .bkg-c3-i3, .bkg-c3-i4{
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;

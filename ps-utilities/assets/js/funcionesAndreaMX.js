@@ -37,10 +37,11 @@ function copyHeadband(){
   let imgCintilloMovil = document.getElementById('img-cintillo-movil').value;
   let altCintillo = document.getElementById('alt-cintillo').value;
 
-  let cintillo = `<a style='padding-bottom: 2px;' class='banner' href='${ urlCintillo }' target='_blank'>
-                    <img class='desktop' src='/arquivos/${ imgCintilloDesktop }' alt='${ altCintillo }' title='${ altCintillo }'>
-                    <img class='mobile' src='/arquivos/${ imgCintilloMovil }' alt='${ altCintillo }' title='${ altCintillo }'>
-                  </a>`;
+  let cintillo = `
+  <a style='padding-bottom: 2px;' class='banner' href='${ urlCintillo }' target='_blank'>
+    <img class='desktop' src='/arquivos/${ imgCintilloDesktop }' alt='${ altCintillo }' title='${ altCintillo }'>
+    <img class='mobile' src='/arquivos/${ imgCintilloMovil }' alt='${ altCintillo }' title='${ altCintillo }'>
+  </a>`;
 
    // Empieza copiado
    var aux = document.createElement("textarea");
@@ -60,12 +61,13 @@ function copyMonsterbanner(){
   let imgMonsterbannerMovil = document.getElementById('img-cintillo-movil-monsterbanner').value;
   let altMonster = document.getElementById('alt-monster').value;
 
-  let monsterbanner = `<div class='item'>
-                           <a class='banner' href='${ urlMonsterbanner }'>
-                               <img class='desktop' src='/arquivos/${ imgMonsterbannerDesktop }' alt='${ altMonster }' title='${ altMonster }'>
-                               <img class='mobile' src='/arquivos/${ imgMonsterbannerMovil }' alt='${ altMonster }' title='${ altMonster }'>
-                           </a>
-                       </div>`;
+  let monsterbanner = `
+  <div class='item'>
+      <a class='banner' href='${ urlMonsterbanner }'>
+          <img class='desktop' src='/arquivos/${ imgMonsterbannerDesktop }' alt='${ altMonster }' title='${ altMonster }'>
+          <img class='mobile' src='/arquivos/${ imgMonsterbannerMovil }' alt='${ altMonster }' title='${ altMonster }'>
+      </a>
+  </div>`;
 
   // copy process
   var aux = document.createElement("textarea");
@@ -118,18 +120,18 @@ function copyContentTwo(){
   <h3 class='tag-title--level-1'>Tendencia</h3>
     <div class='BoardCategory-list'>
         <a href='${ urlImg1 }' class='BoardCategory-item transition-hover hidden-sm hidden-xs'>
-            <img src='/arquivos/${ imgImg1 }' alt='Andrea | ${ altImg1 }' title='${ altImg1 }' class='img-100'>
+            <img src='/arquivos/${ imgImg1 }' alt='Andrea | ${ altImg1 }' title='Andrea | ${ altImg1 }' class='img-100'>
         </a>
         <a href='${ urlImg2 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg2 }' alt='${ altImg2 }' title='${ altImg2 }' class='img-100'>
+            <img src='/arquivos/${ imgImg2 }' alt='Andrea | ${ altImg2 }' title='Andrea | ${ altImg2 }' class='img-100'>
         </a>
     </div>
     <div class='BoardCategory-list'>
         <a href='${ urlImg3 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg3 }' alt='${ altImg3 }' title='${ altImg3 }' class='img-100'>
+            <img src='/arquivos/${ imgImg3 }' alt='Andrea | ${ altImg3 }' title='Andrea | ${ altImg3 }' class='img-100'>
         </a>
         <a href='${ urlImg4 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg4 }' alt='${ altImg4 }' title='${ altImg4 }' class='img-100'>
+            <img src='/arquivos/${ imgImg4 }' alt='Andrea | ${ altImg4 }' title='Andrea | ${ altImg4 }' class='img-100'>
         </a>
     </div>
     
@@ -147,13 +149,13 @@ function copyContentTwo(){
                   
     <div class='BoardCategory-list'>
         <a href='${ urlImg5 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg5 }' alt='${ altImg5 }' title='${ altImg5 }' class='img-100'>
+            <img src='/arquivos/${ imgImg5 }' alt='Andrea | ${ altImg5 }' title='Andrea | ${ altImg5 }' class='img-100'>
         </a>
         <a href='${ urlImg6 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg6 }' alt='${ altImg6 }' title='${ altImg6 }' class='img-100'>
+            <img src='/arquivos/${ imgImg6 }' alt='Andrea | ${ altImg6 }' title='Andrea | ${ altImg6 }' class='img-100'>
         </a>
         <a href='${ urlImg7 }' class='BoardCategory-item transition-hover'>
-            <img src='/arquivos/${ imgImg7 }' alt='${ altImg7 }' title='${ altImg7 }' class='img-100'>
+            <img src='/arquivos/${ imgImg7 }' alt='Andrea | ${ altImg7 }' title='Andrea | ${ altImg7 }' class='img-100'>
         </a>
     </div>
                   
@@ -207,13 +209,26 @@ function copySingleBanner(){
   executeSAlert('timer');
 }
 
-function buttonsBanner(){
+function copyButtonsBanner(){
 
-  let imgbuttonsbanner = document.getElementById('img-single-banner').value;
-  let altbuttonsbanner = document.getElementById('alt-single-banner').value;
+  let imgbuttonsbanner = document.getElementById('img-buttons-banner').value;
+  let altbuttonsbanner = document.getElementById('alt-buttons-banner').value;
 
-  let placeholderimg = document.getElementById('img-single-banner').value;
-  let placeholderalt = document.getElementById('alt-single-banner').value;
+  let btn1_url = document.getElementById('url-btn1-banner').value;
+  let btn1_img = document.getElementById('img-btn1-banner').value;
+  let btn1_alt = document.getElementById('alt-btn1-banner').value;
+  
+  let btn2_url = document.getElementById('url-btn2-banner').value;
+  let btn2_img = document.getElementById('img-btn2-banner').value;
+  let btn2_alt = document.getElementById('alt-btn2-banner').value;
+  
+  let btn3_url = document.getElementById('url-btn3-banner').value;
+  let btn3_img = document.getElementById('img-btn3-banner').value;
+  let btn3_alt = document.getElementById('alt-btn3-banner').value;
+  
+  let btn4_url = document.getElementById('url-btn4-banner').value;
+  let btn4_img = document.getElementById('img-btn4-banner').value;
+  let btn4_alt = document.getElementById('alt-btn4-banner').value;
 
   let buttonsbanner = `
   <table style='width: 100%;' class='thot' cellpadding='0' cellspacing='0'>
@@ -225,17 +240,17 @@ function buttonsBanner(){
       </th>
     </tr>
     <tr>
-      <td><img src='/arquivos/${ placeholderimg }' alt='${ placeholderalt }' title='${ placeholderalt }'></td>
-      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
-      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
-      <td><a href='${ placeholderimg }'><img src='/arquivos/${ placeholderimg }' alt='${ placeholderimg }' title='${ placeholderimg }'></a></td>
+      <td><a href='${ btn1_url }'><img src='/arquivos/${ btn1_img }' alt='${ btn1_alt }' title='${ btn1_alt }'></a></td>
+      <td><a href='${ btn2_url }'><img src='/arquivos/${ btn2_img }' alt='${ btn2_alt }' title='${ btn2_alt }'></a></td>
+      <td><a href='${ btn3_url }'><img src='/arquivos/${ btn3_img }' alt='${ btn3_alt }' title='${ btn3_alt }'></a></td>
+      <td><a href='${ btn4_url }'><img src='/arquivos/${ btn4_img }' alt='${ btn4_alt }' title='${ btn4_alt }'></a></td>
     </tr>
 </table>
   `;
 
   // copy process
   var aux = document.createElement("textarea");
-  aux.innerHTML = buttonsBanner;
+  aux.innerHTML = buttonsbanner;
   document.body.appendChild(aux);
   aux.select();
   document.execCommand("copy");
@@ -244,7 +259,7 @@ function buttonsBanner(){
   executeSAlert('timer');
 }
 
-// Refactor 02/05/23
+// --------------------------------------- Refactor 02/05/23
 
 function copiarContentUno(){
 
