@@ -46,17 +46,63 @@ class _HomeViewState extends ConsumerState<_HomeView> {
 
     if ( slideshowMovies.isEmpty ) return const CircularProgressIndicator();
 
-    return Column(
-      children: [
-        const CustomAppbar(),
-        MoviesSlideshow( movies: slideshowMovies ),
-        const SizedBox( height: 20 ),
-        MovieHorizontalListview( 
-          movies: nowPlayingMovies ,
-          title: 'En Cines',
-          subtitle: "2068",
+    return CustomScrollView(
+      slivers: [
+
+        const SliverAppBar(
+          floating: true,
+          flexibleSpace: FlexibleSpaceBar(
+            title: CustomAppbar(),
+            centerTitle: true,
+          ),
         ),
-      ],
+
+        SliverList(
+          delegate: SliverChildBuilderDelegate(
+            (context, index) {
+              return Column(
+                children: [
+                  MoviesSlideshow( movies: slideshowMovies ),
+                  
+                  const SizedBox( height: 20 ),
+                  
+                  MovieHorizontalListview( 
+                    movies: nowPlayingMovies ,
+                    title: 'En Cines',
+                    subtitle: "2068",
+                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                  ),
+                  
+                  MovieHorizontalListview( 
+                    movies: nowPlayingMovies ,
+                    title: 'Próximamente',
+                    subtitle: "En este mes",
+                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                  ),
+                  
+                  MovieHorizontalListview( 
+                    movies: nowPlayingMovies ,
+                    title: 'Populares',
+                    subtitle: "",
+                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                  ),
+                  
+                  MovieHorizontalListview( 
+                    movies: nowPlayingMovies ,
+                    title: 'Mejor Calificadas',
+                    subtitle: "De todos los tiempos",
+                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                  ),
+
+                  const SizedBox( height: 20 )
+                  
+                ],
+              );
+            },
+            childCount: 1
+        ))
+
+      ]
     );
   }
 }

@@ -89,6 +89,15 @@
   background-size: cover;
 }
 
+/* ======================= Vinoteca ======================= */
+
+.bkg-img-vinoteca{
+  background: url("../img/generator/banner-vinoteca.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ======================= borders ======================= */
 
 .monsterbanner, .content1, .content2, .content3{

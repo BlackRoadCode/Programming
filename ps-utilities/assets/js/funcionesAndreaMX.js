@@ -259,6 +259,50 @@ function copyButtonsBanner(){
   executeSAlert('timer');
 }
 
+function copyVinotecaDesktopBanner(){
+  let urlVinoteca = document.getElementById('url-vinoteca-banner').value;
+  let imgDesktopVinoteca = document.getElementById('img-desktop-vinoteca-banner').value;
+  let altVinoteca = document.getElementById('alt-vinoteca-banner').value;
+
+  let vinotecadesktopbanner = `
+  <a href='${ urlVinoteca }' class='vtex-display--block'>
+    <img src='/arquivos/${ imgDesktopVinoteca }' class='vtex-display--block' alt='${ altVinoteca }' title='${ altVinoteca }' />
+  </a>
+  `;
+
+  // copy process
+  var aux = document.createElement("textarea");
+  aux.innerHTML = vinotecadesktopbanner;
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  executeSAlert('timer');
+}
+
+function copyVinotecaMobileBanner(){
+  let urlVinoteca = document.getElementById('url-vinoteca-banner').value;
+  let imgMobileVinoteca = document.getElementById('img-mobile-vinoteca-banner').value;
+  let altVinoteca = document.getElementById('alt-vinoteca-banner').value;
+
+  let vinotecamobilebanner = `
+  <a href='${ urlVinoteca }' class='vtex-display--block'>
+    <img src='/arquivos/${ imgMobileVinoteca }' class='vtex-display--block' alt='${ altVinoteca }' title='${ altVinoteca }' />
+  </a>
+  `;
+
+  // copy process
+  var aux = document.createElement("textarea");
+  aux.innerHTML = vinotecamobilebanner;
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  executeSAlert('timer');
+}
+
 // --------------------------------------- Refactor 02/05/23
 
 function copiarContentUno(){

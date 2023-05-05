@@ -38,6 +38,10 @@
                         <button class="nav-link mt-4" id="v-pills-settings-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
                             aria-selected="false">Button Landing Banner</button>
+                        <hr>
+                        <button class="nav-link mt-2" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-vinoteca" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Banners Vinoteca</button>
                     </div>
 
                     <!-- Content -->
@@ -377,8 +381,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab">
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
@@ -453,6 +456,45 @@
                                                         </div>
                                                     </form>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-vinoteca" role="tabpanel" aria-labelledby="v-pills-vinoteca-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <button onclick="copyVinotecaDesktopBanner();" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Desktop Banner</button>
+                                            </div>
+                                            <div class="col">
+                                                <button onclick="copyVinotecaMobileBanner();" type="button" class="btn btn-info btn-sm text-white"><i class="fa fa-clipboard" aria-hidden="true"></i> Mobile Banner</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col bkg-img-vinoteca py-5">
+                                                <form class="row g-3">
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                            id="url-vinoteca-banner" placeholder="URL">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                            id="img-desktop-vinoteca-banner" placeholder="Desktop Image">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                            id="img-mobile-vinoteca-banner" placeholder="Mobile Image">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                            id="alt-vinoteca-banner" placeholder="Alt + Title">
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

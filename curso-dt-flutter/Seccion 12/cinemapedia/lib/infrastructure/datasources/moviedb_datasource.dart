@@ -20,7 +20,7 @@ class MoviedbDatasource extends MoviesDatasource{
   Future<List<Movie>> getNowPlaying({ int page = 1 }) async {
 
     // hacemos la llamada al endpoint y almacenamos el resultado en response.
-    final response = await dio.get('/movie/now_playing');
+    final response = await dio.get('/movie/now_playing', queryParameters:{ 'page':page } );
 
     // creamos una variable movieDBResponse en la que vamos a almacenar la conversión desde el modelo
     // creado previamente en quicktype
