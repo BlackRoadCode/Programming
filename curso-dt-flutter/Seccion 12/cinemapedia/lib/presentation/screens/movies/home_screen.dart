@@ -31,6 +31,9 @@ class _HomeViewState extends ConsumerState<_HomeView> {
   void initState() {
     super.initState();
     ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage();
+    ref.read( popularMoviesProvider.notifier ).loadNetxPage();
+    ref.read( upcomingMoviesProvider.notifier ).loadNetxPage();
+    ref.read( topRatedMoviesProvider.notifier ).loadNetxPage();
   }
 
   @override
@@ -41,8 +44,11 @@ class _HomeViewState extends ConsumerState<_HomeView> {
   @override
   Widget build(BuildContext context) {
 
-    final nowPlayingMovies  = ref.watch( nowPlayingMoviesProvider );
     final slideshowMovies  = ref.watch( moviesSlideshowProvider );
+    final nowPlayingMovies  = ref.watch( nowPlayingMoviesProvider );
+    final popularMovies  = ref.watch( popularMoviesProvider );
+    final upcomingMovies  = ref.watch( upcomingMoviesProvider );
+    final topRatedMovies  = ref.watch( topRatedMoviesProvider );
 
     if ( slideshowMovies.isEmpty ) return const CircularProgressIndicator();
 
@@ -66,7 +72,7 @@ class _HomeViewState extends ConsumerState<_HomeView> {
                   
                   const SizedBox( height: 20 ),
                   
-                  MovieHorizontalListview( 
+                  MovieHorizontalListview(  
                     movies: nowPlayingMovies ,
                     title: 'En Cines',
                     subtitle: "2068",
@@ -74,24 +80,24 @@ class _HomeViewState extends ConsumerState<_HomeView> {
                   ),
                   
                   MovieHorizontalListview( 
-                    movies: nowPlayingMovies ,
+                    movies: upcomingMovies ,
                     title: 'Próximamente',
                     subtitle: "En este mes",
-                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                    loadNetxPage: () => ref.read( upcomingMoviesProvider.notifier ).loadNetxPage(),
                   ),
                   
                   MovieHorizontalListview( 
-                    movies: nowPlayingMovies ,
+                    movies: popularMovies ,
                     title: 'Populares',
                     subtitle: "",
-                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                    loadNetxPage: () => ref.read( popularMoviesProvider.notifier ).loadNetxPage(),
                   ),
                   
                   MovieHorizontalListview( 
-                    movies: nowPlayingMovies ,
+                    movies: topRatedMovies ,
                     title: 'Mejor Calificadas',
                     subtitle: "De todos los tiempos",
-                    loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
+                    loadNetxPage: () => ref.read( topRatedMoviesProvider.notifier ).loadNetxPage(),
                   ),
 
                   const SizedBox( height: 20 )

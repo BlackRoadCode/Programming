@@ -50,7 +50,7 @@ class _MovieHorizontalListviewState extends State<MovieHorizontalListview> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350,
+      height: 360,
       child: Column(
         children: [
           if( widget.title != null || widget.subtitle != null )
@@ -89,7 +89,7 @@ class _Title extends StatelessWidget {
     final titleStyle = Theme.of(context).textTheme.titleLarge;
 
     return Container(
-      padding: const EdgeInsets.only( top: 10 ),
+      padding: const EdgeInsets.only( top: 10, bottom: 10 ),
       margin: const EdgeInsets.symmetric( horizontal: 10 ),
       child: Row(
         children: [
@@ -98,7 +98,7 @@ class _Title extends StatelessWidget {
 
           const Spacer(),
           
-          if(subTitle != null)
+          if(subTitle != '')
           FilledButton.tonal(
             style: const ButtonStyle( visualDensity: VisualDensity.compact ),
             onPressed: (){}, 
