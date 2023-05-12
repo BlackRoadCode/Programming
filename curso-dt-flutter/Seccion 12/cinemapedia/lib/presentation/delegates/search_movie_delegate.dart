@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:cinemapedia/domain/entities/movie.dart';
 
-typedef searchMoviesCallback = Future<List<Movie>> Function( String query );
+typedef SearchMoviesCallback = Future<List<Movie>> Function( String query );
 
 class SearchMovieDelegate extends SearchDelegate<Movie?>{
 
-  final searchMoviesCallback searchMovies;
+  final SearchMoviesCallback searchMovies;
 
   SearchMovieDelegate({
     required this.searchMovies
@@ -53,15 +53,13 @@ class SearchMovieDelegate extends SearchDelegate<Movie?>{
       builder: (context, snapshot) {
 
         final movies = snapshot.data ?? [];
-
+        
         return ListView.builder(
           itemCount: movies.length,
           itemBuilder: (context, index) => _MovieSearchItem(movie: movies[index], onMovieSelected: close),
         );
-      },)
-    ;
-
-
+      },
+    );
   }
 
 }
