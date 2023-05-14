@@ -52,6 +52,8 @@ class SearchMovieDelegate extends SearchDelegate<Movie?>{
       future: searchMovies(query),
       builder: (context, snapshot) {
 
+        //! print('Realizando petición');
+
         final movies = snapshot.data ?? [];
         
         return ListView.builder(
@@ -75,7 +77,7 @@ class _MovieSearchItem extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
 
     final textStyles = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
