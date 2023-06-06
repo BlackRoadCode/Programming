@@ -158,6 +158,9 @@ function copyContentTwo(){
             <img src='/arquivos/${ imgImg7 }' alt='Andrea | ${ altImg7 }' title='Andrea | ${ altImg7 }' class='img-100'>
         </a>
     </div>
+    <div class='BoardCategory-list txt-legal'>
+        <p style='font-size: 10px; color: #9c9c9c;'>*VÁLIDO EN ANDREA.COM. CONSULTA POLÍTICAS DE LA PROMOCIÓN.</p>
+    </div>
                   
     <div id='BoardBrands02' class='BoardBrands-list--own'>
         <a href='http://cdn-img.andrea.com/mx/25/89/' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-confort.png'></a>
@@ -171,6 +174,7 @@ function copyContentTwo(){
         <a href='/ferrato' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato'></use></svg></a>
         <a href='/Andrea-Men?fq=B:2000299' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/andrea- men.png'></a>
     </div>
+    
                   
     <h3 class='noline tag-title--level-1' style='padding-top: 5%; margin-bottom: -3%;'>LO MEJOR DE MID SEASON</h3>`;
 
