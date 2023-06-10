@@ -64,14 +64,14 @@ class HomeViewState extends ConsumerState<HomeView> {
                     MovieHorizontalListview(  
                       movies: nowPlayingMovies ,
                       title: 'En Cines',
-                      subtitle: "2068",
+                      subtitle: "Este mes",
                       loadNetxPage: () => ref.read( nowPlayingMoviesProvider.notifier ).loadNetxPage(),
                     ),
                     
                     MovieHorizontalListview( 
                       movies: upcomingMovies ,
                       title: 'Próximamente',
-                      subtitle: "En este mes",
+                      subtitle: "próximos estrenos",
                       loadNetxPage: () => ref.read( upcomingMoviesProvider.notifier ).loadNetxPage(),
                     ),
                     
