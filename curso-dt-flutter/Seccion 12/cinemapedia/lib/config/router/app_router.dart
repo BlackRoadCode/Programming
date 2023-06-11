@@ -1,5 +1,4 @@
 import 'package:go_router/go_router.dart';
-import 'package:cinemapedia/presentation/views/views.dart';
 import 'package:cinemapedia/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
@@ -8,14 +7,10 @@ final appRouter = GoRouter(
     GoRoute(
         path: '/home/:page',
         name: HomeScreen.name,
-<<<<<<< HEAD
-        builder: (context, state) => const HomeScreen( childView: HomeView(), ),
-=======
         builder: (context, state){
           final pageIndex = int.parse( state.pathParameters['page'] ?? '0' );
           return HomeScreen( pageIndex: pageIndex );
         },
->>>>>>> definitiveway
         routes: [
           GoRoute(
               path: 'movie/:id',
