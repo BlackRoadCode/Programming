@@ -26,6 +26,3 @@ final appRouter = GoRouter(
       redirect: ( _, __ ) => '/home/0',
     )
 ]);
-
-
-// CREADO EN LA RAMA LOCALDATABASE
