@@ -163,18 +163,17 @@ function copyContentTwo(){
     </div>
                   
     <div id='BoardBrands02' class='BoardBrands-list--own'>
-        <a href='http://cdn-img.andrea.com/mx/25/89/' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-confort.png'></a>
-        <a href='http://cdn-img.andrea.com/mx/25/407/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andr'></use></svg></a>
-        <a href='http://cdn-img.andrea.com/mx/25/407/10/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-frt'></use></svg></a> <a href='/andrea-premium' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-premium'></use></svg></a>
+        <a href='/confort' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-confort.png'></a>
+        <a href='/andrea' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andr'></use></svg></a>
+        <a href='/ferrato' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-frt'></use></svg></a> <a href='/andrea-premium' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-premium'></use></svg></a>
         <a href='/Mia-Andrea?fq=B:2000041' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/log-n-lenceria.png'></a>
-        <a href='http://cdn-img.andrea.com/mx/25/18/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-accesorios'></use></svg></a>
-        <a href='http://cdn-img.andrea.com/mx/25/177/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato-sport'></use></svg></a>
-        <a href='http://cdn-img.andrea.com/mx/25/203/' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-sport'></use></svg></a>
+        <a href='/accesorios/Mujer/Unisex?map=c,specificationFilter_373,specificationFilter_373&PS=48&O=OrderByReleaseDateDESC' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-accesorios'></use></svg></a>
+        <a href='/Andrea-sport?fq=B:2000021' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato-sport'></use></svg></a>
+        <a href='/Ferrato-sport?fq=B:2000130' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-andrea-sport'></use></svg></a>
         <a href='/belleza/Unisex?map=c,specificationFilter_363' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/lnd-beauty-logo.jpg'></a>
         <a href='/ferrato' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-ferrato'></use></svg></a>
         <a href='/Andrea-Men?fq=B:2000299' class='BoardBrands-item'><img style='max-width: 90%; opacity: 1;' class='img-brand-logo' src='/arquivos/andrea- men.png'></a>
     </div>
-    
                   
     <h3 class='noline tag-title--level-1' style='padding-top: 5%; margin-bottom: -3%;'>LO MEJOR DE MID SEASON</h3>`;
 
