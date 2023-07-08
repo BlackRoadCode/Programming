@@ -136,6 +136,7 @@ function copyContentTwo(){
     </div>
     
     <div id='BoardBrands01' class='BoardBrands-list'>
+        <a href='/playtex' class='BoardBrands-item'><img style='max-width: 63%; opacity: .6;' class='img-brand-logo' src='/arquivos/lnd-playtex-logo.png' alt=''></a> 
         <a href='/nike' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-nike'></use></svg></a>
         <a href='/adidas' class='BoardBrands-item'><svg class='svg-icon'><use xlink:href='#brand-adidas'></use></svg></a> 
         <a href='/reebok' class='BoardBrands-item'><img style='max-width: 63%; opacity: .6;' class='img-brand-logo' src='/arquivos/lnd-reebok-logo.gif?v=230123' alt=''></a> 
