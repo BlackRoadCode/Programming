@@ -18,17 +18,25 @@
         <h1 class="mb-4">QR Generator</h1>
 
         <div class="row g-3">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <input type="text" id="imgName" class="form-control" placeholder="Image Name" >
           </div>
-          <div class="col-sm-6">
+          
+          <div class="col-sm-5">
             <input type="text" id="qrUrl" class="form-control" placeholder="QR URL" >
+          </div>
+
+          <div class="col-sm-3">
+            <input class="form-check-input" type="checkbox" value="bigQR" id="sizeCheckbox">
+            <label class="form-check-label" for="sizeCheckbox">
+              1000px
+            </label>
           </div>
         </div>
         
         <div class="row g-3">
           <div class="col-sm-6">
-            <button class="btn text-white m-3" onclick="generateQRCode( imgName.value , qrUrl.value )" style="background-color: #FF7F50;" >Generar QR</button>
+            <button class="btn text-white m-3" onclick="generateQRCode( imgName.value, qrUrl.value, sizeCheckbox.checked  )" style="background-color: #FF7F50;" >Generar QR</button>
             <button class="btn text-white m-3" onclick="downloadQRCodes()" style="background-color: #FF7F50;" >Descargar QR</button>
           </div>
         </div>

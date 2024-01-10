@@ -1,15 +1,18 @@
 
 let img = "assets/img/mandreaqr2.png"; // mandreaqr.jpg
 let canvas = new Object( { name: '' } );
+let qrSize = 0;
 let qrCodeCanvas = new QRCodeStyling({});
 
-const generateQRCode = ( imageName, qrUrl ) => {
+const generateQRCode = ( imageName, qrUrl, size ) => {
     canvas.name = imageName;
     qrCodeCanvas._options.data = qrUrl;
 
+    size ? qrSize = 1000 : qrSize = 400;
+
     qrCodeCanvas = new QRCodeStyling({
-        width: 400,
-        height: 400,
+        width: qrSize,
+        height: qrSize,
         data: qrUrl,
         image: img,
         qrOptions: {
