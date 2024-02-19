@@ -5,5 +5,5 @@ const { http } = require('./http-client.plugin');
 module.exports = {
     getAge,
     getUUID,
-    http
+    http,
 }
