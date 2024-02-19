@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# actual project
+*.log
+
 # compiled output
 /dist
 /tmp
@@ -7,28 +10,12 @@
 # Only exists if Bazel was run
 /bazel-out
 
-## Angular ##
-# compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
-
 # dependencies
 /node_modules
 bower_components/
 
 # profiling files
 chrome-profiler-events*.json
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
