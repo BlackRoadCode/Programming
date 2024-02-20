@@ -1,5 +1,8 @@
 
-const { getAge, getUUID, buildLogger } = require('./plugins');
+import { buildLogger } from './plugins/logger.plugin';
+// import { getAge, getUUID, buildLogger } from './plugins';
+
+
 // const { buildMakePerson } = require('./js-foundation/05-factory');
 // const { emailTemplate } = require('./js-foundation/01-template');
 // require('./js-foundation/02-destructuring');
@@ -13,10 +16,10 @@ const { getAge, getUUID, buildLogger } = require('./plugins');
 //     .catch( ( err ) => console.error(err) )
 //     .finally( () => console.log('Finalizado') );
 
-const logger = buildLogger('app.js');
+const logger = buildLogger('app.ts');
 
-logger.log('Hola Mundo');
-logger.error('Este es un error');
+// logger.log('Hola Mundo');
+// logger.error('Este es un error');
 
 
 // getAlternativeDataByCode(3354483).then( (data) => console.log(data));
