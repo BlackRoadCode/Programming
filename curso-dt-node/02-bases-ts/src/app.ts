@@ -1,5 +1,5 @@
 
-import { buildLogger } from './plugins/logger.plugin';
+// import { buildLogger } from './plugins/logger.plugin';
 // import { getAge, getUUID, buildLogger } from './plugins';
 
 
@@ -16,7 +16,7 @@ import { buildLogger } from './plugins/logger.plugin';
 //     .catch( ( err ) => console.error(err) )
 //     .finally( () => console.log('Finalizado') );
 
-const logger = buildLogger('app.ts');
+// const logger = buildLogger('app.ts');
 
 // logger.log('Hola Mundo');
 // logger.error('Este es un error');

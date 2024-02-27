@@ -7,10 +7,16 @@ export const httpPlientPlugin = {
         return data;
     },
 
-    post: async(url:string, body:any) => { },
+    post: async(url:string, body:any) => { 
+        throw new Error('Not Implemented');
+     },
 
-    put: async(url:string, body:any) => { },
+    put: async(url:string, body:any) => { 
+        throw new Error('Not Implemented');
+     },
 
-    delete: async(url:string) => { },
+    delete: async(url:string) => { 
+        throw new Error('Not Implemented');
+     },
 
 };
