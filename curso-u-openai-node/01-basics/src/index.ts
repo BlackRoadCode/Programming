@@ -17,7 +17,9 @@ async function main(){
             }
         ],
         max_tokens: 100,
-        n:2
+        n:1,
+        frequency_penalty: 1.5,
+        seed: 555
     });
 
     console.log(response);
