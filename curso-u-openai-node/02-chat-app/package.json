@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r ts-node/register --env-file=.env src/basic_chat/index.ts" 
+    "start": "node -r ts-node/register --env-file=.env src/exercise/index.ts" 
   },
   "keywords": [],
-  "author": "",
+  "author": "Pepe Sosa",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.24",
