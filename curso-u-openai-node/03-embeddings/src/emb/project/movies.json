@@ -1,0 +1,138 @@
+[
+    {
+        "name": "The Shawshank Redemption",
+        "description": "La historia de un banquero injustamente condenado a cadena perpetua, que forma una amistad inquebrantable con otro preso y encuentra esperanza en la libertad interior mientras enfrenta la brutal realidad de la vida en prisión."
+    },
+    {
+        "name": "The Godfather",
+        "description": "La saga de una poderosa familia de la mafia italiana y su ascenso al poder, liderada por el patriarca Vito Corleone, mientras luchan por el control del crimen organizado en Estados Unidos."
+    },
+    {
+        "name": "The Dark Knight",
+        "description": "Batman se enfrenta a su némesis definitiva, el Joker, en una batalla épica por el alma de Gotham City, mientras el caos se desata y el Caballero Oscuro se ve obligado a tomar decisiones difíciles para proteger a los inocentes."
+    },
+    {
+        "name": "The Godfather: Part II",
+        "description": "Una secuela que profundiza en el ascenso de Vito Corleone al poder y sigue los pasos de su hijo Michael mientras lucha por mantener el legado familiar y enfrenta nuevas amenazas a su imperio criminal."
+    },
+    {
+        "name": "12 Angry Men",
+        "description": "Un drama judicial que sigue a un jurado de doce hombres que deliberan sobre el veredicto de un caso de asesinato, mientras luchan con sus prejuicios personales y tratan de llegar a un consenso unánime."
+    },
+    {
+        "name": "Schindler's List",
+        "description": "La verdadera historia de Oskar Schindler, un empresario alemán que salva a más de mil judíos durante el Holocausto al emplearlos en sus fábricas, arriesgando su vida para protegerlos de la persecución nazi."
+    },
+    {
+        "name": "The Lord of the Rings: The Return of the King",
+        "description": "El épico final de la trilogía de El Señor de los Anillos, donde la Comunidad del Anillo se enfrenta a su última batalla contra Sauron y su ejército, mientras luchan por el destino de la Tierra Media."
+    },
+    {
+        "name": "Pulp Fiction",
+        "description": "Una película de culto que sigue las vidas entrelazadas de varios personajes en Los Ángeles, desde un par de asesinos a sueldo hasta un boxeador en decadencia y un gángster adicto a la adrenalina, en una trama llena de violencia, humor negro y diálogos ingeniosos."
+    },
+    {
+        "name": "The Good, the Bad and the Ugly",
+        "description": "Un clásico del western spaghetti que sigue a tres pistoleros en busca de un tesoro enterrado durante la Guerra Civil estadounidense, mientras se enfrentan entre sí en un juego mortal de traición y supervivencia."
+    },
+    {
+        "name": "Fight Club",
+        "description": "Un hombre descontento con la monotonía de su vida conoce a un carismático vendedor de jabón y se ve arrastrado a un submundo de violencia y caos, donde descubre una forma radical de liberarse de la opresión social."
+    },
+    {
+        "name": "Forrest Gump",
+        "description": "La historia de Forrest Gump, un hombre con un coeficiente intelectual bajo que accidentalmente se convierte en testigo de algunos de los momentos más importantes de la historia estadounidense mientras busca el amor y el propósito en su vida."
+    },
+    {
+        "name": "Inception",
+        "description": "Un ladrón de sueños altamente entrenado se embarca en una misión peligrosa para implantar una idea en la mente de un empresario rival, en un mundo donde la realidad y el sueño se entrelazan en un laberinto de intriga y engaño."
+    },
+    {
+        "name": "The Matrix",
+        "description": "Un programador informático descubre que su realidad es una simulación virtual creada por máquinas inteligentes, y se une a un grupo de rebeldes para liberar a la humanidad del control de las máquinas y despertar a la verdadera realidad."
+    },
+    {
+        "name": "Goodfellas",
+        "description": "La historia real de Henry Hill, un joven que se une a la mafia italiana y asciende en sus filas, experimentando el lujo, la violencia y la traición en el mundo del crimen organizado en Nueva York."
+    },
+    {
+        "name": "Star Wars: Episode V - The Empire Strikes Back",
+        "description": "La segunda entrega de la saga Star Wars, donde la Alianza Rebelde se enfrenta a las fuerzas del Imperio Galáctico en una batalla desesperada por la libertad, mientras Luke Skywalker busca entrenamiento con el legendario maestro Jedi, Yoda."
+    },
+    {
+        "name": "The Lord of the Rings: The Fellowship of the Ring",
+        "description": "El primer capítulo de la trilogía de El Señor de los Anillos, donde un humilde hobbit llamado Frodo es encargado de destruir un poderoso anillo mágico que podría sumir a la Tierra Media en la oscuridad."
+    },
+    {
+        "name": "One Flew Over the Cuckoo's Nest",
+        "description": "La historia de un hombre que finge estar loco para escapar de la cárcel y termina en un hospital psiquiátrico, donde desafía la autoridad de la enfermera tiránica y lidera a los pacientes en una rebelión contra el sistema."
+    },
+    {
+        "name": "The Silence of the Lambs",
+        "description": "Una agente del FBI en entrenamiento se ve obligada a pedir ayuda a un brillante pero peligroso psicópata encarcelado para atrapar a un asesino en serie conocido como Buffalo Bill, en un juego de gato y ratón lleno de suspense y horror psicológico."
+    },
+    {
+        "name": "Saving Private Ryan",
+        "description": "La historia de un grupo de soldados estadounidenses que arriesgan sus vidas para rescatar a un paracaidista cuyos tres hermanos han muerto en combate durante la Segunda Guerra Mundial, en una misión épica llena de valentía y sacrificio."
+    },
+    {
+        "name": "The Green Mile",
+        "description": "La vida en un corredor de la muerte en una prisión de Louisiana cambia para siempre cuando un guardia conoce a un hombre condenado a muerte por un crimen que no cometió, y descubre sus asombrosos dones de sanación y compasión."
+    },
+    {
+        "name": "Interstellar",
+        "description": "En un futuro cercano donde la Tierra se enfrenta a la extinción, un grupo de exploradores se embarca en un viaje interestelar en busca de un nuevo hogar para la humanidad, desafiando las leyes de la física y enfrentando peligros desconocidos en el espacio."
+    },
+    {
+        "name": "The Lord of the Rings: The Two Towers",
+        "description": "La segunda entrega de la trilogía de El Señor de los Anillos, donde la Comunidad del Anillo se divide y enfrenta nuevos desafíos mientras se acerca la batalla final contra las fuerzas de la oscuridad."
+    },
+    {
+        "name": "Se7en",
+        "description": "Dos detectives, uno joven y ambicioso y otro a punto de jubilarse, persiguen a un asesino en serie que comete sus crímenes basados en los siete pecados capitales, en un thriller psicológico lleno de giros y sorpresas impactantes."
+    },
+    {
+        "name": "The Usual Suspects",
+        "description": "Tras un atraco fallido, un grupo de criminales se reúne en una comisaría de policía y se ven envueltos en una intrincada trama de engaños y traiciones, mientras un misterioso criminal conocido como Keyser Söze maneja los hilos desde las sombras."
+    },
+    {
+        "name": "Gladiator",
+        "description": "La épica historia de un general romano traicionado y convertido en esclavo que busca venganza contra el emperador corrupto que asesinó a su familia y lo condenó a muerte, en una lucha por restaurar su honor y libertad en la arena del Coliseo."
+    },
+    {
+        "name": "The Departed",
+        "description": "Un policía encubierto se infiltra en la mafia irlandesa en Boston, mientras un informante de la mafia asciende en las filas de la policía, en un juego de identidades cruzadas y traiciones mortales que desemboca en una batalla épica entre el bien y el mal."
+    },
+    {
+        "name": "The Prestige",
+        "description": "La rivalidad entre dos magos obsesionados con superarse mutuamente lleva a una serie de engaños, traiciones y sacrificios en el mundo del ilusionismo victoriano, donde nada es lo que parece y cada truco tiene un precio."
+    },
+    {
+        "name": "The Lion King",
+        "description": "La clásica historia de un joven león que huye de su reino después de la muerte de su padre y descubre su destino como el verdadero rey, en un viaje de autodescubrimiento, amistad y valentía en las vastas llanuras de África."
+    },
+    {
+        "name": "The Pianist",
+        "description": "La verdadera historia de un pianista judío polaco que sobrevive al Holocausto escondiéndose en Varsovia y enfrentando la devastación y la desesperación mientras lucha por preservar su humanidad y su arte en medio del horror."
+    },
+    {
+        "name": "The Silence of the Lambs",
+        "description": "Una agente del FBI en entrenamiento se ve obligada a pedir ayuda a un brillante pero peligroso psicópata encarcelado para atrapar a un asesino en serie conocido como Buffalo Bill, en un juego de gato y ratón lleno de suspense y horror psicológico."
+    },
+    {
+        "name": "The Intouchables",
+        "description": "La inesperada amistad entre un millonario tetrapléjico y su cuidador de origen humilde, que transforma sus vidas y desafía las expectativas sociales en una historia conmovedora y llena de humor sobre el poder redentor de la amistad."
+    },
+    {
+        "name": "Whiplash",
+        "description": "Un joven baterista talentoso ingresa a una prestigiosa escuela de música y se enfrenta a un instructor tiránico que lo empuja hasta el límite en su búsqueda de la grandeza, en una batalla épica entre el sacrificio y la ambición desmedida."
+    },
+    {
+        "name": "The Departed",
+        "description": "Un policía encubierto se infiltra en la mafia irlandesa en Boston, mientras un informante de la mafia asciende en las filas de la policía, en un juego de identidades cruzadas y traiciones mortales que desemboca en una batalla épica entre el bien y el mal."
+    },
+    {
+        "name": "The Matrix",
+        "description": "Un programador informático descubre que su realidad es una simulación virtual creada por máquinas inteligentes, y se une a un grupo de rebeldes para liberar a la humanidad del control de las máquinas y despertar a la verdadera realidad."
+    }
+]
