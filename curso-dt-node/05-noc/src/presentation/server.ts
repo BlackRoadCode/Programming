@@ -9,13 +9,12 @@ export class Server{
         CronService.createJob(
             '*/5 * * * * *',
             () => {
-
                 const url = 'http://localhost:3000/posts';
 
                 new CheckService(
                     () => console.log(`${ url } Checked and ok`),
                     ( error ) => console.log(error)
-                ).execute(url);
+                ).execute( url );
             }
         );
 
