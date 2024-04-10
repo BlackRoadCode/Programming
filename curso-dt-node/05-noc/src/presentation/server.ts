@@ -20,4 +20,10 @@ export class Server{
 
     }
 
+
+
+    public static otroMetodo(){
+        return null;
+    }
+
 }
