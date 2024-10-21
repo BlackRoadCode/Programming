@@ -57,3 +57,22 @@ const getHeroeByIdAsyncProfe = ( id ) => {
 getHeroeByIdAsyncProfe( 3 )
     .then( console.log )
     .catch( console.warn );
+
+// -------------------------------------------- second lap
+
+const getHeroeByIdAsyncSecond = ( id ) => {
+
+    return new Promise( ( resolve, reject ) => {
+
+        setTimeout(() => {
+            const heroe = getHeroeById(id);
+            ( heroe )? resolve( heroe ) : reject('No se pudo encontrar el héroe solicitado.');
+        }, 2000);
+    
+    });
+
+};
+
+getHeroeByIdAsyncSecond( 17 )
+    .then( console.log )
+    .catch( console.warn);

@@ -22,4 +22,5 @@ const getHeroeByOwner = ( owner ) => {
 export {
     getHeroeById,
     getHeroeByOwner
-}
+} 
+
