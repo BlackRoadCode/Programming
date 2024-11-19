@@ -1,5 +1,5 @@
 
-let img = "assets/img/mandreaqr2.png"; // mandreaqr.jpg
+let img = "assets/img/marisa.png"; // mandreaqr.jpg
 let canvas = new Object( { name: '' } );
 let qrSize = 0;
 let qrCodeCanvas = new QRCodeStyling({});
