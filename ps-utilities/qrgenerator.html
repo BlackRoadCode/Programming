@@ -18,6 +18,21 @@
         <h1 class="mb-4">QR Generator</h1>
 
         <div class="row g-3">
+
+          <div class="col-sm-12">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="qrLogo"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                QR Logo
+              </button>
+              <div class="dropdown-menu" aria-labelledby="qrLogo">
+                <a class="dropdown-item" href="#" data-value="andrea.png">Andrea</a>
+                <a class="dropdown-item" href="#" data-value="impuls.png">Impuls</a>
+                <a class="dropdown-item" href="#" data-value="impulsar.png">Impuls AR</a>
+              </div>
+            </div>
+          </div>
+
           <div class="col-sm-4">
             <input type="text" id="imgName" class="form-control" placeholder="Image Name" >
           </div>
@@ -36,7 +51,7 @@
         
         <div class="row g-3">
           <div class="col-sm-6">
-            <button class="btn text-white m-3" onclick="generateQRCode( imgName.value, qrUrl.value, sizeCheckbox.checked  )" style="background-color: #FF7F50;" >Generar QR</button>
+            <button class="btn text-white m-3" onclick="generateQRCode( imgName.value, qrUrl.value, sizeCheckbox.checked, selectedLogo  )" style="background-color: #FF7F50;" >Generar QR</button>
             <button class="btn text-white m-3" onclick="downloadQRCodes()" style="background-color: #FF7F50;" >Descargar QR</button>
           </div>
         </div>

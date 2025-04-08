@@ -1,10 +1,14 @@
 
-let img = "assets/img/marisa.png"; // mandreaqr.jpg
+// let img = ""; // mandreaqr.jpg
 let canvas = new Object( { name: '' } );
 let qrSize = 0;
 let qrCodeCanvas = new QRCodeStyling({});
+let selectedLogo = null;
 
-const generateQRCode = ( imageName, qrUrl, size ) => {
+const generateQRCode = ( imageName, qrUrl, size, img ) => {
+
+    // console.log("esto trae img", `/../qr/${img}`);
+
     canvas.name = imageName;
     qrCodeCanvas._options.data = qrUrl;
 
@@ -14,7 +18,7 @@ const generateQRCode = ( imageName, qrUrl, size ) => {
         width: qrSize,
         height: qrSize,
         data: qrUrl,
-        image: img,
+        image: `assets/img/qr/${img}`,
         qrOptions: {
             typeNumber: 0,
             mode: "Byte",
@@ -43,3 +47,16 @@ const generateQRCode = ( imageName, qrUrl, size ) => {
 const downloadQRCodes = () => {
     qrCodeCanvas.download(canvas);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".dropdown-item");
+  const button = document.getElementById("qrLogo");
+
+  items.forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      selectedLogo = this.dataset.value; 
+      button.textContent = this.textContent;
+    });
+  });
+});
