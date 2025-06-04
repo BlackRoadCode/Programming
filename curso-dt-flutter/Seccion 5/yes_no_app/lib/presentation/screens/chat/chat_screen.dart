@@ -42,6 +42,7 @@ class _ChatView extends StatelessWidget {
             
             Expanded(
               child: ListView.builder(
+                controller: chatProvider.chatScrollController,
                 itemCount: chatProvider.messages.length,
                 itemBuilder: (context, index) {
                   final message = chatProvider.messages[index];
@@ -51,7 +52,7 @@ class _ChatView extends StatelessWidget {
               )
             ),
 
-            const MessageFieldBox()
+            MessageFieldBox(onValue: (value) => chatProvider.sendMessage( value ) )
           ],
         ),
       ),
